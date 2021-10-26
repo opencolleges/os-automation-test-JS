@@ -1,0 +1,1544 @@
+[
+  {
+    "description": "    Verifying top navigations.",
+    "keyword": "Feature",
+    "name": "DPS-573",
+    "line": 2,
+    "id": "dps-573",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-573.feature",
+    "elements": [
+      {
+        "id": "dps-573;verifying-support-and-profile-menu.",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verifying support and profile menu.",
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38517000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "checking document title for OpenSpace",
+            "match": {
+              "location": "features/steps/navigation/DPS-573.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5011000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "hovering and clicking on the support menu",
+            "match": {
+              "location": "features/steps/navigation/DPS-573.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5055000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "check support menus and navigate to all the links listed in the menu",
+            "match": {
+              "location": "features/steps/navigation/DPS-573.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9283000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "click and hover on the profile menu",
+            "match": {
+              "location": "features/steps/commonSteps.js:113"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10051000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "check profile menus and navigate to all the links listed in the menu",
+            "match": {
+              "location": "features/steps/navigation/DPS-573.js:103"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4038000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Verifying study buddy page.",
+    "keyword": "Feature",
+    "name": "DPS-583",
+    "line": 2,
+    "id": "dps-583",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-583.feature",
+    "elements": [
+      {
+        "id": "dps-583;verifying-phone-number-and-payment-history.",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verifying phone number and payment history.",
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35926000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "hovering and clicking on the support menu",
+            "match": {
+              "location": "features/steps/navigation/DPS-573.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5053000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "click Support Centre",
+            "match": {
+              "location": "features/steps/studyBuddy/DPS-583.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "click Study Buddy",
+            "match": {
+              "location": "features/steps/studyBuddy/DPS-583.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 840000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "check Support Centre title",
+            "match": {
+              "location": "features/steps/studyBuddy/DPS-583.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5035000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "click arrow icon of each question to show details",
+            "match": {
+              "location": "features/steps/studyBuddy/DPS-583.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 239000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "click View more button to show more questions",
+            "match": {
+              "location": "features/steps/studyBuddy/DPS-583.js:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5043000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "check the title",
+            "match": {
+              "location": "features/steps/studyBuddy/DPS-583.js:122"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5054000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Verifying students grades page.",
+    "keyword": "Feature",
+    "name": "DPS-588",
+    "line": 2,
+    "id": "dps-588",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-588.feature",
+    "elements": [
+      {
+        "id": "dps-588;verifying-students-grades.",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verifying students grades.",
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38456000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "click and hover on the profile menu",
+            "match": {
+              "location": "features/steps/commonSteps.js:113"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10062000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "click on My Grades link",
+            "match": {
+              "location": "features/steps/studentsGrades/DPS-588.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "check page title",
+            "match": {
+              "location": "features/steps/studentsGrades/DPS-588.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18295000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "check course title",
+            "match": {
+              "location": "features/steps/studentsGrades/DPS-588.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "check all the assignment name and code and grades row",
+            "match": {
+              "location": "features/steps/studentsGrades/DPS-588.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14218000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "click on each grade and expand collapse to check details of grades",
+            "match": {
+              "location": "features/steps/studentsGrades/DPS-588.js:134"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75274000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "check grade name, date graded, date submitted",
+            "match": {
+              "location": "features/steps/studentsGrades/DPS-588.js:161"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 832000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8154000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Verifying payment page.",
+    "keyword": "Feature",
+    "name": "DPS-589",
+    "line": 2,
+    "id": "dps-589",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-589.feature",
+    "elements": [
+      {
+        "id": "dps-589;verifying-phone-number-and-payment-history.",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verifying phone number and payment history.",
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35879000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "click and hover on the profile menu",
+            "match": {
+              "location": "features/steps/commonSteps.js:113"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10069000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "click link My Payments",
+            "match": {
+              "location": "features/steps/payment/DPS-589.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "check My Payments page title",
+            "match": {
+              "location": "features/steps/payment/DPS-589.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5020000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "check Payment History section presents",
+            "match": {
+              "location": "features/steps/payment/DPS-589.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "check Phone Number section presents",
+            "match": {
+              "location": "features/steps/payment/DPS-589.js:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6321000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Verifying discussion panel.",
+    "keyword": "Feature",
+    "name": "DPS-591",
+    "line": 2,
+    "id": "dps-591",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-591.feature",
+    "elements": [
+      {
+        "id": "dps-591;verify-that-user-can-post-image-and-text-into-discussion-panel.",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify that user can post image and text into discussion panel.",
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36092000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "can preview added image and can remove image from preview panel before posting",
+            "match": {
+              "location": "features/steps/discussionPanel/DPS-591.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33595000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "page is refreshed",
+            "match": {
+              "location": "features/steps/commonSteps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "can check the image counter before image upload, image icon and posted image can be opened or not after posting the image",
+            "match": {
+              "location": "features/steps/discussionPanel/DPS-591.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39843000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "page is refreshed",
+            "match": {
+              "location": "features/steps/commonSteps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "can post text into the discussion panel and check the posted text",
+            "match": {
+              "location": "features/steps/discussionPanel/DPS-591.js:157"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20860000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5071000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Verifying discussions",
+    "keyword": "Feature",
+    "name": "DPS-592",
+    "line": 2,
+    "id": "dps-592",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-592.feature",
+    "elements": [
+      {
+        "id": "dps-592;verifying-discussion-likes,-dislikes,-replies-and-url-content",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verifying discussion likes, dislikes, replies and url content",
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37258000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "can add link to discussion text area, Posted link should display in white tile with grey border",
+            "match": {
+              "location": "features/steps/discussionPanel/DPS-592.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5887000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "can like or dislike the post, can reply to post and like or dislike the reply, and check the timestamp for both",
+            "match": {
+              "location": "features/steps/discussionPanel/DPS-592.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2235000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "check the profanity for text posted in the discussion panel",
+            "match": {
+              "location": "features/steps/discussionPanel/DPS-592.js:128"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5673000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "page is refreshed",
+            "match": {
+              "location": "features/steps/commonSteps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "check the profanity for replied post in the discussion panel",
+            "match": {
+              "location": "features/steps/discussionPanel/DPS-592.js:160"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16480000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5064000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Verifying discussions",
+    "keyword": "Feature",
+    "name": "DPS-593",
+    "line": 2,
+    "id": "dps-593",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-593.feature",
+    "elements": [
+      {
+        "id": "dps-593;verifying-discussion-count",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verifying discussion count",
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37606000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "more discussions link will be present at the bottom of discussion panel if there are 10 comments",
+            "match": {
+              "location": "features/steps/discussionPanel/DPS-593.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "clicking on more discussion link will load 10 more discussions",
+            "match": {
+              "location": "features/steps/discussionPanel/DPS-593.js:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2328000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "clicking on close link remove 10 Discussion from display panel",
+            "match": {
+              "location": "features/steps/discussionPanel/DPS-593.js:173"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5077000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5059000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Megadrop Menu and navigation verification",
+    "keyword": "Feature",
+    "name": "DPS-638",
+    "line": 2,
+    "id": "dps-638",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-638.feature",
+    "elements": [
+      {
+        "id": "dps-638;verify-megadrop-menu-options",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify megadrop menu options",
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37817000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
+            "match": {
+              "location": "features/steps/commonSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5026000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "click on course home page from megadrop menu and navigate to Home Page",
+            "match": {
+              "location": "features/steps/megadrop/DPS-638.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10032000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
+            "match": {
+              "location": "features/steps/commonSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5017000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "click and navigate to course overview page and check the content loading right",
+            "match": {
+              "location": "features/steps/megadrop/DPS-638.js:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
+            "match": {
+              "location": "features/steps/commonSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5009000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "can click on any module and it will show topic panel for that module and check the content",
+            "match": {
+              "location": "features/steps/megadrop/DPS-638.js:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15172000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
+            "match": {
+              "location": "features/steps/commonSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5010000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "click on additional resources to check content loading right",
+            "match": {
+              "location": "features/steps/megadrop/DPS-638.js:164"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15318000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "open pages for additional resources and click on few documents link to test",
+            "match": {
+              "location": "features/steps/megadrop/DPS-638.js:255"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5129000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7721000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Megadrop Menu and subtopic navigation",
+    "keyword": "Feature",
+    "name": "DPS-639",
+    "line": 2,
+    "id": "dps-639",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-639.feature",
+    "elements": [
+      {
+        "id": "dps-639;verify-megadrop-menu-and-subtopic-navigation",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify megadrop Menu and subtopic navigation",
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36038000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
+            "match": {
+              "location": "features/steps/commonSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5019000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "check the breadcrumb on module overview page",
+            "match": {
+              "location": "features/steps/megadrop/DPS-639.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10165000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
+            "match": {
+              "location": "features/steps/commonSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5016000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "can click on any topic from the Topic panel and it will show sub topic panel for that Topic",
+            "match": {
+              "location": "features/steps/megadrop/DPS-639.js:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10085000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
+            "match": {
+              "location": "features/steps/commonSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5014000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "can click on quiz and check content is loading right",
+            "match": {
+              "location": "features/steps/megadrop/DPS-639.js:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10405000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
+            "match": {
+              "location": "features/steps/commonSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5019000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "can click on assessment and check content is loading right",
+            "match": {
+              "location": "features/steps/megadrop/DPS-639.js:204"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11990000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5050000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Megadrop Menu and activities",
+    "keyword": "Feature",
+    "name": "DPS-640",
+    "line": 2,
+    "id": "dps-640",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-640.feature",
+    "elements": [
+      {
+        "id": "dps-640;verify-megadrop-menu-and-activities",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify megadrop Menu and activities",
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40076000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "check profile picture, trainer name and position",
+            "match": {
+              "location": "features/steps/commonSteps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5129000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "check document title for OpenSpace 2.0",
+            "match": {
+              "location": "features/steps/megadrop/DPS-640.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
+            "match": {
+              "location": "features/steps/commonSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5048000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "check activity, reading and resource activities inside course content",
+            "match": {
+              "location": "features/steps/megadrop/DPS-640.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20904000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "correct subtopic number is present first on subtopic page and click print pdf",
+            "match": {
+              "location": "features/steps/megadrop/DPS-640.js:162"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5046000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Megadrop Menu and search links",
+    "keyword": "Feature",
+    "name": "DPS-642",
+    "line": 2,
+    "id": "dps-642",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-642.feature",
+    "elements": [
+      {
+        "id": "dps-642;verify-megadrop-menu-and-search-links",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify megadrop Menu and search links",
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38217000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
+            "match": {
+              "location": "features/steps/commonSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5026000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "can click on any topic from the Topic panel and it will show sub topic panel for that Topic",
+            "match": {
+              "location": "features/steps/megadrop/DPS-639.js:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10139000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "can click on forward and backward subtopic pagination arrows to check page title",
+            "match": {
+              "location": "features/steps/megadrop/DPS-642.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11602000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "enter keyword course to search and click on the first search result",
+            "match": {
+              "location": "features/steps/megadrop/DPS-642.js:122"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10037000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "check page title is displayed",
+            "match": {
+              "location": "features/steps/megadrop/DPS-642.js:175"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "click on the last result which called support centre from search list",
+            "match": {
+              "location": "features/steps/megadrop/DPS-642.js:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5041000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "  megadrop menu and subtopic navigation",
+    "keyword": "Feature",
+    "name": "DPS-664",
+    "line": 2,
+    "id": "dps-664",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-664.feature",
+    "elements": [
+      {
+        "id": "dps-664;hover-over-trainer-tooltip-in-discussion-panel-(hover-on-image-or-name-opens-up-tooltip)",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Hover over trainer tooltip in Discussion Panel (Hover on Image or Name Opens up Tooltip)",
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37618000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "check profile picture, trainer name and position",
+            "match": {
+              "location": "features/steps/commonSteps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5114000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "message Centre Compose screen with all details preloaded for to, subject and student id",
+            "match": {
+              "location": "features/steps/messageCenter/DPS-664.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 721000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:137"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7395000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

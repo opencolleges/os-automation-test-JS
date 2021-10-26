@@ -1,0 +1,122 @@
+[
+  {
+    "description": "    Verifying top navigations.",
+    "keyword": "Feature",
+    "name": "DPS-573",
+    "line": 2,
+    "id": "dps-573",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-573.feature",
+    "elements": [
+      {
+        "id": "dps-573;verifying-support-and-profile-menu.",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verifying support and profile menu.",
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/DPS-573.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "checking document title for OpenSpace",
+            "match": {
+              "location": "features/steps/DPS-573.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18261000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "hovering and clicking on the support menu",
+            "match": {
+              "location": "features/steps/DPS-573.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5064000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "check support menus and navigate to all the links listed in the menu",
+            "match": {
+              "location": "features/steps/DPS-573.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19286000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "click and hover on the profile menu",
+            "match": {
+              "location": "features/steps/DPS-573.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5166000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "check profile menus and navigate to all the links listed in the menu",
+            "match": {
+              "location": "features/steps/DPS-573.js:113"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4302000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features/steps/DPS-573.js:149"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
