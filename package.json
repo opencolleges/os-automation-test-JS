@@ -14,14 +14,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-     "@cucumber/cucumber": "^8.0.0-rc.1",
+    "devDependencies": {
     "cucumber-html-reporter": "^5.5.0",
     "selenium-webdriver": "^4.0.0-rc-1",
     "cucumber-junit": "latest"
   },
+
   "dependencies": {
-   
-    "chromedriver": "^93.0.1"
+    "@cucumber/cucumber": "^8.0.0-rc.1",
+    "chromedriver": "^95.0.0"
   }
 }
