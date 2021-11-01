@@ -1,4 +1,4 @@
-const { When, Then, AfterAll } = require("cucumber");
+const { When, Then, AfterAll } = require("@cucumber/cucumber");
 const { Builder, By, until } = require("selenium-webdriver");
 const assert = require("assert");
 
