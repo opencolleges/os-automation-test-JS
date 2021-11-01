@@ -15,12 +15,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+     "@cucumber/cucumber": "^8.0.0-rc.1",
     "cucumber-html-reporter": "^5.5.0",
     "selenium-webdriver": "^4.0.0-rc-1",
     "cucumber-junit": "latest"
   },
   "dependencies": {
-    "@cucumber/cucumber": "^8.0.0-rc.1",
+   
     "chromedriver": "^93.0.1"
   }
 }
