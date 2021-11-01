@@ -1,0 +1,56 @@
+# This config is equivalent to both the '.circleci/extended/orb-free.yml' and the base '.circleci/config.yml'
+version: 2.1
+
+# Orbs are reusable packages of CircleCI configuration that you may share across projects, enabling you to create encapsulated, parameterized commands, jobs, and executors that can be used across multiple projects.
+# See: https://circleci.com/docs/2.0/orb-intro/
+orbs:
+  node: circleci/node@4.7
+  browser-tools: circleci/browser-tools@1.2.3
+
+jobs:
+  install-chrome-run-tests:
+    docker:
+      - image: 'cimg/node:17.0.1-browsers'
+    steps:
+      - browser-tools/install-chrome
+      - browser-tools/install-chromedriver
+      - checkout
+
+      - run:
+          name: Check Versions
+          command: |
+            node --version
+            google-chrome --version
+            chromedriver --version
+      - run: 
+          command: | 
+            npm install
+            npm run test
+          name: Install, then run Node tests
+      - run: 
+          command: |
+            cat report/cucumber_report.json | ./node_modules/.bin/cucumber-junit > report/results.xml
+          name: Convert Reports file
+      - run:
+          command: |
+            npm run report
+          name: Create Report
+
+      - store_test_results:
+          path: report
+      - store_artifacts:
+          path: report
+      
+
+          
+
+# Invoke jobs via workflows
+# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
+workflows:
+  run_tests: # This is the name of the workflow, feel free to change it to better match your workflow.
+    # Inside the workflow, you define the jobs you want to run.
+    jobs:
+    - install-chrome-run-tests
+
+  
+  
