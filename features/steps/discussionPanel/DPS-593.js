@@ -1,4 +1,4 @@
-const { Then, After, setDefaultTimeout } = require("cucumber");
+const { Then, After, setDefaultTimeout } = require("@cucumber/cucumber");
 const assert = require("assert");
 const { By, until } = require("selenium-webdriver");
 
