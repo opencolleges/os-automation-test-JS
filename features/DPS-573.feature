@@ -1,7 +1,7 @@
 @chrome
 Feature:DPS-573
-    Verifying top navigations.
-    Scenario: Verifying support and profile menu.
+    Verifying top navigations
+    Scenario: Verifying support and profile menu
         When user successfully logins
         Then checking document title for OpenSpace
         Then hovering and clicking on the support menu
