@@ -1,10 +1,7 @@
 const { Then, After, setDefaultTimeout } = require("@cucumber/cucumber");
 const { By, until } = require("selenium-webdriver");
-const assert = require("assert");
 
 const { driver } = require("../commonSteps");
-
-const { title } = require("../../../data/testData");
 
 const {
   footerXpath,
@@ -15,16 +12,10 @@ const {
   firstLinkXpath,
 } = require("../../../data/elementXpath");
 
-const { titleCheck, errorLog } = require("../../../utilities/function");
-const {
-  subtopicNumberXpath,
-  printTopicButtonXpath,
-} = require("../../../data/elementXpath");
-
+const { errorLog } = require("../../../utilities/function");
 setDefaultTimeout(60 * 1000);
 
 const path = require("path");
-const { strictEqual } = require("assert");
 
 // Get file name
 const fileName = path.basename(__filename);

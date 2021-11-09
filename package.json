@@ -16,8 +16,8 @@
   "license": "ISC",
   "devDependencies": {
     "cucumber-html-reporter": "^5.5.0",
-    "selenium-webdriver": "^4.0.0-rc-1",
-    "cucumber-junit": "latest"
+    "cucumber-junit": "latest",
+    "selenium-webdriver": "^4.0.0-rc-1"
   },
   "dependencies": {
     "@cucumber/cucumber": "^8.0.0-rc.1",
