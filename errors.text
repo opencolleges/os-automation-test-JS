@@ -1,0 +1,25 @@
+File: DPS-579.js
+Name: studentName
+Xpath: //*[@id="about_me"]/div/div[2]/div[1]/div/div[1]
+Waiting time: 3s
+
+File: DPS-579.js
+Name: pageTitle
+Xpath: By.css('h1')
+Waiting time: 6s
+
+File: DPS-579.js
+Name: pageTitle
+Xpath: By.css('h1')
+Waiting time: 6s
+
+File: DPS-579.js
+Name: pageTitle
+Xpath: By.css('h1')
+Waiting time: 6s
+
+File: DPS-589.js
+Name: title
+Xpath: By.css('h1')
+Waiting time: 3s
+
