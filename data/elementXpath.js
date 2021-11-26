@@ -147,7 +147,7 @@ exports.messageButtonXpath =
   '//*[@id="page-data"]/div/div/motivatorview/div[1]/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[1]/div[2]/a/div';
 
 exports.messageSenderXpath =
-  "//div[@class='autocomplete column small-11 nomgn nopad']//input[@type='text']";
+  '//*[@id="message-centre-body"]/compose/div/div/div[2]/div[1]/div/div/input';
 
 exports.messageSubjectXpath = "//input[@id='message_subject']";
 
@@ -230,6 +230,69 @@ exports.studyBuddySettingsCancelButtonXpath =
 
 exports.downloadAssessmentXpath =
   '//*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]';
+
+exports.assessorHomeXpath =
+  '//*[@id="trainerDashboardMain"]/div/div/div/trainer-dashboard-off-canvas/aside/ul/li[2]';
+
+exports.assessorHomeInternalAnnouncementsXpath =
+  '//*[@id="discussion"]/div[2]/div[3]/div[2]';
+
+exports.assessorHomeTextAreaXpath = '//*[@id="discussion_post_textarea"]';
+
+exports.assessorHomePostButtonXpath = '//*[@id="discussion_post_button"]';
+
+exports.assessorHomeFirstCommentXpath =
+  '//*[@id="discussion"]/div[2]/div[3]/div[2]/div[1]';
+
+exports.assessorHomeLikeButtonXpath =
+  '//*[@id="discussion"]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div/div[2]/div/div[5]/div[1]';
+
+exports.assessorHomeCommentTextAreaXpath =
+  "/html/body/div[2]/div[2]/div/div[2]/div/div/trainer-dashboard/div/div/div/div/section/div/div/div/div/div/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div/div[2]/replyform/div/div/form/div/div[1]/textarea";
+
+exports.assessorHomeCommentPostButtonXpath =
+  "/html/body/div[2]/div[2]/div/div[2]/div/div/trainer-dashboard/div/div/div/div/section/div/div/div/div/div/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div/div[2]/replyform/div/div/form/div/div[5]/button";
+
+exports.assessorOpenSpaceReleaseNotesXpath =
+  '//*[@id="trainerDashboardMain"]/div/div/div/trainer-dashboard-off-canvas/aside/ul/li[3]';
+
+exports.assessorOpenSpaceReleaseNotesContentXPath =
+  '//*[@id="trainerReleaseNote"]/div[2]';
+
+exports.assessorMessagesXpath =
+  '//*[@id="trainerDashboardMain"]/div/div/div/trainer-dashboard-off-canvas/aside/ul/li[4]';
+
+exports.assessorMessagesTabBarItemsXpath =
+  "/html/body/div[2]/div[2]/div/div[2]/div/div/trainer-dashboard/div/div/div/div/section/div/div/messagecentre/div[2]/div/div[2]/div/div[1]/div[2]/div/";
+
+exports.lastVisitedLinkXpath =
+  "/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/motivatorview/div[1]/div[1]/div[2]/div[3]/div/div/p/a";
+
+exports.openSpaceTourXPath = '//*[@id="megadrop-onboarding-button"]/a';
+
+exports.walkthroughMenuXpath = '//*[@id="overlayOpen"]/div';
+
+exports.walkthroughModuleXpath =
+  '//*[@id="megaDropCtrl"]/div/div/div[3]/div/div[6]/div/div[1]';
+
+exports.walkthroughAssessmentXpath = '//*[@id="thisOne"]';
+
+exports.walkthroughAssessmentNextButtonXpath =
+  '//*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[2]/div/div/div/div/div/div[2]/div/div/p[2]/a';
+
+exports.walkthroughMessageNextButtonXpath =
+  '//*[@id="page-data"]/div/div/motivatorview/div[2]/div[4]/div/div/div/div/div/div/div/div[1]/p[2]/a';
+
+exports.walkthroughJumpInXpath =
+  '//*[@id="page-data"]/div/div/motivatorview/div[2]/div[4]/div/div[1]';
+
+exports.firstInboxMessageXpath = '//*[@id="bg2233710"]';
+
+exports.messageSenderXpath =
+  '//*[@id="message-pane"]/div[2]/div[1]/div[1]/div/span';
+
+exports.logoutAsAssessorXpath =
+  '//*[@id="trainerDashboardMain"]/div/div/div/trainer-dashboard-off-canvas/aside/ul/li[20]/a';
 // --------------------Special path for JS operation--------------------
 exports.jsDropFile =
   "var c=arguments,b=c[0],k=c[1];c=c[2];for(var d=b.ownerDocument||document,l=0;;){var e=b.getBoundingClientRect(),g=e.left+(k||e.width/2),h=e.top+(c||e.height/2),f=d.elementFromPoint(g,h);if(f&&b.contains(f))break;if(1<++l)throw b=Error('Element not interactable'),b.code=15,b;b.scrollIntoView({behavior:'instant',block:'center',inline:'center'})}var a=d.createElement('INPUT');a.setAttribute('type','file');a.setAttribute('multiple','');a.setAttribute('style','position:fixed;z-index:2147483647;left:0;top:0;');a.onchange=function(b){a.parentElement.removeChild(a);b.stopPropagation();var c={constructor:DataTransfer,effectAllowed:'all',dropEffect:'none',types:['Files'],files:a.files,setData:function(){},getData:function(){},clearData:function(){},setDragImage:function(){}};window.DataTransferItemList&&(c.items=Object.setPrototypeOf(Array.prototype.map.call(a.files,function(a){return{constructor:DataTransferItem,kind:'file',type:a.type,getAsFile:function(){return a},getAsString:function(b){var c=new FileReader;c.onload=function(a){b(a.target.result)};c.readAsText(a)}}}),{constructor:DataTransferItemList,add:function(){},clear:function(){},remove:function(){}}));['dragenter','dragover','drop'].forEach(function(a){var b=d.createEvent('DragEvent');b.initMouseEvent(a,!0,!0,d.defaultView,0,0,0,g,h,!1,!1,!1,!1,0,null);Object.setPrototypeOf(b,null);b.dataTransfer=c;Object.setPrototypeOf(b,DragEvent.prototype);f.dispatchEvent(b)})};d.documentElement.appendChild(a);a.getBoundingClientRect();return a; ";

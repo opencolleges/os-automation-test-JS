@@ -2,7 +2,11 @@ const { When, Then, AfterAll } = require("@cucumber/cucumber");
 const { Builder, By, until } = require("selenium-webdriver");
 const assert = require("assert");
 
-const { usernameAlt, password } = require("../../data/testData");
+const {
+  usernameAlt,
+  password,
+  usernameAssessor,
+} = require("../../data/testData");
 
 const {
   toolTipXpath,
@@ -11,6 +15,7 @@ const {
   courseMenuXpath,
   trainerPositionXpath,
   profileMenuXpath,
+  logoutAsAssessorXpath,
 } = require("../../data/elementXpath");
 
 const { login, logout, errorLog } = require("../../utilities/function");
@@ -29,6 +34,10 @@ var driver = new Builder().forBrowser("chrome").build();
 
 When("user successfully logins", async function () {
   await login(driver, usernameAlt, password);
+});
+
+When(/^user successfully logins as an assessor$/, async function () {
+  await login(driver, usernameAssessor, password);
 });
 
 When(/^page is refreshed$/, async function () {
@@ -136,6 +145,20 @@ Then("click and hover on the profile menu", async function () {
 
 Then(/^logout the user$/, async function () {
   await logout(driver);
+});
+
+Then(/^logout the user as an assessor$/, async function () {
+  try {
+    var logoutAsAssessor = await driver.wait(
+      until.elementLocated(By.xpath(logoutAsAssessorXpath)),
+      30000
+    );
+  } catch (err) {
+    errorLog("commonSteps", "logoutAsAssessor", logoutAsAssessorXpath, "3s");
+    throw Error(err.message);
+  }
+
+  logoutAsAssessor.click();
 });
 
 exports.driver = driver;

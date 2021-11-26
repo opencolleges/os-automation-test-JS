@@ -5,6 +5,8 @@ exports.uatUrl = "https://uat-os.opencolleges.edu.au";
 exports.usernameAlt = "bobbie.aitken@hotmail.com";
 // exports.usernameAlt = "e1144@opencolleges.com.au"
 
+exports.usernameAssessor = "tracey.hickey";
+
 exports.password = "Y[JWcyF27:jef:Y";
 
 // exports.course = "Welcome to the Certificate III in Education Support";
