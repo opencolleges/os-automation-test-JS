@@ -151,10 +151,10 @@ Then(/^logout the user as an assessor$/, async function () {
   try {
     var logoutAsAssessor = await driver.wait(
       until.elementLocated(By.xpath(logoutAsAssessorXpath)),
-      30000
+      60000
     );
   } catch (err) {
-    errorLog("commonSteps", "logoutAsAssessor", logoutAsAssessorXpath, "3s");
+    errorLog("commonSteps", "logoutAsAssessor", logoutAsAssessorXpath, "6s");
     throw Error(err.message);
   }
 
