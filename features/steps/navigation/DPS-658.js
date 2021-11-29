@@ -3,8 +3,6 @@ const { By, until } = require("selenium-webdriver");
 
 const { driver } = require("../commonSteps");
 
-const { title } = require("../../../data/testData");
-
 const {
   lastVisitedLinkXpath,
   openSpaceTourXPath,
@@ -16,7 +14,7 @@ const {
   walkthroughJumpInXpath,
 } = require("../../../data/elementXpath");
 
-const { titleCheck, errorLog } = require("../../../utilities/function");
+const { errorLog } = require("../../../utilities/function");
 
 const path = require("path");
 
@@ -33,6 +31,7 @@ Then(/^click on last visited page link$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "lastVisitedLink", lastVisitedLinkXpath, "3s");
+    driver.close()
     throw Error(err.message);
   }
 
@@ -51,6 +50,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "openSpaceTour", openSpaceTourXPath, "3s");
+    driver.close()
     throw Error(err.message);
   }
 
@@ -65,6 +65,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "menu", walkthroughMenuXpath, "3s");
+    driver.close()
     throw Error(err.message);
   }
 
@@ -79,6 +80,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "module", walkthroughModuleXpath, "3s");
+    driver.close()
     throw Error(err.message);
   }
 
@@ -93,6 +95,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "assessment", walkthroughAssessmentXpath, "3s");
+    driver.close()
     throw Error(err.message);
   }
 
@@ -112,6 +115,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
       walkthroughAssessmentNextButtonXpath,
       "3s"
     );
+    driver.close()
     throw Error(err.message);
   }
 
@@ -131,6 +135,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
       walkthroughMessageNextButtonXpath,
       "3s"
     );
+    driver.close()
     throw Error(err.message);
   }
 
@@ -145,6 +150,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "jumpInPopUp", walkthroughJumpInXpath, "3s");
+    driver.close()
     throw Error(err.message);
   }
 

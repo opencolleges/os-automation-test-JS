@@ -1,0 +1,70 @@
+File: DPS-579.js
+Name: pageTitle
+Xpath: By.css('h1')
+Waiting time: 6s
+
+File: DPS-579.js
+Name: pageTitle
+Xpath: By.css('h1')
+Waiting time: 6s
+
+File: DPS-579.js
+Name: myProfile
+Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]
+Waiting time: 3s
+
+File: DPS-579.js
+Name: myProfile
+Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]
+Waiting time: 3s
+
+File: DPS-579.js
+Name: myProfile
+Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]
+Waiting time: 3s
+
+File: DPS-579.js
+Name: myProfile
+Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]
+Waiting time: 3s
+
+File: DPS-579.js
+Name: myProfile
+Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]
+Waiting time: 3s
+
+File: DPS-579.js
+Name: myProfile
+Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]
+Waiting time: 3s
+
+File: DPS-579.js
+Name: myProfile
+Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]
+Waiting time: 3s
+
+File: DPS-579.js
+Name: gradingPreference
+Xpath: //*[@id="page-data"]/div/div/profile/profile-sections/div/div/div[1]
+Waiting time: 3s
+
+File: DPS-579.js
+Name: gradingPreference
+Xpath: //*[@id="page-data"]/div/div/profile/profile-sections/div/div/div[1]
+Waiting time: 6s
+
+File: DPS-591.js
+Name: iframe
+Xpath: //iframe[@src='https://widget.cloudinary.com/n/opencolleges/173/index.html?cloud_name=opencolleges']
+Waiting time: 10s
+
+File: DPS-640.js
+Name: readings
+Xpath: By.className("ats-dt-act-label"
+Waiting time: 3s
+
+File: DPS-640.js
+Name: readings
+Xpath: By.className("ats-dt-act-label"
+Waiting time: 6s
+

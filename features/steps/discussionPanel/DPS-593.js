@@ -35,6 +35,7 @@ Then(
         commentNumber++;
       } catch (err) {
         errorLog(fileName, "comment", commentXpath + `div[${i}] `, "6s");
+        driver.close()
         throw Error(err.message);
       }
     }
@@ -47,6 +48,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "totalComments", totalCommentsXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -74,6 +76,7 @@ Then(
           `//a[contains(text(),'More discussions (${totalComments})')]`,
           "3s"
         );
+        driver.close()
         throw Error(err.message);
       }
 
@@ -100,6 +103,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "totalComments", totalCommentsXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -126,6 +130,7 @@ Then(
         `//a[contains(text(),'More discussions (${numberOfMoreDiscussion})')]`,
         "3s"
       );
+      driver.close()
       throw Error(err.message);
     }
 
@@ -155,6 +160,7 @@ Then(
           moreDiscCommentElementXpath + `div[${moreDiscComment}] `,
           "3s"
         );
+        driver.close()
         throw Error(err.message);
       }
 
@@ -189,6 +195,8 @@ Then(
         closeMoreDiscussionXpath,
         "3s"
       );
+      driver.close()
+      throw Error(err.message)
     }
 
     // Wait for web to be fully loaded

@@ -31,6 +31,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "previousPage", previousPageXpath, "6s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -42,6 +43,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "nextPage", nextPageXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -71,6 +73,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "footer", footerXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -85,6 +88,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "nextPage", nextPageXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -102,6 +106,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "nextPageTitle", "By.css('h3')", "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -121,6 +126,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "searchButton", searchButtonXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -135,6 +141,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "searchInput", searchInputXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -152,6 +159,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "firstLink", firstLinkXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -180,6 +188,7 @@ Then(/^click on support centre from search list$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "searchButton", searchButtonXpath, "3s");
+    driver.close()
     throw Error(err.message);
   }
 
@@ -194,6 +203,7 @@ Then(/^click on support centre from search list$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "searchInput", searchInputXpath, "3s");
+    driver.close()
     throw Error(err.message);
   }
 
@@ -227,6 +237,7 @@ Then(
       var title = await driver.wait(until.elementLocated(By.css("h1")), 30000);
     } catch (err) {
       errorLog(fileName, "title", "By.css('h1')", "3s");
+      driver.close()
       throw Error(err.message);
     }
     // Assert title is displayed

@@ -29,6 +29,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "messageButton", messageButtonXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -57,6 +58,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "messageSubject", messageSubjectXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 

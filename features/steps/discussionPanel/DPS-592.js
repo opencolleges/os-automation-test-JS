@@ -56,6 +56,7 @@ Then(
       replyPostWrapper.click();
     } catch (err) {
       errorLog(fileName, "replyPostWrapper", replyPostWrapperXpath, "6s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -70,6 +71,7 @@ Then(
       replyPostTextArea.sendKeys("reply");
     } catch (err) {
       errorLog(fileName, "replyPostTextArea", replyPostAreaXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -84,6 +86,7 @@ Then(
       driver.executeScript("arguments[0].click()", replyPostButton);
     } catch (err) {
       errorLog(fileName, "replyPostButton", replyPostButtonXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -98,6 +101,7 @@ Then(
       assert(await replyTimeStamp.isDisplayed());
     } catch (err) {
       errorLog(fileName, "replyTimeStamp", replyTimeStampXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
     //  ------------------------------- ! Cant find elements -------------------------------
@@ -139,6 +143,7 @@ Then(
       discussionPanel.click();
     } catch (err) {
       errorLog(fileName, "discussionPanel", discussionPanelXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -174,6 +179,7 @@ Then(
       replyPostWrapper.click();
     } catch (err) {
       errorLog(fileName, "replyPostWrapper", replyPostWrapperXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -188,6 +194,7 @@ Then(
       replyPostArea.click();
     } catch (err) {
       errorLog(fileName, "replyPostArea", replyPostAreaXpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 

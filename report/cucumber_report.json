@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38506224368
+              "duration": 43146397306
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5007317075
+              "duration": 5903752512
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5072978681
+              "duration": 5082136974
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11656358078
+              "duration": 10972848450
             }
           },
           {
@@ -71,7 +71,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10089793880
+              "duration": 10055234338
             }
           },
           {
@@ -80,11 +80,11 @@
             "line": 10,
             "name": "check profile menus and navigate to all the links listed in the menu",
             "match": {
-              "location": "features/steps/navigation/DPS-573.js:103"
+              "location": "features/steps/navigation/DPS-573.js:105"
             },
             "result": {
               "status": "passed",
-              "duration": 3443418743
+              "duration": 3480767352
             }
           }
         ],
@@ -129,7 +129,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36187772996
+              "duration": 36150079178
             }
           },
           {
@@ -142,7 +142,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10108593160
+              "duration": 10078819841
             }
           },
           {
@@ -155,7 +155,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17093751
+              "duration": 21027203
             }
           },
           {
@@ -164,11 +164,11 @@
             "line": 8,
             "name": "check My Profile page title",
             "match": {
-              "location": "features/steps/myProfile/DPS-579.js:44"
+              "location": "features/steps/myProfile/DPS-579.js:45"
             },
             "result": {
               "status": "passed",
-              "duration": 5026892998
+              "duration": 5025972586
             }
           },
           {
@@ -177,11 +177,11 @@
             "line": 9,
             "name": "check Student Name and Student Number fields are present",
             "match": {
-              "location": "features/steps/myProfile/DPS-579.js:62"
+              "location": "features/steps/myProfile/DPS-579.js:64"
             },
             "result": {
               "status": "passed",
-              "duration": 99379233
+              "duration": 36980224
             }
           },
           {
@@ -190,24 +190,11 @@
             "line": 10,
             "name": "check Change Password link correctly redirects to the update_password page",
             "match": {
-              "location": "features/steps/myProfile/DPS-579.js:91"
+              "location": "features/steps/myProfile/DPS-579.js:95"
             },
             "result": {
               "status": "passed",
-              "duration": 5019890514
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "check Grading Preference section can be edited and saved",
-            "match": {
-              "location": "features/steps/myProfile/DPS-579.js:127"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3184631707
+              "duration": 5018153230
             }
           },
           {
@@ -216,11 +203,11 @@
             "line": 12,
             "name": "check Privacy Setting section is present",
             "match": {
-              "location": "features/steps/myProfile/DPS-579.js:178"
+              "location": "features/steps/myProfile/DPS-579.js:186"
             },
             "result": {
               "status": "passed",
-              "duration": 82515841
+              "duration": 2633436882
             }
           },
           {
@@ -229,11 +216,11 @@
             "line": 13,
             "name": "check Study Buddy settings can be edited and saved",
             "match": {
-              "location": "features/steps/myProfile/DPS-579.js:192"
+              "location": "features/steps/myProfile/DPS-579.js:201"
             },
             "result": {
               "status": "passed",
-              "duration": 36418072
+              "duration": 32361535.000000004
             }
           },
           {
@@ -246,7 +233,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6393453487
+              "duration": 6523863671.999999
             }
           }
         ],
@@ -291,7 +278,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36651983615
+              "duration": 35999678041
             }
           },
           {
@@ -304,7 +291,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5057993326
+              "duration": 5059406307
             }
           },
           {
@@ -317,7 +304,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21288551
+              "duration": 17224008
             }
           },
           {
@@ -326,11 +313,11 @@
             "line": 8,
             "name": "click Study Buddy",
             "match": {
-              "location": "features/steps/studyBuddy/DPS-583.js:38"
+              "location": "features/steps/studyBuddy/DPS-583.js:39"
             },
             "result": {
               "status": "passed",
-              "duration": 577965439
+              "duration": 1411303966
             }
           },
           {
@@ -339,11 +326,11 @@
             "line": 9,
             "name": "check Support Centre title",
             "match": {
-              "location": "features/steps/studyBuddy/DPS-583.js:54"
+              "location": "features/steps/studyBuddy/DPS-583.js:56"
             },
             "result": {
               "status": "passed",
-              "duration": 5024644952
+              "duration": 5021625353
             }
           },
           {
@@ -352,11 +339,11 @@
             "line": 10,
             "name": "click arrow icon of each question to show details",
             "match": {
-              "location": "features/steps/studyBuddy/DPS-583.js:70"
+              "location": "features/steps/studyBuddy/DPS-583.js:73"
             },
             "result": {
               "status": "passed",
-              "duration": 254373871
+              "duration": 262638712
             }
           },
           {
@@ -365,11 +352,11 @@
             "line": 11,
             "name": "click View more button to show more questions",
             "match": {
-              "location": "features/steps/studyBuddy/DPS-583.js:104"
+              "location": "features/steps/studyBuddy/DPS-583.js:109"
             },
             "result": {
               "status": "passed",
-              "duration": 5036482891
+              "duration": 5050816092
             }
           },
           {
@@ -378,11 +365,11 @@
             "line": 12,
             "name": "check the title",
             "match": {
-              "location": "features/steps/studyBuddy/DPS-583.js:122"
+              "location": "features/steps/studyBuddy/DPS-583.js:129"
             },
             "result": {
               "status": "passed",
-              "duration": 31002103
+              "duration": 21582637
             }
           },
           {
@@ -395,7 +382,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5043442993
+              "duration": 5059522373
             }
           }
         ],
@@ -440,7 +427,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36903405585
+              "duration": 36920515964
             }
           },
           {
@@ -453,7 +440,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5087738107
+              "duration": 5093321532
             }
           }
         ],
@@ -498,7 +485,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36995573311
+              "duration": 37599662612
             }
           },
           {
@@ -511,7 +498,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10073571708
+              "duration": 10072062201
             }
           },
           {
@@ -524,7 +511,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 296808
+              "duration": 812270
             }
           },
           {
@@ -533,11 +520,11 @@
             "line": 8,
             "name": "check My Payments page title",
             "match": {
-              "location": "features/steps/payment/DPS-589.js:39"
+              "location": "features/steps/payment/DPS-589.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 5022735012
+              "duration": 5020954634
             }
           },
           {
@@ -546,11 +533,11 @@
             "line": 9,
             "name": "check Payment History section presents",
             "match": {
-              "location": "features/steps/payment/DPS-589.js:55"
+              "location": "features/steps/payment/DPS-589.js:57"
             },
             "result": {
               "status": "passed",
-              "duration": 21027661
+              "duration": 19575354
             }
           },
           {
@@ -559,11 +546,11 @@
             "line": 10,
             "name": "check Phone Number section presents",
             "match": {
-              "location": "features/steps/payment/DPS-589.js:71"
+              "location": "features/steps/payment/DPS-589.js:74"
             },
             "result": {
               "status": "passed",
-              "duration": 26334003
+              "duration": 18899473
             }
           },
           {
@@ -576,7 +563,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6051151284
+              "duration": 6096559022
             }
           }
         ],
@@ -621,7 +608,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36646902527
+              "duration": 36139788957
             }
           },
           {
@@ -634,7 +621,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33833904264.999996
+              "duration": 33841323113
             }
           },
           {
@@ -647,7 +634,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 262810
+              "duration": 267614
             }
           },
           {
@@ -656,11 +643,11 @@
             "line": 8,
             "name": "can check the image counter before image upload, image icon and posted image can be opened or not after posting the image",
             "match": {
-              "location": "features/steps/discussionPanel/DPS-591.js:70"
+              "location": "features/steps/discussionPanel/DPS-591.js:72"
             },
             "result": {
               "status": "passed",
-              "duration": 40125970772
+              "duration": 40716593734
             }
           },
           {
@@ -673,7 +660,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 83212
+              "duration": 86640
             }
           },
           {
@@ -682,11 +669,11 @@
             "line": 10,
             "name": "can post text into the discussion panel and check the posted text",
             "match": {
-              "location": "features/steps/discussionPanel/DPS-591.js:157"
+              "location": "features/steps/discussionPanel/DPS-591.js:164"
             },
             "result": {
               "status": "passed",
-              "duration": 6766363906.000001
+              "duration": 9564786876
             }
           },
           {
@@ -699,7 +686,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5057686757
+              "duration": 5091646187
             }
           }
         ],
@@ -744,7 +731,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36992133643
+              "duration": 37693679581
             }
           },
           {
@@ -757,7 +744,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6088604063
+              "duration": 6115887983
             }
           },
           {
@@ -770,7 +757,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2690731957
+              "duration": 2602064859
             }
           },
           {
@@ -779,11 +766,11 @@
             "line": 8,
             "name": "check the profanity for text posted in the discussion panel",
             "match": {
-              "location": "features/steps/discussionPanel/DPS-592.js:128"
+              "location": "features/steps/discussionPanel/DPS-592.js:132"
             },
             "result": {
               "status": "passed",
-              "duration": 5669701750
+              "duration": 5705001492
             }
           },
           {
@@ -796,7 +783,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 99922
+              "duration": 105141
             }
           },
           {
@@ -805,11 +792,11 @@
             "line": 10,
             "name": "check the profanity for replied post in the discussion panel",
             "match": {
-              "location": "features/steps/discussionPanel/DPS-592.js:160"
+              "location": "features/steps/discussionPanel/DPS-592.js:165"
             },
             "result": {
               "status": "passed",
-              "duration": 15619980522
+              "duration": 13918353280
             }
           },
           {
@@ -822,7 +809,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5076720439
+              "duration": 5059350685
             }
           }
         ],
@@ -867,7 +854,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37751449177
+              "duration": 37486911772
             }
           },
           {
@@ -880,7 +867,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 173291320
+              "duration": 150223119
             }
           },
           {
@@ -889,11 +876,11 @@
             "line": 7,
             "name": "clicking on more discussion link will load 10 more discussions",
             "match": {
-              "location": "features/steps/discussionPanel/DPS-593.js:92"
+              "location": "features/steps/discussionPanel/DPS-593.js:95"
             },
             "result": {
               "status": "passed",
-              "duration": 2961362386
+              "duration": 2829740824
             }
           },
           {
@@ -902,11 +889,11 @@
             "line": 8,
             "name": "clicking on close link remove 10 Discussion from display panel",
             "match": {
-              "location": "features/steps/discussionPanel/DPS-593.js:173"
+              "location": "features/steps/discussionPanel/DPS-593.js:179"
             },
             "result": {
               "status": "passed",
-              "duration": 5076050292
+              "duration": 5070664853
             }
           },
           {
@@ -919,7 +906,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5062298228
+              "duration": 5074532903
             }
           }
         ],
@@ -964,7 +951,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37056853781
+              "duration": 37096505153
             }
           },
           {
@@ -977,7 +964,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5023832435
+              "duration": 5025082554
             }
           },
           {
@@ -990,7 +977,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10070619846
+              "duration": 10029328779
             }
           },
           {
@@ -1003,7 +990,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5019154776
+              "duration": 5022556707
             }
           },
           {
@@ -1012,11 +999,11 @@
             "line": 11,
             "name": "click and navigate to course overview page and check the content loading right",
             "match": {
-              "location": "features/steps/megadrop/DPS-638.js:60"
+              "location": "features/steps/megadrop/DPS-638.js:61"
             },
             "result": {
               "status": "passed",
-              "duration": 5163373261
+              "duration": 5096506952
             }
           },
           {
@@ -1029,7 +1016,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5066516812
+              "duration": 5010231190
             }
           },
           {
@@ -1038,11 +1025,11 @@
             "line": 13,
             "name": "can click on any module and it will show topic panel for that module and check the content",
             "match": {
-              "location": "features/steps/megadrop/DPS-638.js:95"
+              "location": "features/steps/megadrop/DPS-638.js:98"
             },
             "result": {
               "status": "passed",
-              "duration": 15161534842
+              "duration": 15176485274
             }
           },
           {
@@ -1055,7 +1042,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5014102665
+              "duration": 5010390684
             }
           },
           {
@@ -1064,11 +1051,11 @@
             "line": 15,
             "name": "click on additional resources to check content loading right",
             "match": {
-              "location": "features/steps/megadrop/DPS-638.js:164"
+              "location": "features/steps/megadrop/DPS-638.js:172"
             },
             "result": {
               "status": "passed",
-              "duration": 15411194276
+              "duration": 15360483350
             }
           },
           {
@@ -1077,11 +1064,11 @@
             "line": 16,
             "name": "open pages for additional resources and click on few documents link to test",
             "match": {
-              "location": "features/steps/megadrop/DPS-638.js:255"
+              "location": "features/steps/megadrop/DPS-638.js:268"
             },
             "result": {
               "status": "passed",
-              "duration": 5159854449
+              "duration": 5180912481
             }
           },
           {
@@ -1094,7 +1081,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6360316357
+              "duration": 6242323651
             }
           }
         ],
@@ -1139,7 +1126,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36023609037
+              "duration": 35859211948
             }
           },
           {
@@ -1152,7 +1139,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5014764637
+              "duration": 5026624439
             }
           },
           {
@@ -1165,7 +1152,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10195571556
+              "duration": 10198125533
             }
           },
           {
@@ -1178,7 +1165,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5016136611
+              "duration": 5015577625
             }
           },
           {
@@ -1187,11 +1174,11 @@
             "line": 11,
             "name": "can click on any topic from the Topic panel and it will show sub topic panel for that Topic",
             "match": {
-              "location": "features/steps/megadrop/DPS-639.js:81"
+              "location": "features/steps/megadrop/DPS-639.js:84"
             },
             "result": {
               "status": "passed",
-              "duration": 10096858631
+              "duration": 10163735293
             }
           },
           {
@@ -1204,7 +1191,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5016747177
+              "duration": 5010508503
             }
           },
           {
@@ -1213,11 +1200,11 @@
             "line": 13,
             "name": "can click on quiz and check content is loading right",
             "match": {
-              "location": "features/steps/megadrop/DPS-639.js:136"
+              "location": "features/steps/megadrop/DPS-639.js:142"
             },
             "result": {
               "status": "passed",
-              "duration": 11176923995
+              "duration": 10332142867
             }
           },
           {
@@ -1230,7 +1217,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5029178359
+              "duration": 5019036890
             }
           },
           {
@@ -1239,11 +1226,11 @@
             "line": 15,
             "name": "can click on assessment and check content is loading right",
             "match": {
-              "location": "features/steps/megadrop/DPS-639.js:204"
+              "location": "features/steps/megadrop/DPS-639.js:214"
             },
             "result": {
               "status": "passed",
-              "duration": 11256038459
+              "duration": 11368632227
             }
           },
           {
@@ -1256,7 +1243,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5075448918
+              "duration": 5050254975
             }
           }
         ],
@@ -1301,7 +1288,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37501577360
+              "duration": 37012740499
             }
           },
           {
@@ -1314,7 +1301,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5141756981
+              "duration": 5170348281
             }
           },
           {
@@ -1327,7 +1314,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3614021
+              "duration": 3591148
             }
           },
           {
@@ -1340,7 +1327,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5025906979
+              "duration": 5017357227
             }
           },
           {
@@ -1353,7 +1340,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21094306490
+              "duration": 25932580560
             }
           },
           {
@@ -1362,11 +1349,11 @@
             "line": 12,
             "name": "correct subtopic number is present first on subtopic page and click print pdf",
             "match": {
-              "location": "features/steps/megadrop/DPS-640.js:162"
+              "location": "features/steps/megadrop/DPS-640.js:168"
             },
             "result": {
               "status": "passed",
-              "duration": 60819706
+              "duration": 56563452
             }
           },
           {
@@ -1379,7 +1366,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5078295055
+              "duration": 5054980875
             }
           }
         ],
@@ -1424,7 +1411,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38600385972
+              "duration": 36976224781
             }
           },
           {
@@ -1437,7 +1424,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5028113493
+              "duration": 5026468562
             }
           },
           {
@@ -1446,11 +1433,11 @@
             "line": 9,
             "name": "can click on any topic from the Topic panel and it will show sub topic panel for that Topic",
             "match": {
-              "location": "features/steps/megadrop/DPS-639.js:81"
+              "location": "features/steps/megadrop/DPS-639.js:84"
             },
             "result": {
               "status": "passed",
-              "duration": 10150742606
+              "duration": 10170169656
             }
           },
           {
@@ -1463,7 +1450,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11374856025
+              "duration": 11773137673
             }
           },
           {
@@ -1472,11 +1459,11 @@
             "line": 11,
             "name": "enter keyword course to search and click on the first search result",
             "match": {
-              "location": "features/steps/megadrop/DPS-642.js:113"
+              "location": "features/steps/megadrop/DPS-642.js:118"
             },
             "result": {
               "status": "passed",
-              "duration": 10048057784
+              "duration": 10039306385
             }
           },
           {
@@ -1485,11 +1472,11 @@
             "line": 12,
             "name": "check page title is displayed",
             "match": {
-              "location": "features/steps/megadrop/DPS-642.js:166"
+              "location": "features/steps/megadrop/DPS-642.js:174"
             },
             "result": {
               "status": "passed",
-              "duration": 35993067
+              "duration": 35816398
             }
           },
           {
@@ -1498,11 +1485,11 @@
             "line": 13,
             "name": "click on the last result which called support centre from search list",
             "match": {
-              "location": "features/steps/megadrop/DPS-642.js:207"
+              "location": "features/steps/megadrop/DPS-642.js:217"
             },
             "result": {
               "status": "passed",
-              "duration": 11934138
+              "duration": 10780659
             }
           },
           {
@@ -1515,7 +1502,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5055259407
+              "duration": 5040893798
             }
           }
         ],
@@ -1560,7 +1547,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37383592863
+              "duration": 37450501226
             }
           },
           {
@@ -1569,11 +1556,11 @@
             "line": 8,
             "name": "click on last visited page link",
             "match": {
-              "location": "features/steps/navigation/DPS-658.js:28"
+              "location": "features/steps/navigation/DPS-658.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 14398240
+              "duration": 13576107
             }
           },
           {
@@ -1582,11 +1569,11 @@
             "line": 9,
             "name": "back to home page",
             "match": {
-              "location": "features/steps/navigation/DPS-658.js:42"
+              "location": "features/steps/navigation/DPS-658.js:41"
             },
             "result": {
               "status": "passed",
-              "duration": 294334378
+              "duration": 299982704
             }
           },
           {
@@ -1595,11 +1582,11 @@
             "line": 10,
             "name": "click on OpenSpace Tour to test the Walkthrough",
             "match": {
-              "location": "features/steps/navigation/DPS-658.js:46"
+              "location": "features/steps/navigation/DPS-658.js:45"
             },
             "result": {
               "status": "passed",
-              "duration": 36336772229
+              "duration": 35757060276
             }
           },
           {
@@ -1612,7 +1599,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5113612618
+              "duration": 5097588676
             }
           }
         ],
@@ -1657,7 +1644,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37990461940
+              "duration": 37058035930
             }
           },
           {
@@ -1670,7 +1657,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5026933556
+              "duration": 5022939084
             }
           },
           {
@@ -1683,7 +1670,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 133594348
+              "duration": 104969467
             }
           },
           {
@@ -1692,11 +1679,11 @@
             "line": 10,
             "name": "can click on Assessment Knowledge Test",
             "match": {
-              "location": "features/steps/megadrop/DPS-659.js:37"
+              "location": "features/steps/megadrop/DPS-659.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 5019553830
+              "duration": 5031883853
             }
           },
           {
@@ -1705,11 +1692,11 @@
             "line": 11,
             "name": "click Download Assessment",
             "match": {
-              "location": "features/steps/megadrop/DPS-659.js:53"
+              "location": "features/steps/megadrop/DPS-659.js:55"
             },
             "result": {
               "status": "passed",
-              "duration": 11365988137
+              "duration": 11092651776
             }
           },
           {
@@ -1722,7 +1709,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10256239170
+              "duration": 10093986889
             }
           }
         ],
@@ -1767,7 +1754,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38262609708
+              "duration": 36900589537
             }
           },
           {
@@ -1780,7 +1767,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10292611977
+              "duration": 10214412497
             }
           },
           {
@@ -1793,7 +1780,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5056487669
+              "duration": 5088436681
             }
           },
           {
@@ -1806,7 +1793,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12364536948
+              "duration": 6258304455
             }
           }
         ],
@@ -1851,7 +1838,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35846260998
+              "duration": 35971110767
             }
           },
           {
@@ -1864,7 +1851,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5018817653
+              "duration": 5024540610
             }
           },
           {
@@ -1873,11 +1860,11 @@
             "line": 9,
             "name": "check whether internal announcements is present",
             "match": {
-              "location": "features/steps/assessor/DPS-802.js:44"
+              "location": "features/steps/assessor/DPS-802.js:45"
             },
             "result": {
               "status": "passed",
-              "duration": 167757874
+              "duration": 242263830
             }
           },
           {
@@ -1886,11 +1873,11 @@
             "line": 10,
             "name": "check post functionality",
             "match": {
-              "location": "features/steps/assessor/DPS-802.js:63"
+              "location": "features/steps/assessor/DPS-802.js:65"
             },
             "result": {
               "status": "passed",
-              "duration": 189165131
+              "duration": 204704268
             }
           },
           {
@@ -1899,11 +1886,11 @@
             "line": 11,
             "name": "like a comment and unlike a comment",
             "match": {
-              "location": "features/steps/assessor/DPS-802.js:91"
+              "location": "features/steps/assessor/DPS-802.js:95"
             },
             "result": {
               "status": "passed",
-              "duration": 5031104022
+              "duration": 5034063319
             }
           },
           {
@@ -1912,11 +1899,11 @@
             "line": 12,
             "name": "add a comment to an existing post",
             "match": {
-              "location": "features/steps/assessor/DPS-802.js:123"
+              "location": "features/steps/assessor/DPS-802.js:129"
             },
             "result": {
               "status": "passed",
-              "duration": 357484887
+              "duration": 385003238
             }
           },
           {
@@ -1929,7 +1916,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 105090695
+              "duration": 142142617
             }
           }
         ],
@@ -1974,7 +1961,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40220900352
+              "duration": 37753927679
             }
           },
           {
@@ -1987,7 +1974,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5021784301
+              "duration": 5020671507
             }
           },
           {
@@ -1996,11 +1983,11 @@
             "line": 9,
             "name": "verify the Release notes page is present and content has loaded",
             "match": {
-              "location": "features/steps/assessor/DPS-803.js:48"
+              "location": "features/steps/assessor/DPS-803.js:49"
             },
             "result": {
               "status": "passed",
-              "duration": 220379949
+              "duration": 205916751
             }
           },
           {
@@ -2009,11 +1996,11 @@
             "line": 10,
             "name": "click Messages",
             "match": {
-              "location": "features/steps/assessor/DPS-803.js:81"
+              "location": "features/steps/assessor/DPS-803.js:84"
             },
             "result": {
               "status": "passed",
-              "duration": 10708142
+              "duration": 8449971
             }
           },
           {
@@ -2022,11 +2009,11 @@
             "line": 11,
             "name": "check that content loads on Inbox, Send, Notifications, and Contracts tabs",
             "match": {
-              "location": "features/steps/assessor/DPS-803.js:95"
+              "location": "features/steps/assessor/DPS-803.js:99"
             },
             "result": {
               "status": "passed",
-              "duration": 10067876004
+              "duration": 10070011425
             }
           },
           {
@@ -2035,11 +2022,11 @@
             "line": 12,
             "name": "select Inbox and select the first message",
             "match": {
-              "location": "features/steps/assessor/DPS-803.js:165"
+              "location": "features/steps/assessor/DPS-803.js:172"
             },
             "result": {
               "status": "passed",
-              "duration": 5029641148
+              "duration": 5026395967
             }
           },
           {
@@ -2048,11 +2035,11 @@
             "line": 13,
             "name": "verify that content loads in the right-hand panel",
             "match": {
-              "location": "features/steps/assessor/DPS-803.js:198"
+              "location": "features/steps/assessor/DPS-803.js:207"
             },
             "result": {
               "status": "passed",
-              "duration": 6630787630
+              "duration": 8637650237
             }
           },
           {
@@ -2065,7 +2052,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14385278
+              "duration": 10359457
             }
           }
         ],

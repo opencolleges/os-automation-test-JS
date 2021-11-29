@@ -27,6 +27,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "module1", module1Xpath, "3s");
+      driver.close()
       throw Error(err.message);
     }
 
@@ -44,6 +45,7 @@ Then(/^can click on Assessment Knowledge Test$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "assessment", secondAssessmentXpath, "3s");
+    driver.close()
     throw Error(err.message);
   }
 
@@ -60,6 +62,7 @@ Then(/^click Download Assessment$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "downloadAssessment", downloadAssessmentXpath, "3s");
+    driver.close()
     throw Error(err.message);
   }
 
