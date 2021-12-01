@@ -86,7 +86,7 @@ exports.login = async function (driver, username, password) {
   passwordInput.sendKeys(password);
 
   // Find login button
-  loginbtn = await driver.wait(
+  const loginbtn = await driver.wait(
     until.elementLocated(By.xpath("// button[ @ type = 'submit']")),
     30000
   );

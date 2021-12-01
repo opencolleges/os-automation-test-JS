@@ -6,7 +6,7 @@ exports.supportMenuXpath =
   "//ul[@class='font-size-11px nomgn-b no-bullet-point']";
 
 exports.messageCenterXpath =
-  "//div[@class='menu-behavior-link mgn-t5 mgn-l5 mgn-r5 pad-10 ng-scope']";
+  '//*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[2]';
 
 exports.otherLinksXpath =
   "//div[@class='menu-behavior-link mgn-t5 mgn-l5 mgn-r5 pad-10']";
@@ -158,7 +158,7 @@ exports.printTopicButtonXpath =
   "//span[@class='pdf-download-icon os-color-light-gray left']";
 
 exports.myPaymentLinkXpath =
-  '//*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[7]';
+  '//*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[8]';
 
 exports.paymentHistoryXpath = '//*[@id="page-data"]/div/div[1]/div[2]';
 
@@ -199,7 +199,7 @@ exports.firstLinkXpath =
   "/html/body/div[2]/div[1]/nav-bar/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div/div/div/div/form/div/div/div/div[2]";
 
 exports.myProfileXpath =
-  '//*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]';
+  '//*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[4]';
 
 exports.studentNameXpath = '//*[@id="about_me"]/div/div[2]/div[1]/div/div[1]';
 

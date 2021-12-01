@@ -68,3 +68,38 @@ Name: readings
 Xpath: By.className("ats-dt-act-label"
 Waiting time: 6s
 
+File: DPS-573.js
+Name: messageCenter
+Xpath: //div[@class='menu-behavior-link mgn-t5 mgn-l5 mgn-r5 pad-10 ng-scope']
+Waiting time: 3s
+
+File: DPS-573.js
+Name: messageCenter
+Xpath: //div[@class='menu-behavior-link mgn-t5 mgn-l5 mgn-r5 pad-10 ng-scope']
+Waiting time: 3s
+
+File: DPS-573.js
+Name: messageCenter
+Xpath: //div[@class='menu-behavior-link mgn-t5 mgn-l5 mgn-r5 pad-10 ng-scope']
+Waiting time: 3s
+
+File: DPS-573.js
+Name: messageCenter
+Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[2]
+Waiting time: 3s
+
+File: DPS-589.js
+Name: title
+Xpath: By.css('h1')
+Waiting time: 3s
+
+File: DPS-642.js
+Name: searchInput
+Xpath: /html/body/div[2]/div[1]/nav-bar/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div/div/div/div/form/div/div/input
+Waiting time: 3s
+
+File: DPS-642.js
+Name: searchInput
+Xpath: /html/body/div[2]/div[1]/nav-bar/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div/div/div/div/form/div/div/input
+Waiting time: 3s
+

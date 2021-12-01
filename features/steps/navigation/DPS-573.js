@@ -120,7 +120,7 @@ Then(
     } catch (err) {
       errorLog(fileName, "messageCenter", messageCenterXpath, "3s");
       driver.close()
-      throw Error(err.message);
+      throw Error("messageCenter is not found after waiting for 3s");
     }
 
     try {
