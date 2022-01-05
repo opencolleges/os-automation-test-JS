@@ -41,7 +41,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "courseHomePage", courseHomePageXpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
     // Click course homepage to show megadrop menu
@@ -69,7 +69,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "courseOverview", courseOverviewXpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -85,8 +85,8 @@ Then(
         .wait(until.elementLocated(By.css("h1"), 60000))
         .getText();
     } catch (err) {
-      errorLog(fileName, "courseTitle", "By.css('h1')", "6s");
-      driver.close()
+      errorLog(fileName, "courseTitle", 'By.css("h1")', "6s");
+      driver.close();
       throw Error(err.message);
     }
 
@@ -106,7 +106,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "module1", module1Xpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -124,7 +124,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "firstTopic", firstTopicXpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -142,7 +142,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "firstSubTopic", firstSubtopicXpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -161,8 +161,8 @@ Then(
         );
       } catch (err) {
         errorLog(fileName, "content", `By.id(p${i})`, "6s");
-        driver.close()
-        throw Error(err.message)
+        driver.close();
+        throw Error(err.message);
       }
       assert(await content.isDisplayed());
     }
@@ -180,8 +180,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "additionalResources", additionalResourcesXpath, "3s");
-      driver.close()
-      throw Error(err.message)
+      driver.close();
+      throw Error(err.message);
     }
 
     // Click additional resources
@@ -203,7 +203,7 @@ Then(
         additionalResourcesTitleXpath,
         "3s"
       );
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -228,7 +228,7 @@ Then(
         additionalResourcesSubTitle,
         "3s"
       );
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -254,7 +254,7 @@ Then(
         additionalResourcesLinksXpath,
         "3s"
       );
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -276,7 +276,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "moduleHelper", moduleHelperXpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 

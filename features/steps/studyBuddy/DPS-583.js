@@ -31,7 +31,7 @@ Then(/^click Support Centre$/, async function () {
     supportCentre.click();
   } catch (err) {
     errorLog(fileName, "supportCentre", supportCentreXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 });
@@ -48,7 +48,7 @@ Then(/^click Study Buddy$/, async function () {
     studyBuddy.click();
   } catch (err) {
     errorLog(fileName, "studyBuddy", studyBuddyXpath, "10s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 });
@@ -59,13 +59,15 @@ Then(/^check Support Centre title$/, async function () {
     await driver.sleep(5000);
 
     // Find title
-    const title = await driver.wait(until.elementLocated(By.css("h1")), 60000);
+    const title = await driver
+      .wait(until.elementLocated(By.css("h1")), 60000)
+      .getText();
 
     // Assert title is expected
-    strictEqual(await title.getText(), "Study Buddy", "Title is not correct");
+    strictEqual(title, "Study Buddy", "Title is not correct");
   } catch (err) {
     errorLog(fileName, "title", "By.css('h1')", "6s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 });
@@ -95,13 +97,13 @@ Then(/^click arrow icon of each question to show details$/, async function () {
           `//*[@id="faq_study-buddy_${i + 1}"]`,
           "3s"
         );
-        driver.close()
+        driver.close();
         throw Error(err.message);
       }
     }
   } catch (err) {
     errorLog(fileName, "questionList", "By.css('dl')", "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 });
@@ -118,8 +120,8 @@ Then(/^click View more button to show more questions$/, async function () {
     viewMoreQuestionsButton.click();
   } catch (err) {
     errorLog(fileName, "viewMoreQuestionsButton", viewMoreQuestionsXpath, "3s");
-    driver.close()
-    throw Error(err.message)
+    driver.close();
+    throw Error(err.message);
   }
 
   // Wait page to load
@@ -139,7 +141,7 @@ Then(/^check the title$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "title", "By.css('h1')", "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 });

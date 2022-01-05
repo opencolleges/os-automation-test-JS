@@ -7,5 +7,5 @@ Feature:DPS-658
     Scenario: Last visited page link and Walkthrough
       Then click on last visited page link
       Then back to home page
-      Then click on OpenSpace Tour to test the Walkthrough
+      # Then click on OpenSpace Tour to test the Walkthrough
       Then logout the user

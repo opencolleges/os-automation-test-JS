@@ -21,6 +21,7 @@ const {
 
 const util = require("util");
 const fs = require("fs");
+const { strictEqual } = require("assert");
 const writeFile = util.promisify(fs.appendFile);
 
 // Function to create random string
@@ -101,6 +102,19 @@ exports.login = async function (driver, username, password) {
   await isCourseExpired(driver);
 };
 
+exports.elementTitleCheck = async function (driver, fileName, expectedTitle) {
+  try {
+    var title = await driver
+      .wait(until.elementLocated(By.css("h1")), 30000)
+      .getText();
+  } catch (err) {
+    errorLog(fileName, "title", 'By.css("h1")', "3s");
+    driver.close();
+    throw Error(err.message);
+  }
+  strictEqual(title, expectedTitle);
+};
+
 exports.logout = async function (driver) {
   const actions = driver.actions({ bridge: true });
 
@@ -117,7 +131,7 @@ exports.logout = async function (driver) {
       .perform();
   } catch (err) {
     errorLog("function", "profileMenu", profileMenuXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -135,7 +149,7 @@ exports.logout = async function (driver) {
     await driver.wait(until.elementLocated(By.css("h3")));
   } catch (err) {
     errorLog("null", "otherLinks", otherLinksXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 };
@@ -157,7 +171,7 @@ exports.supportMenuHovering = async function (driver, fileName) {
       .perform();
   } catch (err) {
     errorLog(fileName, "supportMenu", "By.className('mgn-b5')", "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 };
@@ -175,7 +189,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     discussionPanel.click();
   } catch (err) {
     errorLog(fileName, "discussionPanel", discussionPanelXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -190,7 +204,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     addImage.click();
   } catch (err) {
     errorLog(fileName, "addImageButton", addImageXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -208,7 +222,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     driver.switchTo().frame(iframe);
   } catch (err) {
     errorLog(fileName, "iframe", iframeXpath, "10s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -224,7 +238,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     await driver.sleep(5000);
   } catch (err) {
     errorLog(fileName, "browseButton", browseButtonXpath, "10s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -236,7 +250,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     uploadFile.sendKeys(filePath);
   } catch (err) {
     errorLog(fileName, "uploadFile", "", "");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -268,7 +282,7 @@ exports.publishPostToDiscussionPanel = async function (driver, fileName) {
     discussionPanel.sendKeys(textToPost);
   } catch (err) {
     errorLog(fileName, "discussionPanel", discussionPanelXpath, "6s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -283,7 +297,7 @@ exports.publishPostToDiscussionPanel = async function (driver, fileName) {
     postButton.click();
   } catch (err) {
     errorLog(fileName, "postButton", postButtonXpath, "6s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -303,7 +317,7 @@ exports.publishPostToDiscussionPanel = async function (driver, fileName) {
     assert(await postText.isDisplayed());
   } catch (err) {
     errorLog(fileName, "postText", `//p[contains(text(),${name})] `, "6s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 };
@@ -315,7 +329,7 @@ exports.titleCheck = async function (driver, fileName, targetTitle) {
     assert.strictEqual(title, targetTitle, "Title Not Equal");
   } catch (error) {
     errorLog(fileName, "title", "By.css('title')", "3s");
-    driver.close()
+    driver.close();
     throw Error(error.message);
   }
 };
@@ -332,7 +346,7 @@ exports.pofanityCheck = async function (driver, fileName) {
     assert(await pofanityElement.isDisplayed());
   } catch (err) {
     errorLog(fileName, "pofanityElement", pofanityElementXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 };

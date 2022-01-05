@@ -1,105 +1,75 @@
-File: DPS-579.js
-Name: pageTitle
-Xpath: By.css('h1')
-Waiting time: 6s
-
-File: DPS-579.js
-Name: pageTitle
-Xpath: By.css('h1')
-Waiting time: 6s
-
-File: DPS-579.js
-Name: myProfile
-Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]
+File: DPS-590.js
+Name: viewMore
+Xpath: //*[@id="page-data"]/div/div/div[5]/div/div/a
 Waiting time: 3s
 
-File: DPS-579.js
-Name: myProfile
-Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]
+File: DPS-577.js
+Name: FAQ
+Xpath: //*[@id="page-data"]/div/div[2]/div[2]/div[1]/dl/dd[1]
 Waiting time: 3s
 
-File: DPS-579.js
-Name: myProfile
-Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]
+File: DPS-577.js
+Name: team
+Xpath: //*[@id="support_page_team_wrapper"]
 Waiting time: 3s
 
-File: DPS-579.js
-Name: myProfile
-Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]
+File: DPS-577.js
+Name: supportCategoryItemdiv[8]
+Xpath: //*[@id="support-centre-react-div"]/div/
 Waiting time: 3s
 
-File: DPS-579.js
-Name: myProfile
-Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]
+File: DPS-577.js
+Name: team
+Xpath: //*[@id="support_page_team_wrapper"]
 Waiting time: 3s
 
-File: DPS-579.js
-Name: myProfile
-Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]
-Waiting time: 3s
-
-File: DPS-579.js
-Name: myProfile
-Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[3]
-Waiting time: 3s
-
-File: DPS-579.js
-Name: gradingPreference
-Xpath: //*[@id="page-data"]/div/div/profile/profile-sections/div/div/div[1]
-Waiting time: 3s
-
-File: DPS-579.js
-Name: gradingPreference
-Xpath: //*[@id="page-data"]/div/div/profile/profile-sections/div/div/div[1]
-Waiting time: 6s
-
-File: DPS-591.js
-Name: iframe
-Xpath: //iframe[@src='https://widget.cloudinary.com/n/opencolleges/173/index.html?cloud_name=opencolleges']
-Waiting time: 10s
-
-File: DPS-640.js
-Name: readings
-Xpath: By.className("ats-dt-act-label"
-Waiting time: 3s
-
-File: DPS-640.js
-Name: readings
-Xpath: By.className("ats-dt-act-label"
-Waiting time: 6s
-
-File: DPS-573.js
-Name: messageCenter
-Xpath: //div[@class='menu-behavior-link mgn-t5 mgn-l5 mgn-r5 pad-10 ng-scope']
-Waiting time: 3s
-
-File: DPS-573.js
-Name: messageCenter
-Xpath: //div[@class='menu-behavior-link mgn-t5 mgn-l5 mgn-r5 pad-10 ng-scope']
-Waiting time: 3s
-
-File: DPS-573.js
-Name: messageCenter
-Xpath: //div[@class='menu-behavior-link mgn-t5 mgn-l5 mgn-r5 pad-10 ng-scope']
-Waiting time: 3s
-
-File: DPS-573.js
-Name: messageCenter
-Xpath: //*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[2]
-Waiting time: 3s
-
-File: DPS-589.js
+File: DPS-583.js
 Name: title
 Xpath: By.css('h1')
+Waiting time: 6s
+
+File: DPS-583.js
+Name: title
+Xpath: By.css('h1')
+Waiting time: 6s
+
+File: DPS-583.js
+Name: title
+Xpath: By.css('h1')
+Waiting time: 6s
+
+File: DPS-588.js
+Name: assignmentName
+Xpath: *[@id="grades_dt_id14"]/div[1]/div[1]
 Waiting time: 3s
 
-File: DPS-642.js
-Name: searchInput
-Xpath: /html/body/div[2]/div[1]/nav-bar/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div/div/div/div/form/div/div/input
+File: DPS-588.js
+Name: collapseButton
+Xpath: //*[@id="grades_dt_detail_id140"]
 Waiting time: 3s
 
-File: DPS-642.js
-Name: searchInput
-Xpath: /html/body/div[2]/div[1]/nav-bar/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div/div/div/div/form/div/div/input
+File: commonSteps
+Name: toolTip
+Xpath: //*[@id="page-data"]/div/div/motivatorview/div[1]/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[2]/a/img
+Waiting time: 5s
+
+File: commonSteps
+Name: name
+Xpath: //*[@id="page-data"]/div/div/motivatorview/div[1]/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[1]/div[2]/div/h6
+Waiting time: 3s
+
+File: DPS-658.js
+Name: lastVisitedLink
+Xpath: /html/body/div[2]/div[2]/div/div[2]/div/div/div/div/motivatorview/div[1]/div[1]/div[2]/div[3]/div/div/p/a
+Waiting time: 3s
+
+File: DPS-658.js
+Name: openSpaceTour
+Xpath: //*[@id="megadrop-onboarding-button"]/a
+Waiting time: 3s
+
+File: DPS-664.js
+Name: messageButton
+Xpath: //*[@id="page-data"]/div/div/motivatorview/div[1]/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[1]/div[2]/a/div
 Waiting time: 3s
 

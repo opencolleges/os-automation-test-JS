@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39505776278
+              "duration": 38847323004
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5011242237
+              "duration": 5009838822
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5070204485
+              "duration": 5119077170
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10069012889
+              "duration": 6690160645
             }
           },
           {
@@ -71,7 +71,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10205845063
+              "duration": 10045149639
             }
           },
           {
@@ -84,7 +84,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4292546083.9999995
+              "duration": 4669884689
             }
           }
         ],
@@ -110,6 +110,116 @@
     "uri": "features/DPS-573.feature"
   },
   {
+    "description": "    Verifying Support Centre",
+    "elements": [
+      {
+        "description": "",
+        "id": "dps-577;verifying-support-centre",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verifying support centre",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37269575766
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "click on support menu from nav",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-577.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18388314
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "check support centre page title is expected",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-577.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5046967648
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "click on all 8 support category and navigate to each page then click on support breadcrumbs to back to support centre page",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-577.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70255932307
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "expand collapse all FAQ on support category page",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-577.js:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1023105888
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:146"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5221956220
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "dps-577",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "DPS-577",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-577.feature"
+  },
+  {
     "description": "    Verifying My Profile and Enrolment page",
     "elements": [
       {
@@ -129,7 +239,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36003762778
+              "duration": 38819205281
             }
           },
           {
@@ -142,7 +252,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10071701592
+              "duration": 10073940746
             }
           },
           {
@@ -155,7 +265,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17557808
+              "duration": 15946157
             }
           },
           {
@@ -168,7 +278,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5021776121
+              "duration": 5019249104
             }
           },
           {
@@ -181,7 +291,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39915681
+              "duration": 42553609
             }
           },
           {
@@ -194,7 +304,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5019679324
+              "duration": 5020339267
             }
           },
           {
@@ -207,7 +317,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2771524316
+              "duration": 3219287410
             }
           },
           {
@@ -220,7 +330,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39995017
+              "duration": 131410741
             }
           },
           {
@@ -233,7 +343,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6421316568
+              "duration": 6545585310
             }
           }
         ],
@@ -259,6 +369,129 @@
     "uri": "features/DPS-579.feature"
   },
   {
+    "description": "    Verifying assessment support page",
+    "elements": [
+      {
+        "description": "",
+        "id": "dps-581;verifying-assessment-support-page",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verifying assessment support page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36155627236
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "click on assessment support category from support menu",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-581.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5041534881
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "check assessment support page title is expected",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-581.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 582009615
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "click on article blog tiles and then click breadcrumb to back to assessment page",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-581.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3730407357
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "click on view more button and then click breadcrumb to back to assessment page",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-581.js:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1634288012
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "click on support breadcrumb to navigate to back to support centre page",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-581.js:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 516589801.99999994
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:146"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5180483246
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "dps-581",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "DPS-581",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-581.feature"
+  },
+  {
     "description": "    Verifying study buddy page.",
     "elements": [
       {
@@ -278,7 +511,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37739063897
+              "duration": 36924072307
             }
           },
           {
@@ -291,7 +524,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5070538078
+              "duration": 5068019349
             }
           },
           {
@@ -304,7 +537,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17488184
+              "duration": 16736442
             }
           },
           {
@@ -317,7 +550,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 602869902
+              "duration": 610718804
             }
           },
           {
@@ -330,7 +563,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5037325767
+              "duration": 5024840491
             }
           },
           {
@@ -339,11 +572,11 @@
             "line": 10,
             "name": "click arrow icon of each question to show details",
             "match": {
-              "location": "features/steps/studyBuddy/DPS-583.js:73"
+              "location": "features/steps/studyBuddy/DPS-583.js:75"
             },
             "result": {
               "status": "passed",
-              "duration": 280103161
+              "duration": 294680536
             }
           },
           {
@@ -352,11 +585,11 @@
             "line": 11,
             "name": "click View more button to show more questions",
             "match": {
-              "location": "features/steps/studyBuddy/DPS-583.js:109"
+              "location": "features/steps/studyBuddy/DPS-583.js:111"
             },
             "result": {
               "status": "passed",
-              "duration": 5043458974
+              "duration": 5048011924
             }
           },
           {
@@ -365,11 +598,11 @@
             "line": 12,
             "name": "check the title",
             "match": {
-              "location": "features/steps/studyBuddy/DPS-583.js:129"
+              "location": "features/steps/studyBuddy/DPS-583.js:131"
             },
             "result": {
               "status": "passed",
-              "duration": 22852892
+              "duration": 23224841
             }
           },
           {
@@ -382,7 +615,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5059694658
+              "duration": 5052189781
             }
           }
         ],
@@ -427,7 +660,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36900341614
+              "duration": 37818545675
             }
           },
           {
@@ -440,7 +673,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10069629127
+              "duration": 10080064301
             }
           },
           {
@@ -453,7 +686,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16996423
+              "duration": 41877103
             }
           },
           {
@@ -466,7 +699,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5019510625
+              "duration": 5020678781
             }
           },
           {
@@ -479,7 +712,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20692447
+              "duration": 18274251
             }
           },
           {
@@ -492,7 +725,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8771882261
+              "duration": 8515051214.999999
             }
           },
           {
@@ -505,7 +738,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 75237543851
+              "duration": 70258835592
             }
           },
           {
@@ -518,7 +751,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 995621726
+              "duration": 797658754
             }
           },
           {
@@ -531,7 +764,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6636745419
+              "duration": 6032496056
             }
           }
         ],
@@ -576,7 +809,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35976425095
+              "duration": 36148407711
             }
           },
           {
@@ -589,7 +822,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10067268054
+              "duration": 10084722157
             }
           },
           {
@@ -602,7 +835,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 248903
+              "duration": 294527
             }
           },
           {
@@ -615,7 +848,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5028382624
+              "duration": 5018471023
             }
           },
           {
@@ -628,7 +861,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22347363
+              "duration": 20010530
             }
           },
           {
@@ -641,7 +874,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20508069
+              "duration": 18895248
             }
           },
           {
@@ -654,7 +887,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6182214570
+              "duration": 6070541404
             }
           }
         ],
@@ -680,6 +913,142 @@
     "uri": "features/DPS-589.feature"
   },
   {
+    "description": "    Verifying FAQ main page and FAQ feedback",
+    "elements": [
+      {
+        "description": "",
+        "id": "dps-590;verifying-phone-number-and-payment-history.",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verifying phone number and payment history.",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user successfully logins",
+            "match": {
+              "location": "features/steps/commonSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36450220174
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "click on getting started support category from support page",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-590.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5093750363
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "click on view more button to navigate to main FAQ page",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-590.js:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5027419445
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "check FAQ main page title is expected",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-590.js:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5029785537
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "check the breadscrumbs and heading display correct",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-590.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58381324
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "click on any of the link in Quick Links section",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-590.js:143"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9889086
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "provide the feedback with YES or NO",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-590.js:163"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5028110980
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:146"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5136240283
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@chrome",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "dps-590",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "DPS-590",
+    "tags": [
+      {
+        "name": "@chrome",
+        "line": 1
+      }
+    ],
+    "uri": "features/DPS-590.feature"
+  },
+  {
     "description": "    Verifying discussion panel.",
     "elements": [
       {
@@ -699,7 +1068,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35999154253
+              "duration": 38035095438
             }
           },
           {
@@ -712,7 +1081,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33893395099
+              "duration": 33605365097
             }
           },
           {
@@ -725,7 +1094,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 261888
+              "duration": 255882
             }
           },
           {
@@ -738,7 +1107,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40277027487
+              "duration": 40328261175
             }
           },
           {
@@ -751,7 +1120,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 84768
+              "duration": 81828
             }
           },
           {
@@ -764,7 +1133,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7117028733
+              "duration": 9376858479
             }
           },
           {
@@ -777,7 +1146,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7002903370
+              "duration": 5081818763
             }
           }
         ],
@@ -822,7 +1191,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37857723459
+              "duration": 37148851381
             }
           },
           {
@@ -835,7 +1204,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6096143036
+              "duration": 6005552219
             }
           },
           {
@@ -848,7 +1217,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2989424645
+              "duration": 2541138206
             }
           },
           {
@@ -861,7 +1230,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5758630278
+              "duration": 5673596958
             }
           },
           {
@@ -874,7 +1243,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 89507
+              "duration": 89003
             }
           },
           {
@@ -887,7 +1256,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14074102939
+              "duration": 13724380342
             }
           },
           {
@@ -900,7 +1269,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5101695284
+              "duration": 5067777702
             }
           }
         ],
@@ -945,7 +1314,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36990263685
+              "duration": 37320491117
             }
           },
           {
@@ -958,7 +1327,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 153327770
+              "duration": 157198652
             }
           },
           {
@@ -971,7 +1340,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2897681545
+              "duration": 3257797665
             }
           },
           {
@@ -984,7 +1353,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5080591987
+              "duration": 5123860864
             }
           },
           {
@@ -997,7 +1366,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5051574383
+              "duration": 5058631975
             }
           }
         ],
@@ -1042,7 +1411,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37164505576
+              "duration": 37254600665
             }
           },
           {
@@ -1055,7 +1424,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5021860126
+              "duration": 5021475308
             }
           },
           {
@@ -1068,7 +1437,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10066386991
+              "duration": 10029520416
             }
           },
           {
@@ -1081,7 +1450,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5020613533
+              "duration": 5017029329
             }
           },
           {
@@ -1094,7 +1463,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5102754833
+              "duration": 5088113650
             }
           },
           {
@@ -1107,7 +1476,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5007113924
+              "duration": 5010252731
             }
           },
           {
@@ -1120,7 +1489,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15230011449
+              "duration": 15148528178
             }
           },
           {
@@ -1133,7 +1502,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5009899224
+              "duration": 5011498081
             }
           },
           {
@@ -1146,7 +1515,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15415601965
+              "duration": 15340811295
             }
           },
           {
@@ -1159,7 +1528,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5236050250
+              "duration": 5175811666
             }
           },
           {
@@ -1172,7 +1541,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6078855080
+              "duration": 6205148138
             }
           }
         ],
@@ -1217,7 +1586,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37132858927
+              "duration": 36244072674
             }
           },
           {
@@ -1230,7 +1599,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5021231088
+              "duration": 5017626374
             }
           },
           {
@@ -1243,7 +1612,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10210820082
+              "duration": 10233727777
             }
           },
           {
@@ -1256,7 +1625,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5015480746
+              "duration": 5010556634
             }
           },
           {
@@ -1269,7 +1638,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10079069794
+              "duration": 10092710192
             }
           },
           {
@@ -1282,7 +1651,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5013908142
+              "duration": 5018442479
             }
           },
           {
@@ -1295,7 +1664,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11331240924
+              "duration": 10113325165
             }
           },
           {
@@ -1308,7 +1677,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5031642426
+              "duration": 5019215945
             }
           },
           {
@@ -1321,7 +1690,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11803196220
+              "duration": 11278247323
             }
           },
           {
@@ -1334,7 +1703,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5052563066
+              "duration": 5054609535
             }
           }
         ],
@@ -1379,7 +1748,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37039388885
+              "duration": 36959323180
             }
           },
           {
@@ -1392,7 +1761,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5137066465
+              "duration": 5144004421
             }
           },
           {
@@ -1405,7 +1774,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3602364
+              "duration": 3243396
             }
           },
           {
@@ -1418,7 +1787,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5060073156
+              "duration": 5023309083
             }
           },
           {
@@ -1431,7 +1800,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25944867202
+              "duration": 25932824480
             }
           },
           {
@@ -1444,7 +1813,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 60717054
+              "duration": 48515774
             }
           },
           {
@@ -1457,7 +1826,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5059800207
+              "duration": 5076780184
             }
           }
         ],
@@ -1502,7 +1871,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37414594183
+              "duration": 36975689018
             }
           },
           {
@@ -1515,7 +1884,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5017776950
+              "duration": 5039344399
             }
           },
           {
@@ -1528,7 +1897,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10164084875
+              "duration": 10226282083
             }
           },
           {
@@ -1541,7 +1910,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11284297755
+              "duration": 12018903586
             }
           },
           {
@@ -1554,7 +1923,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5043575960
+              "duration": 10101800680
             }
           }
         ],
@@ -1599,7 +1968,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37267492530
+              "duration": 36908814121
             }
           },
           {
@@ -1612,7 +1981,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13552061
+              "duration": 15586815
             }
           },
           {
@@ -1625,20 +1994,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 315178076
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "click on OpenSpace Tour to test the Walkthrough",
-            "match": {
-              "location": "features/steps/navigation/DPS-658.js:45"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 36977293181
+              "duration": 327424196
             }
           },
           {
@@ -1651,7 +2007,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5098025298
+              "duration": 9763058529
             }
           }
         ],
@@ -1696,7 +2052,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37683520292
+              "duration": 38599519995
             }
           },
           {
@@ -1709,7 +2065,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5019800796
+              "duration": 5021064672
             }
           },
           {
@@ -1722,7 +2078,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 123177567
+              "duration": 164653433
             }
           },
           {
@@ -1735,7 +2091,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5018214657
+              "duration": 5019286502
             }
           },
           {
@@ -1748,7 +2104,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13514490717
+              "duration": 13823643918
             }
           },
           {
@@ -1761,7 +2117,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10086538841
+              "duration": 10075822003
             }
           }
         ],
@@ -1806,7 +2162,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37022214851
+              "duration": 37056631160
             }
           },
           {
@@ -1819,20 +2175,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10329987139
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "message Centre Compose screen with all details preloaded for to, subject and student id",
-            "match": {
-              "location": "features/steps/messageCenter/DPS-664.js:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5056959199
+              "duration": 10260106862
             }
           },
           {
@@ -1845,7 +2188,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6164555302
+              "duration": 10245859254
             }
           }
         ],
@@ -1890,7 +2233,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35937324005
+              "duration": 36892954380
             }
           },
           {
@@ -1903,7 +2246,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5013207056
+              "duration": 5023969973
             }
           },
           {
@@ -1916,7 +2259,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 167833001
+              "duration": 200283874
             }
           },
           {
@@ -1929,7 +2272,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 194839475
+              "duration": 194596497
             }
           },
           {
@@ -1942,7 +2285,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5029668076
+              "duration": 5025386984
             }
           },
           {
@@ -1955,7 +2298,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 384884190
+              "duration": 276447261
             }
           },
           {
@@ -1968,7 +2311,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 89982105
+              "duration": 86489064
             }
           }
         ],
@@ -2013,7 +2356,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37141586387
+              "duration": 37881202214
             }
           },
           {
@@ -2026,7 +2369,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5031968528
+              "duration": 5016386559
             }
           },
           {
@@ -2039,7 +2382,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 242909584
+              "duration": 191316605
             }
           },
           {
@@ -2052,7 +2395,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11657627
+              "duration": 9190365
             }
           },
           {
@@ -2065,7 +2408,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10054216161
+              "duration": 10052283519
             }
           },
           {
@@ -2078,7 +2421,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5025456507
+              "duration": 5024101341
             }
           },
           {
@@ -2091,7 +2434,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6890355005
+              "duration": 6307549485
             }
           },
           {
@@ -2104,7 +2447,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 57187397
+              "duration": 10017295
             }
           }
         ],
