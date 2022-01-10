@@ -8,6 +8,8 @@ const {
   supportBreadcrumbXpath,
   supportCategoryItemXpath,
   supportCentreFAQXpath,
+  supportCategoryItemsXpath,
+  supportCategoryItemsWrapperXpath,
 } = require("../../../data/elementXpath");
 
 const { errorLog, elementTitleCheck } = require("../../../utilities/function");
@@ -43,7 +45,22 @@ Then(/^check support centre page title is expected$/, async function () {
 Then(
   /^click on all 8 support category and navigate to each page then click on support breadcrumbs to back to support centre page$/,
   async function () {
-    for (let i = 1; i <= 7; i++) {
+    try {
+      var supportCategoryItemsWrapper = await driver.wait(until.elementLocated(By.xpath(supportCategoryItemsWrapperXpath)),30000)
+    } catch (err) {
+      errorLog(
+        fileName,
+        "supportCategoryItemsWrapper",
+        supportCategoryItemsWrapperXpath,
+        "3s"
+      );
+      driver.close();
+      throw Error(err.message);
+    }
+
+    const supportCategoryItems = await supportCategoryItemsWrapper.findElements(By.className("oc-grid__item oc-grid__item--s-6 oc-grid__item--m-3"))
+
+    for (let i = 1; i <= supportCategoryItems.length; i++) {
       await driver.sleep(5000);
 
       try {

@@ -166,7 +166,7 @@ exports.phoneNumberSectionXpath = '//*[@id="page-data"]/div/div[2]/div';
 exports.supportCentreXpath =
   '//*[@id="support_menu"]/div/div[2]/div/div/div[2]/div[3]';
 
-exports.studyBuddyXpath = '//*[@id="support-centre-react-div"]/div/div[5]';
+exports.studyBuddyXpath = '//*[@id="study-buddy"]';
 
 exports.viewMoreQuestionsXpath =
   '//*[@id="page-data"]/div/div/div[5]/div/div/a';
@@ -293,6 +293,8 @@ exports.messageSenderXpath =
 exports.logoutAsAssessorXpath =
   '//*[@id="trainerDashboardMain"]/div/div/div/trainer-dashboard-off-canvas/aside/ul/li[20]/a';
 
+exports.supportCategoryItemsWrapperXpath = '//*[@id="support-centre-react-div"]/div'
+
 exports.supportCategoryItemXpath = '//*[@id="support-centre-react-div"]/div/';
 
 exports.supportBreadcrumbXpath = '//*[@id="course_picker_span"]/a[2]';
@@ -328,7 +330,7 @@ exports.gettingStartedButtonYesXpath =
   '//*[@id="page-data"]/div/div/div[6]/div[2]/div[1]/div[1]/div/div[2]';
 
 exports.supportCentreAssessmentBlockXpath =
-  '//*[@id="support-centre-react-div"]/div/div[4]';
+  '//*[@id="assessments"]';
 
 exports.supportCentreAsssessmentSecondArticleBlogTileXpath =
   '//*[@id="page-data"]/div/div/div[5]/ul/li[2]';

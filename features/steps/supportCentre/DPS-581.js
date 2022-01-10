@@ -35,7 +35,7 @@ Then(
         until.elementLocated(By.xpath(supportMenuXpath)),
         30000
       );
-    } catch {
+    } catch (err) {
       errorLog(fileName, "supportMenu", supportMenuXpath, "3s");
       driver.close();
       throw Error(err.message);
@@ -50,7 +50,7 @@ Then(
         until.elementLocated(By.xpath(supportCentreAssessmentBlockXpath)),
         30000
       );
-    } catch {
+    } catch (err) {
       errorLog(
         fileName,
         "assessmentBlock",
@@ -61,7 +61,8 @@ Then(
       throw Error(err.message);
     }
 
-    assessmentBlock.click();
+    // assessmentBlock.click();
+    driver.executeScript("arguments[0].click()", assessmentBlock);
   }
 );
 
@@ -79,7 +80,7 @@ Then(
         ),
         30000
       );
-    } catch {
+    } catch (err) {
       errorLog(
         fileName,
         "secondArticleBlogTile",

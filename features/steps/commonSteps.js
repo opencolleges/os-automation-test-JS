@@ -69,10 +69,10 @@ Then(/^check profile picture, trainer name and position$/, async function () {
     // Find tool tip
     var toolTip = await driver.wait(
       until.elementLocated(By.xpath(toolTipXpath)),
-      50000
+      100000
     );
   } catch (err) {
-    errorLog("commonSteps", "toolTip", toolTipXpath, "5s");
+    errorLog("commonSteps", "toolTip", toolTipXpath, "10s");
     throw Error(err.message);
   }
 
