@@ -293,7 +293,8 @@ exports.messageSenderXpath =
 exports.logoutAsAssessorXpath =
   '//*[@id="trainerDashboardMain"]/div/div/div/trainer-dashboard-off-canvas/aside/ul/li[20]/a';
 
-exports.supportCategoryItemsWrapperXpath = '//*[@id="support-centre-react-div"]/div'
+exports.supportCategoryItemsWrapperXpath =
+  '//*[@id="support-centre-react-div"]/div';
 
 exports.supportCategoryItemXpath = '//*[@id="support-centre-react-div"]/div/';
 
@@ -330,7 +331,7 @@ exports.gettingStartedButtonYesXpath =
   '//*[@id="page-data"]/div/div/div[6]/div[2]/div[1]/div[1]/div/div[2]';
 
 exports.supportCentreAssessmentBlockXpath =
-  '//*[@id="assessments"]';
+  "/html/body/div[2]/div[2]/div/div[2]/div/div/div[2]/div[1]/div/div/div/div[4]/div/a";
 
 exports.supportCentreAsssessmentSecondArticleBlogTileXpath =
   '//*[@id="page-data"]/div/div/div[5]/ul/li[2]';

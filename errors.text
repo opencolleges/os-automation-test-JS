@@ -73,3 +73,13 @@ Name: assessmentBlock
 Xpath: //*[@id="assessments"]
 Waiting time: 3s
 
+File: DPS-581.js
+Name: assessmentBlock
+Xpath: //*[@id="assessments"]
+Waiting time: 3s
+
+File: DPS-581.js
+Name: assessmentBlock
+Xpath: //*[@id="assessments"]
+Waiting time: 3s
+
