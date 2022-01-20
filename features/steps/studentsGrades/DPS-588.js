@@ -74,7 +74,7 @@ Then(/^check course title$/, async function () {
 Then(
   /^check all the assignment name and code and grades row$/,
   async function () {
-    for (let i = 0; i < 14; i++) {
+    for (let i = 0; i < 13; i++) {
       // Find assignment name and assert it is displayed
       try {
         const assignmentName = driver.wait(
@@ -140,7 +140,7 @@ Then(
   /^click on each grade and expand collapse to check details of grades$/,
   async function () {
     // Expend collapse for each grade
-    for (let i = 0; i < 14; i++) {
+    for (let i = 0; i < 13; i++) {
       try {
         var collapseButton = await driver.wait(
           until.elementLocated(By.xpath(`//*[@id="grades_dt_detail_id${i}0"]`)),
@@ -165,7 +165,7 @@ Then(
 );
 
 Then(/^check grade name, date graded, date submitted$/, async function () {
-  for (let i = 0; i < 14; i++) {
+  for (let i = 0; i < 13; i++) {
     try {
       var gradeName = driver.wait(
         until.elementLocated(

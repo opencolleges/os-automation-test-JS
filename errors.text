@@ -83,3 +83,53 @@ Name: assessmentBlock
 Xpath: //*[@id="assessments"]
 Waiting time: 3s
 
+File: DPS-583.js
+Name: studyBuddy
+Xpath: //*[@id="study-buddy"]
+Waiting time: 10s
+
+File: DPS-577.js
+Name: title
+Xpath: By.css("h1")
+Waiting time: 3s
+
+File: DPS-573.js
+Name: supportMenu
+Xpath: By.className('mgn-b5')
+Waiting time: 3s
+
+File: DPS-588.js
+Name: assignmentName
+Xpath: *[@id="grades_dt_id13"]/div[1]/div[1]
+Waiting time: 3s
+
+File: DPS-588.js
+Name: collapseButton
+Xpath: //*[@id="grades_dt_detail_id130"]
+Waiting time: 3s
+
+File: DPS-588.js
+Name: collapseButton
+Xpath: //*[@id="grades_dt_detail_id130"]
+Waiting time: 3s
+
+File: commonSteps
+Name: toolTip
+Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/motivatorview/div/div/div[2]/div[1]/div[1]/div/div/div/div[2]
+Waiting time: 10s
+
+File: commonSteps
+Name: toolTip
+Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/motivatorview/div/div/div[2]/div[1]/div[1]/div/div/div/div[2]
+Waiting time: 10s
+
+File: commonSteps
+Name: name
+Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/motivatorview/div/div/div[2]/div[1]/div[1]/div/div/div/div[1]/div[2]/div/h6
+Waiting time: 3s
+
+File: DPS-658.js
+Name: lastVisitedLink
+Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/motivatorview/div/div/div[2]/div[3]/div[1]/p/a/span
+Waiting time: 3s
+

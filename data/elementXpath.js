@@ -132,15 +132,15 @@ exports.assessmentTitleXpath =
 exports.assessmentTipsXpath = '//*[@id="assessment-info"]/div[1]/div[2]';
 
 exports.toolTipXpath =
-  '//*[@id="page-data"]/div/div/oc-motivator/div/div/motivatorview/div/div/div[2]/div[1]/div[1]/div/div/div/div[2]';
+  '//*[@id="page-data"]/div/div/oc-motivator/div/div/div/motivatorview/div/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[2]';
 
 exports.trainerNameXpath =
-  '//*[@id="page-data"]/div/div/oc-motivator/div/div/motivatorview/div/div/div[2]/div[1]/div[1]/div/div/div/div[1]/div[2]/div/h6';
+  '//*[@id="page-data"]/div/div/oc-motivator/div/div/div/motivatorview/div/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[1]/div[2]/div/h6';
 
 exports.trainerAvatarXpath = '//*[@id="trainer-avatar"]';
 
 exports.trainerPositionXpath =
-  '//*[@id="page-data"]/div/div/oc-motivator/div/div/motivatorview/div/div/div[2]/div[1]/div[1]/div/div/div/div[1]/div[2]/div/p[1]';
+  '//*[@id="page-data"]/div/div/oc-motivator/div/div/div/motivatorview/div/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[1]/div[2]/div/p[1]';
 
 exports.messageButtonXpath =
   '//*[@id="page-data"]/div/div/motivatorview/div[1]/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[1]/div[2]/a/div';
@@ -265,7 +265,7 @@ exports.assessorMessagesTabBarItemsXpath =
   "/html/body/div[2]/div[2]/div/div[2]/div/div/trainer-dashboard/div/div/div/div/section/div/div/messagecentre/div[2]/div/div[2]/div/div[1]/div[2]/div/";
 
 exports.lastVisitedLinkXpath =
-  '//*[@id="page-data"]/div/div/oc-motivator/div/div/motivatorview/div/div/div[2]/div[3]/div[1]/p/a/span';
+  '//*[@id="page-data"]/div/div/oc-motivator/div/div/div/motivatorview/div/div[1]/div[2]/div[3]/div/div/p/a/span';
 
 exports.openSpaceTourXPath = '//*[@id="megadrop-onboarding-button"]/a';
 
@@ -330,8 +330,7 @@ exports.gettingStartedButtonNoXpath =
 exports.gettingStartedButtonYesXpath =
   '//*[@id="page-data"]/div/div/div[6]/div[2]/div[1]/div[1]/div/div[2]';
 
-exports.supportCentreAssessmentBlockXpath =
-  "/html/body/div[2]/div[2]/div/div[2]/div/div/div[2]/div[1]/div/div/div/div[4]/div/a";
+exports.supportCentreAssessmentBlockXpath = '//*[@id="assessments"]';
 
 exports.supportCentreAsssessmentSecondArticleBlogTileXpath =
   '//*[@id="page-data"]/div/div/div[5]/ul/li[2]';
