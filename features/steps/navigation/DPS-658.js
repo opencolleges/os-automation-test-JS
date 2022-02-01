@@ -31,7 +31,7 @@ Then(/^click on last visited page link$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "lastVisitedLink", lastVisitedLinkXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -50,7 +50,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "openSpaceTour", openSpaceTourXPath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -65,7 +65,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "menu", walkthroughMenuXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -80,7 +80,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "module", walkthroughModuleXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -95,7 +95,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "assessment", walkthroughAssessmentXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -115,7 +115,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
       walkthroughAssessmentNextButtonXpath,
       "3s"
     );
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -135,7 +135,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
       walkthroughMessageNextButtonXpath,
       "3s"
     );
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -150,7 +150,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "jumpInPopUp", walkthroughJumpInXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 

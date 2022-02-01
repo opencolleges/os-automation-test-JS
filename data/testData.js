@@ -2,18 +2,19 @@ exports.uatUrl = "https://uat-os.opencolleges.edu.au";
 
 // exports.usernameAlt = "dac.84@hotmail.com";
 
-exports.usernameAlt = "bobbie.aitken@hotmail.com";
+exports.usernameAlt = "testuser@opencolleges.com.au";
 // exports.usernameAlt = "e1144@opencolleges.com.au"
 
 exports.usernameAssessor = "tracey.hickey";
 
-exports.password = "Y[JWcyF27:jef:Y";
+exports.passwordAssessor = "Y[JWcyF27:jef:Y";
+
+exports.password = "test123";
 
 // exports.course = "Welcome to the Certificate III in Education Support";
-exports.course =
-  "About the Certificate III in Individual Support (Ageing, Home and Community)";
+exports.course = "Welcome to the Certificate III in Education Support";
 
-exports.courseCode = "E1144";
+exports.courseCode = "E1048B";
 
 exports.title = "Open Space 2.0 | Open Colleges | Open Colleges";
 

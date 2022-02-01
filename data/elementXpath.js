@@ -115,7 +115,7 @@ exports.firstAssessmentXpath =
   '//*[@id="megaDropCtrkl"]/div/div/div[3]/div[2]/div/div[1]/div/div[3]';
 
 exports.moduleTwoAssessmentXpath =
-  '//*[@id="megaDropCtrkl"]/div/div/div[3]/div[2]/div/div[1]/div/div[6]';
+  '//*[@id="megaDropCtrkl"]/div/div/div[3]/div[2]/div/div[1]/div/div[3]/a[1]/div';
 
 exports.teamUpBuddyXpath =
   '//*[@id="discussion-container"]/div[1]/div[2]/div/a/span';
@@ -124,7 +124,7 @@ exports.discussionsIconXpath =
   '//*[@id="discussion-container"]/div[1]/div[1]/h3';
 
 exports.secondAssessmentXpath =
-  '//*[@id="megaDropCtrkl"]/div/div/div[3]/div[2]/div/div[1]/div/div[7]/a[1]/div';
+  '//*[@id="megaDropCtrkl"]/div/div/div[3]/div[2]/div/div[1]/div/div[4]/a[1]/div';
 
 exports.assessmentTitleXpath =
   '//*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[1]/div[1]/h3';

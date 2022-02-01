@@ -5,11 +5,6 @@ const { driver } = require("../commonSteps");
 
 const {
   supportMenuXpath,
-  supportBreadcrumbXpath,
-  supportCategoryItemXpath,
-  supportCentreFAQXpath,
-  supportCentreTeamXpath,
-  supportCentreMeetTheTeamXpath,
   supportCentreAssessmentBlockXpath,
   supportCentreAsssessmentSecondArticleBlogTileXpath,
   gettingStartedCurrentBreadScrumbXpath,
@@ -20,7 +15,6 @@ const {
 const { errorLog, elementTitleCheck } = require("../../../utilities/function");
 
 const path = require("path");
-const { assert } = require("console");
 
 // Get file name
 const fileName = path.basename(__filename);

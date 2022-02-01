@@ -105,7 +105,10 @@ Then(/^check the breadscrumbs and heading display correct$/, async function () {
     driver.close();
     throw Error(err.message);
   }
-  strictEqual(courseBreadscrumb, "E1144 Certificate III Individual Support");
+  strictEqual(
+    courseBreadscrumb,
+    "E1048B Certificate III Education Support - Supporting Education"
+  );
 
   try {
     var previousPageBreadScrumb = await driver

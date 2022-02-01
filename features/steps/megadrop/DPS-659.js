@@ -18,7 +18,7 @@ const path = require("path");
 const fileName = path.basename(__filename);
 
 Then(
-  /^can click on Module 1 Meeting the needs of older people$/,
+  /^can click on Module 1 Facilitate programs and behaviours$/,
   async function () {
     try {
       var module1 = await driver.wait(
@@ -27,7 +27,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "module1", module1Xpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -45,7 +45,7 @@ Then(/^can click on Assessment Knowledge Test$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "assessment", secondAssessmentXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -62,7 +62,7 @@ Then(/^click Download Assessment$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "downloadAssessment", downloadAssessmentXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 

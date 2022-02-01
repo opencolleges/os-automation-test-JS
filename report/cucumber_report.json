@@ -15,11 +15,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 38613569343
+              "duration": 39457199080
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5009404808
+              "duration": 5011485034
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5062654178
+              "duration": 5083882623
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10590921421
+              "duration": 8114414375
             }
           },
           {
@@ -67,11 +67,11 @@
             "line": 9,
             "name": "click and hover on the profile menu",
             "match": {
-              "location": "features/steps/commonSteps.js:122"
+              "location": "features/steps/commonSteps.js:123"
             },
             "result": {
               "status": "passed",
-              "duration": 10031089784
+              "duration": 10030216319
             }
           },
           {
@@ -84,7 +84,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3335280299
+              "duration": 3177718440
             }
           }
         ],
@@ -125,11 +125,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 36243292559
+              "duration": 35978691931
             }
           },
           {
@@ -142,7 +142,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17144205
+              "duration": 32016345
             }
           },
           {
@@ -155,7 +155,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5030045516
+              "duration": 5030635108
             }
           },
           {
@@ -168,7 +168,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 80397442426
+              "duration": 80387975350
             }
           },
           {
@@ -181,7 +181,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1298033362.0000002
+              "duration": 1318620256
             }
           },
           {
@@ -190,11 +190,11 @@
             "line": 12,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 5332321312
+              "duration": 5134899200
             }
           }
         ],
@@ -235,11 +235,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 37472485736
+              "duration": 36865780220
             }
           },
           {
@@ -248,11 +248,11 @@
             "line": 6,
             "name": "click and hover on the profile menu",
             "match": {
-              "location": "features/steps/commonSteps.js:122"
+              "location": "features/steps/commonSteps.js:123"
             },
             "result": {
               "status": "passed",
-              "duration": 10066582187
+              "duration": 10098171509
             }
           },
           {
@@ -265,7 +265,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26825630
+              "duration": 32228603.999999996
             }
           },
           {
@@ -278,7 +278,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5019402191
+              "duration": 5018867321
             }
           },
           {
@@ -291,7 +291,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40821749
+              "duration": 39264406
             }
           },
           {
@@ -304,7 +304,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5016349954
+              "duration": 5020700037
             }
           },
           {
@@ -317,7 +317,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2560675617
+              "duration": 3481610240
             }
           },
           {
@@ -330,7 +330,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 62821605
+              "duration": 338887232
             }
           },
           {
@@ -339,11 +339,11 @@
             "line": 14,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 6392752757
+              "duration": 11783904364
             }
           }
         ],
@@ -384,11 +384,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 36058739871
+              "duration": 35793280955
             }
           },
           {
@@ -397,11 +397,11 @@
             "line": 6,
             "name": "click on assessment support category from support menu",
             "match": {
-              "location": "features/steps/supportCentre/DPS-581.js:30"
+              "location": "features/steps/supportCentre/DPS-581.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 5068562909
+              "duration": 5042945930
             }
           },
           {
@@ -410,11 +410,11 @@
             "line": 7,
             "name": "check assessment support page title is expected",
             "match": {
-              "location": "features/steps/supportCentre/DPS-581.js:69"
+              "location": "features/steps/supportCentre/DPS-581.js:63"
             },
             "result": {
               "status": "passed",
-              "duration": 617896719
+              "duration": 522393719.00000006
             }
           },
           {
@@ -423,11 +423,11 @@
             "line": 8,
             "name": "click on article blog tiles and then click breadcrumb to back to assessment page",
             "match": {
-              "location": "features/steps/supportCentre/DPS-581.js:73"
+              "location": "features/steps/supportCentre/DPS-581.js:67"
             },
             "result": {
               "status": "passed",
-              "duration": 3654998912
+              "duration": 4729068114
             }
           },
           {
@@ -436,11 +436,11 @@
             "line": 9,
             "name": "click on view more button and then click breadcrumb to back to assessment page",
             "match": {
-              "location": "features/steps/supportCentre/DPS-581.js:116"
+              "location": "features/steps/supportCentre/DPS-581.js:110"
             },
             "result": {
               "status": "passed",
-              "duration": 1667886003
+              "duration": 1254873188
             }
           },
           {
@@ -449,11 +449,11 @@
             "line": 10,
             "name": "click on support breadcrumb to navigate to back to support centre page",
             "match": {
-              "location": "features/steps/supportCentre/DPS-581.js:157"
+              "location": "features/steps/supportCentre/DPS-581.js:151"
             },
             "result": {
               "status": "passed",
-              "duration": 676867213
+              "duration": 560858316
             }
           },
           {
@@ -462,11 +462,11 @@
             "line": 11,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 5183867686
+              "duration": 8849350395
             }
           }
         ],
@@ -507,11 +507,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 37251359123
+              "duration": 36551016702
             }
           },
           {
@@ -524,7 +524,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5078308845
+              "duration": 10132619801
             }
           },
           {
@@ -537,7 +537,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18298830
+              "duration": 16981690
             }
           },
           {
@@ -550,7 +550,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 953015337
+              "duration": 582199213
             }
           },
           {
@@ -563,7 +563,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5025112438
+              "duration": 5027471735
             }
           },
           {
@@ -576,7 +576,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 242033557
+              "duration": 180451636
             }
           },
           {
@@ -589,7 +589,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5059391259
+              "duration": 5038363357
             }
           },
           {
@@ -602,7 +602,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23476763
+              "duration": 30009797
             }
           },
           {
@@ -611,11 +611,11 @@
             "line": 13,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 5122706670
+              "duration": 10126542171
             }
           }
         ],
@@ -656,11 +656,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 37701863871
+              "duration": 37967061547
             }
           },
           {
@@ -669,11 +669,11 @@
             "line": 6,
             "name": "click and hover on the profile menu",
             "match": {
-              "location": "features/steps/commonSteps.js:122"
+              "location": "features/steps/commonSteps.js:123"
             },
             "result": {
               "status": "passed",
-              "duration": 10077041252
+              "duration": 15224835975
             }
           },
           {
@@ -686,7 +686,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19313817
+              "duration": 55946952
             }
           },
           {
@@ -699,7 +699,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5024191445
+              "duration": 5021231588
             }
           },
           {
@@ -712,7 +712,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19021184
+              "duration": 19145938
             }
           },
           {
@@ -725,7 +725,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8930305519
+              "duration": 46577123
             }
           },
           {
@@ -738,7 +738,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 65253384075
+              "duration": 5009002384
             }
           },
           {
@@ -751,7 +751,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 914397171
+              "duration": 136264509
             }
           },
           {
@@ -760,11 +760,11 @@
             "line": 13,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 6035341211
+              "duration": 11057216189
             }
           }
         ],
@@ -805,11 +805,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 37130134940
+              "duration": 37104792409
             }
           },
           {
@@ -818,11 +818,11 @@
             "line": 6,
             "name": "click and hover on the profile menu",
             "match": {
-              "location": "features/steps/commonSteps.js:122"
+              "location": "features/steps/commonSteps.js:123"
             },
             "result": {
               "status": "passed",
-              "duration": 10075366648
+              "duration": 15129361443
             }
           },
           {
@@ -835,7 +835,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 738880
+              "duration": 230268
             }
           },
           {
@@ -848,7 +848,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5023647599
+              "duration": 5024365912
             }
           },
           {
@@ -861,7 +861,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20831727
+              "duration": 18455594
             }
           },
           {
@@ -874,7 +874,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20733973
+              "duration": 17870820
             }
           },
           {
@@ -883,11 +883,11 @@
             "line": 11,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 5893648411
+              "duration": 6266242496
             }
           }
         ],
@@ -928,11 +928,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 36920576916
+              "duration": 35748657732
             }
           },
           {
@@ -945,7 +945,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5096439898
+              "duration": 10434693869
             }
           },
           {
@@ -958,7 +958,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5030089090
+              "duration": 5030406142
             }
           },
           {
@@ -971,7 +971,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5035842526
+              "duration": 5033520609
             }
           },
           {
@@ -984,7 +984,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 60020483
+              "duration": 53625323
             }
           },
           {
@@ -993,11 +993,11 @@
             "line": 10,
             "name": "click on any of the link in Quick Links section",
             "match": {
-              "location": "features/steps/supportCentre/DPS-590.js:143"
+              "location": "features/steps/supportCentre/DPS-590.js:146"
             },
             "result": {
               "status": "passed",
-              "duration": 11933166
+              "duration": 9849095
             }
           },
           {
@@ -1006,11 +1006,11 @@
             "line": 11,
             "name": "provide the feedback with YES or NO",
             "match": {
-              "location": "features/steps/supportCentre/DPS-590.js:163"
+              "location": "features/steps/supportCentre/DPS-590.js:166"
             },
             "result": {
               "status": "passed",
-              "duration": 5027523573
+              "duration": 5023986022
             }
           },
           {
@@ -1019,11 +1019,11 @@
             "line": 12,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 5158416765
+              "duration": 10428628955
             }
           }
         ],
@@ -1064,11 +1064,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 37224416275
+              "duration": 39355945844
             }
           },
           {
@@ -1081,7 +1081,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33742992221
+              "duration": 33556094628
             }
           },
           {
@@ -1090,11 +1090,11 @@
             "line": 7,
             "name": "page is refreshed",
             "match": {
-              "location": "features/steps/commonSteps.js:43"
+              "location": "features/steps/commonSteps.js:44"
             },
             "result": {
               "status": "passed",
-              "duration": 281919
+              "duration": 246725
             }
           },
           {
@@ -1107,7 +1107,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 41261442173
+              "duration": 39750592669
             }
           },
           {
@@ -1116,11 +1116,11 @@
             "line": 9,
             "name": "page is refreshed",
             "match": {
-              "location": "features/steps/commonSteps.js:43"
+              "location": "features/steps/commonSteps.js:44"
             },
             "result": {
               "status": "passed",
-              "duration": 170389
+              "duration": 84726
             }
           },
           {
@@ -1133,7 +1133,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5940792478
+              "duration": 7028263412
             }
           },
           {
@@ -1142,11 +1142,11 @@
             "line": 11,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 5114300904
+              "duration": 8276080491.999999
             }
           }
         ],
@@ -1187,11 +1187,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 37825867396
+              "duration": 36702613855
             }
           },
           {
@@ -1204,7 +1204,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6017670518
+              "duration": 6023795561
             }
           },
           {
@@ -1217,7 +1217,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2487766432
+              "duration": 2325914681
             }
           },
           {
@@ -1230,7 +1230,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5780820051
+              "duration": 5867817392
             }
           },
           {
@@ -1239,11 +1239,11 @@
             "line": 9,
             "name": "page is refreshed",
             "match": {
-              "location": "features/steps/commonSteps.js:43"
+              "location": "features/steps/commonSteps.js:44"
             },
             "result": {
               "status": "passed",
-              "duration": 96717
+              "duration": 89498
             }
           },
           {
@@ -1256,7 +1256,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14014689198
+              "duration": 15433743224
             }
           },
           {
@@ -1265,11 +1265,11 @@
             "line": 11,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 5079521016
+              "duration": 10089004156
             }
           }
         ],
@@ -1310,11 +1310,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 37018378909
+              "duration": 36713799712
             }
           },
           {
@@ -1327,7 +1327,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 147035543
+              "duration": 134270756
             }
           },
           {
@@ -1340,7 +1340,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2750925415
+              "duration": 2618173690
             }
           },
           {
@@ -1353,7 +1353,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5078290408
+              "duration": 5078393279
             }
           },
           {
@@ -1362,11 +1362,11 @@
             "line": 9,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 5062083317
+              "duration": 10093665565
             }
           }
         ],
@@ -1407,11 +1407,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 37351026885
+              "duration": 36838048645
             }
           },
           {
@@ -1420,11 +1420,11 @@
             "line": 8,
             "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
             "match": {
-              "location": "features/steps/commonSteps.js:47"
+              "location": "features/steps/commonSteps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 5016885287
+              "duration": 5020687268
             }
           },
           {
@@ -1437,7 +1437,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10060866668
+              "duration": 10024763657
             }
           },
           {
@@ -1446,11 +1446,11 @@
             "line": 10,
             "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
             "match": {
-              "location": "features/steps/commonSteps.js:47"
+              "location": "features/steps/commonSteps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 5021110290
+              "duration": 5018952311
             }
           },
           {
@@ -1463,7 +1463,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5111046557
+              "duration": 5127076879
             }
           },
           {
@@ -1472,11 +1472,11 @@
             "line": 12,
             "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
             "match": {
-              "location": "features/steps/commonSteps.js:47"
+              "location": "features/steps/commonSteps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 5014278197
+              "duration": 5010150665
             }
           },
           {
@@ -1489,7 +1489,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15310178374
+              "duration": 15203165857
             }
           },
           {
@@ -1498,11 +1498,11 @@
             "line": 14,
             "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
             "match": {
-              "location": "features/steps/commonSteps.js:47"
+              "location": "features/steps/commonSteps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 5011732482
+              "duration": 5012079031
             }
           },
           {
@@ -1515,7 +1515,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15405873368
+              "duration": 15518028003
             }
           },
           {
@@ -1528,7 +1528,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5199217713
+              "duration": 5278343387
             }
           },
           {
@@ -1537,11 +1537,11 @@
             "line": 17,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 6200091320
+              "duration": 6328841444
             }
           }
         ],
@@ -1582,11 +1582,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 36513323869
+              "duration": 37181110939
             }
           },
           {
@@ -1595,11 +1595,11 @@
             "line": 8,
             "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
             "match": {
-              "location": "features/steps/commonSteps.js:47"
+              "location": "features/steps/commonSteps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 5022963189
+              "duration": 5045309137
             }
           },
           {
@@ -1612,7 +1612,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10209819260
+              "duration": 10183999714
             }
           },
           {
@@ -1621,11 +1621,11 @@
             "line": 10,
             "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
             "match": {
-              "location": "features/steps/commonSteps.js:47"
+              "location": "features/steps/commonSteps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 5018395829
+              "duration": 5011591924
             }
           },
           {
@@ -1638,7 +1638,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10101233264
+              "duration": 10087964980
             }
           },
           {
@@ -1647,11 +1647,11 @@
             "line": 12,
             "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
             "match": {
-              "location": "features/steps/commonSteps.js:47"
+              "location": "features/steps/commonSteps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 5012465802
+              "duration": 5016549877
             }
           },
           {
@@ -1664,7 +1664,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10157501022
+              "duration": 10139797611
             }
           },
           {
@@ -1673,11 +1673,11 @@
             "line": 14,
             "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
             "match": {
-              "location": "features/steps/commonSteps.js:47"
+              "location": "features/steps/commonSteps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 5022422291
+              "duration": 5018267280
             }
           },
           {
@@ -1690,7 +1690,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11429129725
+              "duration": 10227744469
             }
           },
           {
@@ -1699,11 +1699,11 @@
             "line": 16,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 5054174114
+              "duration": 10361500012
             }
           }
         ],
@@ -1744,24 +1744,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 37794587942
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "check profile picture, trainer name and position",
-            "match": {
-              "location": "features/steps/commonSteps.js:64"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5149423229
+              "duration": 36859523772
             }
           },
           {
@@ -1774,46 +1761,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4228166
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
-            "match": {
-              "location": "features/steps/commonSteps.js:47"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5020541190
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "check activity, reading and resource activities inside course content",
-            "match": {
-              "location": "features/steps/megadrop/DPS-640.js:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 25902758917
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "correct subtopic number is present first on subtopic page and click print pdf",
-            "match": {
-              "location": "features/steps/megadrop/DPS-640.js:168"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 52229808
+              "duration": 4256443
             }
           },
           {
@@ -1822,11 +1770,11 @@
             "line": 13,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 5079340952
+              "duration": 10591764573
             }
           }
         ],
@@ -1867,11 +1815,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 37688829152
+              "duration": 37215071964
             }
           },
           {
@@ -1880,11 +1828,11 @@
             "line": 8,
             "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
             "match": {
-              "location": "features/steps/commonSteps.js:47"
+              "location": "features/steps/commonSteps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 5025489445
+              "duration": 5018662562
             }
           },
           {
@@ -1897,7 +1845,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10258421210
+              "duration": 10168578521
             }
           },
           {
@@ -1910,7 +1858,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12263559201
+              "duration": 12358446831
             }
           },
           {
@@ -1919,11 +1867,11 @@
             "line": 14,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 10228549716
+              "duration": 10144047916
             }
           }
         ],
@@ -1964,37 +1912,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 36971878358
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "click on last visited page link",
-            "match": {
-              "location": "features/steps/navigation/DPS-658.js:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 23399731
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "back to home page",
-            "match": {
-              "location": "features/steps/navigation/DPS-658.js:41"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 473264096
+              "duration": 36729290287
             }
           },
           {
@@ -2003,11 +1925,11 @@
             "line": 11,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 9637261111
+              "duration": 10242977094
             }
           }
         ],
@@ -2048,63 +1970,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 37521043303
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
-            "match": {
-              "location": "features/steps/commonSteps.js:47"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5027240157
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "can click on Module 1 Meeting the needs of older people",
-            "match": {
-              "location": "features/steps/megadrop/DPS-659.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 162122044
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "can click on Assessment Knowledge Test",
-            "match": {
-              "location": "features/steps/megadrop/DPS-659.js:38"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5027155895
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "click Download Assessment",
-            "match": {
-              "location": "features/steps/megadrop/DPS-659.js:55"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11195439138
+              "duration": 36766425767
             }
           },
           {
@@ -2113,11 +1983,11 @@
             "line": 12,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 5185835018
+              "duration": 10631373437
             }
           }
         ],
@@ -2158,24 +2028,11 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:35"
+              "location": "features/steps/commonSteps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 37074208745
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "check profile picture, trainer name and position",
-            "match": {
-              "location": "features/steps/commonSteps.js:64"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10280293421
+              "duration": 38197456447
             }
           },
           {
@@ -2184,11 +2041,11 @@
             "line": 10,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:146"
+              "location": "features/steps/commonSteps.js:147"
             },
             "result": {
               "status": "passed",
-              "duration": 10245073540
+              "duration": 10206396595
             }
           }
         ],
@@ -2229,11 +2086,11 @@
             "line": 5,
             "name": "user successfully logins as an assessor",
             "match": {
-              "location": "features/steps/commonSteps.js:39"
+              "location": "features/steps/commonSteps.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 36781108075
+              "duration": 38189188659
             }
           },
           {
@@ -2246,7 +2103,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5023782801
+              "duration": 5020634840
             }
           },
           {
@@ -2259,7 +2116,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 169155797
+              "duration": 145729279
             }
           },
           {
@@ -2272,7 +2129,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 216384859
+              "duration": 290618659
             }
           },
           {
@@ -2285,7 +2142,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5032137182
+              "duration": 5070058509
             }
           },
           {
@@ -2298,7 +2155,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 396172967
+              "duration": 307818602
             }
           },
           {
@@ -2307,11 +2164,11 @@
             "line": 13,
             "name": "logout the user as an assessor",
             "match": {
-              "location": "features/steps/commonSteps.js:150"
+              "location": "features/steps/commonSteps.js:151"
             },
             "result": {
               "status": "passed",
-              "duration": 91352301
+              "duration": 105904073
             }
           }
         ],
@@ -2352,11 +2209,11 @@
             "line": 5,
             "name": "user successfully logins as an assessor",
             "match": {
-              "location": "features/steps/commonSteps.js:39"
+              "location": "features/steps/commonSteps.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 36786635668
+              "duration": 36885779537
             }
           },
           {
@@ -2369,7 +2226,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5027902627
+              "duration": 5017784264
             }
           },
           {
@@ -2382,7 +2239,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 223645051
+              "duration": 161259418
             }
           },
           {
@@ -2395,7 +2252,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27650224
+              "duration": 8733223
             }
           },
           {
@@ -2408,7 +2265,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10066641831
+              "duration": 10057237823
             }
           },
           {
@@ -2421,7 +2278,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5066594948
+              "duration": 5027029620
             }
           },
           {
@@ -2434,7 +2291,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6113476933
+              "duration": 5027742669
             }
           },
           {
@@ -2443,11 +2300,11 @@
             "line": 14,
             "name": "logout the user as an assessor",
             "match": {
-              "location": "features/steps/commonSteps.js:150"
+              "location": "features/steps/commonSteps.js:151"
             },
             "result": {
               "status": "passed",
-              "duration": 12507984
+              "duration": 9370612
             }
           }
         ],

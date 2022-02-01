@@ -6,6 +6,7 @@ const {
   usernameAlt,
   password,
   usernameAssessor,
+  passwordAssessor,
 } = require("../../data/testData");
 
 const {
@@ -37,7 +38,7 @@ When("user successfully logins", async function () {
 });
 
 When(/^user successfully logins as an assessor$/, async function () {
-  await login(driver, usernameAssessor, password);
+  await login(driver, usernameAssessor, passwordAssessor);
 });
 
 When(/^page is refreshed$/, async function () {
