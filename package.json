@@ -20,7 +20,7 @@
     "selenium-webdriver": "latest"
   },
   "dependencies": {
-    "@cucumber/cucumber": "^8.0.0-rc.1",
+    "@cucumber/cucumber": "latest",
     "chromedriver": "latest"
   }
 }
