@@ -11,7 +11,8 @@ jobs:
       - image: 'cimg/node:17.4.0-browsers'
     steps:
       - browser-tools/install-chrome
-      - browser-tools/install-chromedriver
+      - browser-tools/install-chromedriver:
+          chrome-version: 97.0.4
       - checkout
 
       - run:
