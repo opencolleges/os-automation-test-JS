@@ -17,10 +17,10 @@
   "devDependencies": {
     "cucumber-html-reporter": "^5.5.0",
     "cucumber-junit": "latest",
-    "selenium-webdriver": "latest"
+    "selenium-webdriver": "^4.0.0-rc-1"
   },
   "dependencies": {
-    "@cucumber/cucumber": "latest",
-    "chromedriver": "latest"
+    "@cucumber/cucumber": "^8.0.0-rc.1",
+    "chromedriver": "^97.0.4"
   }
 }
