@@ -124,7 +124,7 @@ exports.discussionsIconXpath =
   '//*[@id="discussion-container"]/div[1]/div[1]/h3';
 
 exports.secondAssessmentXpath =
-  '//*[@id="megaDropCtrkl"]/div/div/div[3]/div[2]/div/div[1]/div/div[4]/a[1]/div';
+  '//*[@id="megaDropCtrkl"]/div/div/div[3]/div[2]/div/div[1]/div/div[10]/a[1]/div';
 
 exports.assessmentTitleXpath =
   '//*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[1]/div[1]/h3';
@@ -228,7 +228,7 @@ exports.studyBuddySettingsCancelButtonXpath =
   '//*[@id="rest_best"]/div/div[1]/div/div[2]/div[3]/div';
 
 exports.downloadAssessmentXpath =
-  '//*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]';
+  '//*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]/a';
 
 exports.assessorHomeXpath =
   '//*[@id="trainerDashboardMain"]/div/div/div/trainer-dashboard-off-canvas/aside/ul/li[2]';
@@ -280,7 +280,7 @@ exports.walkthroughAssessmentNextButtonXpath =
   '//*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[2]/div/div/div/div/div/div[2]/div/div/p[2]/a';
 
 exports.walkthroughMessageNextButtonXpath =
-  '//*[@id="page-data"]/div/div/motivatorview/div[2]/div[4]/div/div/div/div/div/div/div/div[1]/p[2]/a';
+  '//*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[2]/div/div/div/div/div/div[2]/div/div/p[2]/a';
 
 exports.walkthroughJumpInXpath =
   '//*[@id="page-data"]/div/div/motivatorview/div[2]/div[4]/div/div[1]';

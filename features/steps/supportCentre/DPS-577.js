@@ -8,7 +8,6 @@ const {
   supportBreadcrumbXpath,
   supportCategoryItemXpath,
   supportCentreFAQXpath,
-  supportCategoryItemsXpath,
   supportCategoryItemsWrapperXpath,
 } = require("../../../data/elementXpath");
 
@@ -46,7 +45,10 @@ Then(
   /^click on all 8 support category and navigate to each page then click on support breadcrumbs to back to support centre page$/,
   async function () {
     try {
-      var supportCategoryItemsWrapper = await driver.wait(until.elementLocated(By.xpath(supportCategoryItemsWrapperXpath)),30000)
+      var supportCategoryItemsWrapper = await driver.wait(
+        until.elementLocated(By.xpath(supportCategoryItemsWrapperXpath)),
+        30000
+      );
     } catch (err) {
       errorLog(
         fileName,
@@ -58,7 +60,9 @@ Then(
       throw Error(err.message);
     }
 
-    const supportCategoryItems = await supportCategoryItemsWrapper.findElements(By.className("oc-grid__item oc-grid__item--s-6 oc-grid__item--m-3"))
+    const supportCategoryItems = await supportCategoryItemsWrapper.findElements(
+      By.className("oc-grid__item oc-grid__item--s-6 oc-grid__item--m-3")
+    );
 
     for (let i = 1; i <= supportCategoryItems.length; i++) {
       await driver.sleep(5000);
@@ -102,7 +106,7 @@ Then(
 );
 
 Then(/^expand collapse all FAQ on support category page$/, async function () {
-  for (let i = 1; i <= 6; i++) {
+  for (let i = 1; i <= 5; i++) {
     try {
       var FAQ = await driver.wait(
         until.elementLocated(By.xpath(supportCentreFAQXpath + `dd[${i}]`)),

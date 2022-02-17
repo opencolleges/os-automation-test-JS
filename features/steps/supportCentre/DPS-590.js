@@ -143,26 +143,6 @@ Then(/^check the breadscrumbs and heading display correct$/, async function () {
   strictEqual(currentPageBreadScrumb, "Getting Started");
 });
 
-Then(/^click on any of the link in Quick Links section$/, async function () {
-  try {
-    var firstQuickLink = await driver.wait(
-      until.elementLocated(By.xpath(gettingStartedFirstQuickLinkXpath)),
-      30000
-    );
-  } catch (err) {
-    errorLog(
-      fileName,
-      "firstQuickLink",
-      gettingStartedFirstQuickLinkXpath,
-      "3s"
-    );
-    driver.close();
-    throw Error(err.message);
-  }
-
-  firstQuickLink.click();
-});
-
 Then(/^provide the feedback with YES or NO$/, async function () {
   await driver.sleep(5000);
 

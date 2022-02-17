@@ -183,3 +183,123 @@ Name: toolTip
 Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/div/motivatorview/div/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[2]
 Waiting time: 10s
 
+File: DPS-658.js
+Name: openSpaceTour
+Xpath: //*[@id="megadrop-onboarding-button"]/a
+Waiting time: 3s
+
+File: DPS-658.js
+Name: openSpaceTour
+Xpath: //*[@id="megadrop-onboarding-button"]/a
+Waiting time: 3s
+
+File: DPS-658.js
+Name: openSpaceTour
+Xpath: //*[@id="megadrop-onboarding-button"]/a
+Waiting time: 3s
+
+File: DPS-577.js
+Name: FAQ
+Xpath: //*[@id="page-data"]/div[2]/div[2]/div/dl/dd[6]
+Waiting time: 3s
+
+File: DPS-577.js
+Name: FAQ
+Xpath: //*[@id="page-data"]/div[2]/div[2]/div/dl/dd[6]
+Waiting time: 3s
+
+File: DPS-590.js
+Name: firstQuickLink
+Xpath: //*[@id="page-data"]/div/div/div[4]/div/div[1]/a/div
+Waiting time: 3s
+
+File: DPS-590.js
+Name: buttonYes
+Xpath: //*[@id="page-data"]/div/div/div[6]/div[2]/div[1]/div[1]/div/div[2]
+Waiting time: 3s
+
+File: DPS-658.js
+Name: menu
+Xpath: //*[@id="overlayOpen"]/div
+Waiting time: 3s
+
+File: DPS-658.js
+Name: menu
+Xpath: //*[@id="overlayOpen"]/div
+Waiting time: 3s
+
+File: DPS-659.js
+Name: downloadAssessment
+Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]
+Waiting time: 3s
+
+File: DPS-658.js
+Name: lastVisitedLink
+Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/div/motivatorview/div/div[1]/div[2]/div[3]/div/div/p/a/span
+Waiting time: 3s
+
+File: DPS-658.js
+Name: messageNextButton
+Xpath: //*[@id="page-data"]/div/div/motivatorview/div[2]/div[4]/div/div/div/div/div/div/div/div[1]/p[2]/a
+Waiting time: 3s
+
+File: DPS-658.js
+Name: messageNextButton
+Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[2]/div/div/div/div/div/div[2]/div/div/p[2]/a
+Waiting time: 3s
+
+File: DPS-659.js
+Name: downloadAssessment
+Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]
+Waiting time: 3s
+
+File: DPS-659.js
+Name: downloadAssessment
+Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]
+Waiting time: 3s
+
+File: DPS-659.js
+Name: downloadAssessment
+Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]/a
+Waiting time: 3s
+
+File: DPS-659.js
+Name: downloadAssessment
+Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]/a
+Waiting time: 3s
+
+File: DPS-664.js
+Name: messageButton
+Xpath: //*[@id="page-data"]/div/div/motivatorview/div[1]/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[1]/div[2]/a/div
+Waiting time: 3s
+
+File: DPS-579.js
+Name: gradingPreference
+Xpath: //*[@id="page-data"]/div/div/profile/profile-sections/div/div/div[1]
+Waiting time: 3s
+
+File: DPS-573.js
+Name: title
+Xpath: By.css('title')
+Waiting time: 3s
+
+File: DPS-639.js
+Name: secondAssessment
+Xpath: //*[@id="megaDropCtrkl"]/div/div/div[3]/div[2]/div/div[1]/div/div[10]/a[1]/div
+Waiting time: 3s
+
+File: DPS-639.js
+Name: secondAssessment
+Xpath: //*[@id="megaDropCtrkl"]/div/div/div[3]/div[2]/div/div[1]/div/div[10]/a[1]/div
+Waiting time: 3s
+
+File: DPS-573.js
+Name: title
+Xpath: By.css('title')
+Waiting time: 3s
+
+File: DPS-659.js
+Name: downloadAssessment
+Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]/a
+Waiting time: 3s
+

@@ -6,7 +6,6 @@ const { driver } = require("../commonSteps");
 
 const {
   messageButtonXpath,
-  messageSenderXpath,
   messageSubjectXpath,
 } = require("../../../data/elementXpath");
 
@@ -29,7 +28,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "messageButton", messageButtonXpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -58,7 +57,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "messageSubject", messageSubjectXpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
