@@ -1,13 +1,13 @@
 [
   {
-    "description": "    Verifying My Profile and Enrolment page",
+    "description": "    Download Assessment",
     "elements": [
       {
         "description": "",
-        "id": "dps-579;my-profile-and-enrolment-page",
+        "id": "dps-659;verify-megadrop-menu-and-search-links",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "My Profile and Enrolment page",
+        "line": 7,
+        "name": "Verify megadrop Menu and search links",
         "steps": [
           {
             "arguments": [],
@@ -18,112 +18,22 @@
               "location": "features/steps/commonSteps.js:36"
             },
             "result": {
-              "status": "passed",
-              "duration": 40047007153
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "click and hover on the profile menu",
-            "match": {
-              "location": "features/steps/commonSteps.js:123"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10082449028
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "click My Profile",
-            "match": {
-              "location": "features/steps/myProfile/DPS-579.js:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 16553854.999999998
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "check My Profile page title",
-            "match": {
-              "location": "features/steps/myProfile/DPS-579.js:45"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5019213268
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "check Student Name and Student Number fields are present",
-            "match": {
-              "location": "features/steps/myProfile/DPS-579.js:64"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 38172899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "check Change Password link correctly redirects to the update_password page",
-            "match": {
-              "location": "features/steps/myProfile/DPS-579.js:95"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5012516494
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "check Privacy Setting section is present",
-            "match": {
-              "location": "features/steps/myProfile/DPS-579.js:186"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2456274746
+              "status": "failed",
+              "duration": 17309000234,
+              "error_message": "WebDriverError: unknown error: Chrome failed to start: crashed.\n  (chrome not reachable)\n  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:517:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:643:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:569:28)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 13,
-            "name": "check Study Buddy settings can be edited and saved",
-            "match": {
-              "location": "features/steps/myProfile/DPS-579.js:201"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 88008318
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
             "name": "logout the user",
             "match": {
               "location": "features/steps/commonSteps.js:147"
             },
             "result": {
-              "status": "passed",
-              "duration": 6473712199
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -136,16 +46,16 @@
         "type": "scenario"
       }
     ],
-    "id": "dps-579",
+    "id": "dps-659",
     "line": 2,
     "keyword": "Feature",
-    "name": "DPS-579",
+    "name": "DPS-659",
     "tags": [
       {
         "name": "@chrome",
         "line": 1
       }
     ],
-    "uri": "features/DPS-579.feature"
+    "uri": "features/DPS-659.feature"
   }
 ]
