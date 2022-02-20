@@ -1,4 +1,4 @@
-const { Then, After, setDefaultTimeout } = require("@cucumber/cucumber");
+const { Then, setDefaultTimeout } = require("@cucumber/cucumber");
 const { By, until } = require("selenium-webdriver");
 
 const { driver } = require("../commonSteps");
@@ -170,8 +170,3 @@ Then(
     supportCentreBreadScrumb.click();
   }
 );
-
-// Close the web driver after test
-// After(function () {
-//   driver.close();
-// });

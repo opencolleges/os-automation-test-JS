@@ -1,4 +1,4 @@
-const { Then, After, setDefaultTimeout } = require("@cucumber/cucumber");
+const { Then, setDefaultTimeout } = require("@cucumber/cucumber");
 const { By, until } = require("selenium-webdriver");
 
 const { driver } = require("../commonSteps");
@@ -10,7 +10,6 @@ const {
   gettingStartedCourseBreadScrumbXpath,
   gettingStartedCurrentBreadScrumbXpath,
   supportBreadcrumbXpath,
-  gettingStartedFirstQuickLinkXpath,
   gettingStartedButtonYesXpath,
   gettingStartedButtonNoXpath,
 } = require("../../../data/elementXpath");
@@ -18,7 +17,6 @@ const {
 const { errorLog, elementTitleCheck } = require("../../../utilities/function");
 
 const path = require("path");
-const { assert } = require("console");
 const { strictEqual } = require("assert");
 
 const actions = driver.actions({ bridge: true });
@@ -172,8 +170,3 @@ Then(/^provide the feedback with YES or NO$/, async function () {
 
   buttonNo.click();
 });
-
-// Close the web driver after test
-// After(function () {
-//   driver.close();
-// });

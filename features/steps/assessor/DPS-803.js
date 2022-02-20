@@ -1,4 +1,4 @@
-const { Then, After, setDefaultTimeout } = require("@cucumber/cucumber");
+const { Then, setDefaultTimeout } = require("@cucumber/cucumber");
 const { By, until } = require("selenium-webdriver");
 const assert = require("assert");
 
@@ -39,7 +39,7 @@ Then(/^click OpenSpace Release Notes$/, async function () {
       assessorOpenSpaceReleaseNotesXpath,
       "3s"
     );
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -55,7 +55,7 @@ Then(
         .getText();
     } catch (err) {
       errorLog(fileName, "title", "By.css('h1')", "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -75,7 +75,7 @@ Then(
         assessorOpenSpaceReleaseNotesContentXPath,
         "3s"
       );
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
   }
@@ -89,7 +89,7 @@ Then(/^click Messages$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "Messages", assessorMessagesXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -116,7 +116,7 @@ Then(
         "messageItem",
         "3s"
       );
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -138,7 +138,7 @@ Then(
           assessorMessagesTabBarItemsXpath + `div[${i}]`,
           "3s"
         );
-        driver.close()
+        driver.close();
         throw Error(err.message);
       }
 
@@ -160,7 +160,7 @@ Then(
           "messageItem",
           "3s"
         );
-        driver.close()
+        driver.close();
         throw Error(err.message);
       }
 
@@ -183,7 +183,7 @@ Then(/^select Inbox and select the first message$/, async function () {
       assessorMessagesTabBarItemsXpath + `div[${1}]`,
       "3s"
     );
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -197,7 +197,7 @@ Then(/^select Inbox and select the first message$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "firstInboxMessage", firstInboxMessageXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -214,7 +214,7 @@ Then(/^verify that content loads in the right-hand panel$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "messageSender", messageSenderXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -224,7 +224,3 @@ Then(/^verify that content loads in the right-hand panel$/, async function () {
     "Message sender is not correct"
   );
 });
-
-// After(async function () {
-//   driver.close();
-// });

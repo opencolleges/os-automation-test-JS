@@ -1,4 +1,4 @@
-const { Then, After, setDefaultTimeout } = require("@cucumber/cucumber");
+const { Then, setDefaultTimeout } = require("@cucumber/cucumber");
 const { By, until } = require("selenium-webdriver");
 const assert = require("assert");
 
@@ -35,7 +35,7 @@ Then(/^click My Profile$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "myProfile", myProfileXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -53,7 +53,7 @@ Then(/^check My Profile page title$/, async function () {
       .getText();
   } catch (err) {
     errorLog(fileName, "pageTitle", "By.css('h1')", "6s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -71,7 +71,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "studentName", studentNameXpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -82,7 +82,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "studentNumber", studentNumberXpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -107,7 +107,7 @@ Then(
         changePasswordButtonXpath,
         "3s"
       );
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -139,7 +139,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "gradingPreference", gradingPreferenceXpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -157,7 +157,7 @@ Then(
         gradingPreferenceEditButtonXpath,
         "3s"
       );
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -175,7 +175,7 @@ Then(
         gradingPreferenceSaveButtonXpath,
         "3s"
       );
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -191,7 +191,7 @@ Then(/^check Privacy Setting section is present$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "privacySetting", privacySettingXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -206,7 +206,7 @@ Then(/^check Study Buddy settings can be edited and saved$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "studyBuddySettings", studyBuddySettingsXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -219,7 +219,7 @@ Then(/^check Study Buddy settings can be edited and saved$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "editButton", studyBuddySettingsEditButtonXpath, "3s");
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
@@ -237,13 +237,9 @@ Then(/^check Study Buddy settings can be edited and saved$/, async function () {
       studyBuddySettingsCancelButtonXpath,
       "3s"
     );
-    driver.close()
+    driver.close();
     throw Error(err.message);
   }
 
   studyBuddySettingsCancelButton.click();
 });
-
-// After(async function () {
-//   driver.close();
-// });

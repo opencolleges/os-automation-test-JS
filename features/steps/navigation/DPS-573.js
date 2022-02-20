@@ -1,4 +1,4 @@
-const { Then, After, setDefaultTimeout } = require("@cucumber/cucumber");
+const { Then, setDefaultTimeout } = require("@cucumber/cucumber");
 const { By, until } = require("selenium-webdriver");
 const assert = require("assert");
 
@@ -73,7 +73,7 @@ Then(
       }
     } catch (err) {
       errorLog(fileName, "links", "By.className('large-3')", "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -96,7 +96,7 @@ Then(
       }
     } catch (err) {
       errorLog(fileName, "supportMenu", supportMenuXpath, "6s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
   }
@@ -119,7 +119,7 @@ Then(
       await driver.wait(until.elementLocated(By.css("h1")));
     } catch (err) {
       errorLog(fileName, "messageCenter", messageCenterXpath, "3s");
-      driver.close()
+      driver.close();
       throw Error("messageCenter is not found after waiting for 3s");
     }
 
@@ -136,13 +136,13 @@ Then(
           await driver.wait(until.elementLocated(By.css("h1")), 30000);
         } catch (err) {
           errorLog(fileName, "linkTitle", "By.css('h1')", "3s");
-          driver.close()
+          driver.close();
           throw Error(err.message);
         }
       }
     } catch (err) {
       errorLog(fileName, "otherLinks", otherLinksXpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -154,13 +154,8 @@ Then(
       await driver.wait(until.elementLocated(By.css("h3")), 30000);
     } catch (err) {
       errorLog(fileName, "logoutTitle", "By.css('h3')", "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
   }
 );
-
-// Close the web driver after test
-// After(function () {
-//   driver.close();
-// });

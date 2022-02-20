@@ -1,4 +1,4 @@
-const { Then, After, setDefaultTimeout } = require("@cucumber/cucumber");
+const { Then, setDefaultTimeout } = require("@cucumber/cucumber");
 const assert = require("assert");
 const { By, until } = require("selenium-webdriver");
 
@@ -35,7 +35,7 @@ Then(
         commentNumber++;
       } catch (err) {
         errorLog(fileName, "comment", commentXpath + `div[${i}] `, "6s");
-        driver.close()
+        driver.close();
         throw Error(err.message);
       }
     }
@@ -48,7 +48,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "totalComments", totalCommentsXpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -76,7 +76,7 @@ Then(
           `//a[contains(text(),'More discussions (${totalComments})')]`,
           "3s"
         );
-        driver.close()
+        driver.close();
         throw Error(err.message);
       }
 
@@ -103,7 +103,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "totalComments", totalCommentsXpath, "3s");
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -130,7 +130,7 @@ Then(
         `//a[contains(text(),'More discussions (${numberOfMoreDiscussion})')]`,
         "3s"
       );
-      driver.close()
+      driver.close();
       throw Error(err.message);
     }
 
@@ -160,7 +160,7 @@ Then(
           moreDiscCommentElementXpath + `div[${moreDiscComment}] `,
           "3s"
         );
-        driver.close()
+        driver.close();
         throw Error(err.message);
       }
 
@@ -195,8 +195,8 @@ Then(
         closeMoreDiscussionXpath,
         "3s"
       );
-      driver.close()
-      throw Error(err.message)
+      driver.close();
+      throw Error(err.message);
     }
 
     // Wait for web to be fully loaded
@@ -212,7 +212,3 @@ Then(
     }
   }
 );
-
-// After(async function () {
-//   driver.close();
-// });

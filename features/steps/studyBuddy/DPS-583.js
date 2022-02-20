@@ -1,4 +1,4 @@
-const { Then, After, setDefaultTimeout } = require("@cucumber/cucumber");
+const { Then, setDefaultTimeout } = require("@cucumber/cucumber");
 const { By, until } = require("selenium-webdriver");
 
 const { driver } = require("../commonSteps");
@@ -145,8 +145,3 @@ Then(/^check the title$/, async function () {
     throw Error(err.message);
   }
 });
-
-// Close the web driver after test
-// After(function () {
-//   driver.close();
-// });

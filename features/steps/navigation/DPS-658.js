@@ -1,4 +1,4 @@
-const { Then, After, setDefaultTimeout } = require("@cucumber/cucumber");
+const { Then, setDefaultTimeout } = require("@cucumber/cucumber");
 const { By, until } = require("selenium-webdriver");
 
 const { driver } = require("../commonSteps");
@@ -158,8 +158,3 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
 
   await driver.sleep(5000);
 });
-
-// Close the web driver after test
-// After(function () {
-//   driver.close();
-// });

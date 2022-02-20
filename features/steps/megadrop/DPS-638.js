@@ -1,4 +1,4 @@
-const { Then, After, setDefaultTimeout } = require("@cucumber/cucumber");
+const { Then, setDefaultTimeout } = require("@cucumber/cucumber");
 const { By, until } = require("selenium-webdriver");
 const assert = require("assert");
 
@@ -296,7 +296,3 @@ Then(
     await driver.switchTo().window(windows[0]);
   }
 );
-
-// After(async function () {
-//   driver.close();
-// });

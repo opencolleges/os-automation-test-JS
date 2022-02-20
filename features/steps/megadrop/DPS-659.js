@@ -70,7 +70,3 @@ Then(/^click Download Assessment$/, async function () {
 
   await driver.sleep(5000);
 });
-
-// After(async function () {
-//   this.driver.close();
-// });

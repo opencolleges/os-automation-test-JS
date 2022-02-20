@@ -1,4 +1,4 @@
-const { Then, After, setDefaultTimeout } = require("@cucumber/cucumber");
+const { Then, setDefaultTimeout } = require("@cucumber/cucumber");
 const { By, until } = require("selenium-webdriver");
 
 const { driver } = require("../commonSteps");
@@ -227,7 +227,3 @@ Then(/^check grade name, date graded, date submitted$/, async function () {
     await gradeSubmitted.isDisplayed();
   }
 });
-
-// After(async function () {
-//   this.driver.close();
-// });
