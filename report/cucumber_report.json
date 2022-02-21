@@ -1,13 +1,13 @@
 [
   {
-    "description": "    Download Assessment",
+    "description": "    Verifying Support Centre",
     "elements": [
       {
         "description": "",
-        "id": "dps-659;verify-megadrop-menu-and-search-links",
+        "id": "dps-577;verifying-support-centre",
         "keyword": "Scenario",
-        "line": 7,
-        "name": "Verify megadrop Menu and search links",
+        "line": 4,
+        "name": "Verifying support centre",
         "steps": [
           {
             "arguments": [],
@@ -19,72 +19,72 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38696673196
+              "duration": 40653432868
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "click on support menu from nav",
+            "match": {
+              "location": "features/steps/commonSteps.js:166"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15689859
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "check support centre page title is expected",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-577.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5024837816
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
+            "name": "click on all 8 support category and navigate to each page then click on support breadcrumbs to back to support centre page",
             "match": {
-              "location": "features/steps/commonSteps.js:49"
+              "location": "features/steps/supportCentre/DPS-577.js:28"
             },
             "result": {
               "status": "passed",
-              "duration": 5021598942
+              "duration": 50160156683
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "can click on Module 2",
+            "name": "expand collapse all FAQ on support category page",
             "match": {
-              "location": "features/steps/megadrop/DPS-659.js:20"
+              "location": "features/steps/supportCentre/DPS-577.js:97"
             },
             "result": {
               "status": "passed",
-              "duration": 106551702
+              "duration": 544312893
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "can click on Assessment Project",
-            "match": {
-              "location": "features/steps/megadrop/DPS-659.js:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5017774075
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "click Download Assessment",
-            "match": {
-              "location": "features/steps/megadrop/DPS-659.js:52"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10102410259
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
             "name": "logout the user",
             "match": {
               "location": "features/steps/commonSteps.js:148"
             },
             "result": {
               "status": "passed",
-              "duration": 10095946883
+              "duration": 5186655914
             }
           }
         ],
@@ -97,16 +97,16 @@
         "type": "scenario"
       }
     ],
-    "id": "dps-659",
+    "id": "dps-577",
     "line": 2,
     "keyword": "Feature",
-    "name": "DPS-659",
+    "name": "DPS-577",
     "tags": [
       {
         "name": "@chrome",
         "line": 1
       }
     ],
-    "uri": "features/DPS-659.feature"
+    "uri": "features/DPS-577.feature"
   }
 ]

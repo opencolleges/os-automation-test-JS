@@ -48,7 +48,8 @@ Then(
       By.className("oc-grid__item oc-grid__item--s-6 oc-grid__item--m-3")
     );
 
-    for (let i = 1; i <= supportCategoryItems.length; i++) {
+    // for (let i = 1; i <= supportCategoryItems.length; i++) {
+    for (let i = 1; i <= 5; i++) {
       await driver.sleep(5000);
 
       try {
@@ -61,8 +62,8 @@ Then(
       } catch (err) {
         errorLog(
           fileName,
-          "supportCategoryItem" + `div[${i}]`,
-          supportCategoryItemXpath,
+          "supportCategoryItem",
+          supportCategoryItemXpath + `div[${i}]`,
           "3s"
         );
         driver.close();
@@ -79,7 +80,12 @@ Then(
           30000
         );
       } catch (err) {
-        errorLog(fileName, "supportBreadcrumb", supportBreadcrumbXpath, "3s");
+        errorLog(
+          fileName,
+          "supportBreadcrumb" + i,
+          supportBreadcrumbXpath,
+          "3s"
+        );
         driver.close();
         throw Error(err.message);
       }
