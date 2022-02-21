@@ -22,17 +22,17 @@ const {
 
 const { login, logout, errorLog } = require("../../utilities/function");
 
-const chrome = require("selenium-webdriver/chrome");
+const firefox = require("selenium-webdriver/firefox");
 
 const screen = {
   width: 1920,
   height: 1200,
 };
-options = new chrome.Options().headless().windowSize(screen);
+options = new firefox.Options().headless().windowSize(screen);
 options.addArguments("disable-gpu");
 
 // Create a new driver for Chrome
-var driver = new Builder().forBrowser("chrome").build();
+var driver = new Builder().forBrowser("firefox").build();
 
 When("user successfully logins", async function () {
   await login(driver, usernameAlt, password);

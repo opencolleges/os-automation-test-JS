@@ -448,3 +448,13 @@ Name: supportBreadcrumb6
 Xpath: //*[@id="course_picker_span"]/a[2]
 Waiting time: 3s
 
+File: DPS-579.js
+Name: gradingPreference
+Xpath: //*[@id="page-data"]/div/div/profile/profile-sections/div/div/div[1]
+Waiting time: 3s
+
+File: DPS-579.js
+Name: gradingPreference
+Xpath: //*[@id="page-data"]/div/div/profile/profile-sections/div/div/div[1]
+Waiting time: 3s
+
