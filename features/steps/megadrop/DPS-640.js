@@ -138,12 +138,12 @@ Then(
     }
 
     // Assert each reding tag is displayed
-    for (let i = 0; i < readings.length; i++) {
-      const element = readings[i];
-      driver.executeScript("arguments[0].scrollIntoView()", element);
-      await driver.sleep(5000);
-      assert(await element.isDisplayed());
-    }
+    // for (let i = 0; i < readings.length; i++) {
+    //   const element = readings[i];
+    //   driver.executeScript("arguments[0].scrollIntoView()", element);
+    //   await driver.sleep(5000);
+    //   assert(await element.isDisplayed());
+    // }
 
     try {
       var generalCourseContent = await driver.wait(
