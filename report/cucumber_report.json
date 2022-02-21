@@ -15,25 +15,76 @@
             "line": 5,
             "name": "user successfully logins",
             "match": {
-              "location": "features/steps/commonSteps.js:36"
+              "location": "features/steps/commonSteps.js:37"
             },
             "result": {
-              "status": "failed",
-              "duration": 17309000234,
-              "error_message": "WebDriverError: unknown error: Chrome failed to start: crashed.\n  (chrome not reachable)\n  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:517:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:643:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:569:28)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              "status": "passed",
+              "duration": 38696673196
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 13,
-            "name": "logout the user",
+            "line": 8,
+            "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
             "match": {
-              "location": "features/steps/commonSteps.js:147"
+              "location": "features/steps/commonSteps.js:49"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5021598942
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "can click on Module 2",
+            "match": {
+              "location": "features/steps/megadrop/DPS-659.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106551702
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "can click on Assessment Project",
+            "match": {
+              "location": "features/steps/megadrop/DPS-659.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5017774075
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "click Download Assessment",
+            "match": {
+              "location": "features/steps/megadrop/DPS-659.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10102410259
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "logout the user",
+            "match": {
+              "location": "features/steps/commonSteps.js:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10095946883
             }
           }
         ],

@@ -7,7 +7,9 @@ Feature:DPS-590
         Then click on view more button to navigate to main FAQ page
         Then check FAQ main page title is expected
         Then check the breadscrumbs and heading display correct
-        # Then provide the feedback with YES or NO
+        # CANT SELECT BUTTON NEED TO ADD IDS
+        # Then click the first FAQ and provide the feedback with YES
+        # Then click the second FAQ and provide the feedback with NO
         Then logout the user
 
 

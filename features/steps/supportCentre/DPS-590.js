@@ -12,6 +12,8 @@ const {
   supportBreadcrumbXpath,
   gettingStartedButtonYesXpath,
   gettingStartedButtonNoXpath,
+  supportCentreFirstFAQXpath,
+  supportCentreSecondFAQXpath,
 } = require("../../../data/elementXpath");
 
 const { errorLog, elementTitleCheck } = require("../../../utilities/function");
@@ -141,32 +143,70 @@ Then(/^check the breadscrumbs and heading display correct$/, async function () {
   strictEqual(currentPageBreadScrumb, "Getting Started");
 });
 
-Then(/^provide the feedback with YES or NO$/, async function () {
-  await driver.sleep(5000);
+Then(
+  /^click the first FAQ and provide the feedback with YES$/,
+  async function () {
+    await driver.sleep(5000);
+    try {
+      var firstFAQ = await driver.wait(
+        until.elementLocated(By.xpath(supportCentreFirstFAQXpath)),
+        30000
+      );
+    } catch (err) {
+      errorLog(fileName, "firstFAQ", supportCentreFirstFAQXpath, "3s");
+      driver.close();
+      throw Error(err.message);
+    }
 
-  try {
-    var buttonYes = await driver.wait(
-      until.elementLocated(By.xpath(gettingStartedButtonYesXpath)),
-      30000
-    );
-  } catch (err) {
-    errorLog(fileName, "buttonYes", gettingStartedButtonYesXpath, "3s");
-    driver.close();
-    throw Error(err.message);
+    firstFAQ.click();
+
+    await driver.sleep(5000);
+
+    try {
+      var buttonYes = await driver.wait(
+        until.elementLocated(By.xpath(gettingStartedButtonYesXpath)),
+        30000
+      );
+    } catch (err) {
+      errorLog(fileName, "buttonYes", gettingStartedButtonYesXpath, "3s");
+      driver.close();
+      throw Error(err.message);
+    }
+
+    buttonYes.click();
   }
+);
 
-  buttonYes.click();
+Then(
+  /^click the second FAQ and provide the feedback with NO$/,
+  async function () {
+    await driver.sleep(5000);
+    try {
+      var secondFAQ = await driver.wait(
+        until.elementLocated(By.xpath(supportCentreSecondFAQXpath)),
+        30000
+      );
+    } catch (err) {
+      errorLog(fileName, "secondFAQ", supportCentreSecondFAQXpath, "3s");
+      driver.close();
+      throw Error(err.message);
+    }
 
-  try {
-    var buttonNo = await driver.wait(
-      until.elementLocated(By.xpath(gettingStartedButtonNoXpath)),
-      30000
-    );
-  } catch (err) {
-    errorLog(fileName, "buttonNo", gettingStartedButtonNoXpath, "3s");
-    driver.close();
-    throw Error(err.message);
+    secondFAQ.click();
+
+    await driver.sleep(5000);
+
+    try {
+      var buttonNo = await driver.wait(
+        until.elementLocated(By.xpath(gettingStartedButtonNoXpath)),
+        30000
+      );
+    } catch (err) {
+      errorLog(fileName, "buttonNo", gettingStartedButtonNoXpath, "3s");
+      driver.close();
+      throw Error(err.message);
+    }
+
+    buttonNo.click();
   }
-
-  buttonNo.click();
-});
+);

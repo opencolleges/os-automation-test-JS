@@ -4,7 +4,7 @@ const { By, until } = require("selenium-webdriver");
 const { driver } = require("../commonSteps");
 
 const {
-  module1Xpath,
+  module2Xpath,
   secondAssessmentXpath,
   downloadAssessmentXpath,
 } = require("../../../data/elementXpath");
@@ -17,25 +17,22 @@ const path = require("path");
 // Get file name
 const fileName = path.basename(__filename);
 
-Then(
-  /^can click on Module 1 Facilitate programs and behaviours$/,
-  async function () {
-    try {
-      var module1 = await driver.wait(
-        until.elementLocated(By.xpath(module1Xpath)),
-        30000
-      );
-    } catch (err) {
-      errorLog(fileName, "module1", module1Xpath, "3s");
-      driver.close();
-      throw Error(err.message);
-    }
-
-    module1.click();
+Then(/^can click on Module 2$/, async function () {
+  try {
+    var module2 = await driver.wait(
+      until.elementLocated(By.xpath(module2Xpath)),
+      30000
+    );
+  } catch (err) {
+    errorLog(fileName, "module2", module2Xpath, "3s");
+    driver.close();
+    throw Error(err.message);
   }
-);
 
-Then(/^can click on Assessment Knowledge Test$/, async function () {
+  module2.click();
+});
+
+Then(/^can click on Assessment Project$/, async function () {
   await driver.sleep(5000);
 
   try {

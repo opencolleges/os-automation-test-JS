@@ -17,6 +17,7 @@ const {
   trainerPositionXpath,
   profileMenuXpath,
   logoutAsAssessorXpath,
+  supportMenuXpath,
 } = require("../../data/elementXpath");
 
 const { login, logout, errorLog } = require("../../utilities/function");
@@ -160,6 +161,21 @@ Then(/^logout the user as an assessor$/, async function () {
   }
 
   logoutAsAssessor.click();
+});
+
+Then(/^click on support menu from nav$/, async function () {
+  try {
+    var supportMenu = await driver.wait(
+      until.elementLocated(By.xpath(supportMenuXpath)),
+      30000
+    );
+  } catch {
+    errorLog("commonSteps", "supportMenu", supportMenuXpath, "3s");
+    driver.close();
+    throw Error(err.message);
+  }
+
+  supportMenu.click();
 });
 
 exports.driver = driver;

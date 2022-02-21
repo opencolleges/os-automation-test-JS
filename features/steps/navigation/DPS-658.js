@@ -11,7 +11,6 @@ const {
   walkthroughAssessmentXpath,
   walkthroughAssessmentNextButtonXpath,
   walkthroughMessageNextButtonXpath,
-  walkthroughJumpInXpath,
 } = require("../../../data/elementXpath");
 
 const { errorLog } = require("../../../utilities/function");
@@ -140,21 +139,4 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
   }
 
   messageNextButton.click();
-
-  await driver.sleep(5000);
-
-  try {
-    var jumpInPopUp = await driver.wait(
-      until.elementLocated(By.xpath(walkthroughJumpInXpath)),
-      30000
-    );
-  } catch (err) {
-    errorLog(fileName, "jumpInPopUp", walkthroughJumpInXpath, "3s");
-    driver.close();
-    throw Error(err.message);
-  }
-
-  jumpInPopUp.click();
-
-  await driver.sleep(5000);
 });

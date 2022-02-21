@@ -124,7 +124,7 @@ exports.discussionsIconXpath =
   '//*[@id="discussion-container"]/div[1]/div[1]/h3';
 
 exports.secondAssessmentXpath =
-  '//*[@id="megaDropCtrkl"]/div/div/div[3]/div[2]/div/div[1]/div/div[10]/a[1]/div';
+  '//*[@id="megaDropCtrkl"]/div/div/div[3]/div[2]/div/div[1]/div/div[4]/a[1]/div';
 
 exports.assessmentTitleXpath =
   '//*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[1]/div[1]/h3';
@@ -143,12 +143,13 @@ exports.trainerPositionXpath =
   '//*[@id="page-data"]/div/div/oc-motivator/div/div/div/motivatorview/div/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[1]/div[2]/div/p[1]';
 
 exports.messageButtonXpath =
-  '//*[@id="page-data"]/div/div/motivatorview/div[1]/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[1]/div[2]/a/div';
+  '//*[@id="message-centre-menu"]/div/div[1]/div[1]/div/div/div';
 
-exports.messageSenderXpath =
-  '//*[@id="message-centre-body"]/compose/div/div/div[2]/div[1]/div/div/input';
+exports.messageReceiverXpath =
+  '//*[@id="message-centre-body"]/compose/div/div/div[2]/div[1]';
 
-exports.messageSubjectXpath = "//input[@id='message_subject']";
+exports.messageSubjectXpath =
+  '//*[@id="message-centre-body"]/compose/div/div/div[2]/div[3]';
 
 exports.subtopicNumberXpath =
   "//div[@class='right native-content-sub-topic-num os-color-mid-green os-bg-white font-size-14px']";
@@ -188,14 +189,11 @@ exports.previousPageXpath = '//*[@id="paginationSticky"]/div/div/div[1]';
 
 exports.nextPageXpath = '//*[@id="paginationSticky"]/div/div/div[2]';
 
-exports.searchButtonXpath =
-  '//*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[2]';
+exports.searchInputXpath = '//*[@id="global-search-text-field"]';
 
-exports.searchInputXpath =
-  "/html/body/div[2]/div[1]/nav-bar/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div/div/div/div/form/div/div/input";
+exports.firstLinkXpath = "/html/body/ul[2]/li[1]";
 
-exports.firstLinkXpath =
-  "/html/body/div[2]/div[1]/nav-bar/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div/div/div/div/form/div/div/div/div[2]";
+exports.supportCentreLinkXpath = "/html/body/ul[2]/li[11]";
 
 exports.myProfileXpath =
   '//*[@id="os_main_page_header"]/nav-bar/div/div/div[2]/div[2]/div[2]/div[1]/navbar-menu/div/div[1]/div/div[2]/div/div/div[4]';
@@ -280,7 +278,7 @@ exports.walkthroughAssessmentNextButtonXpath =
   '//*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[2]/div/div/div/div/div/div[2]/div/div/p[2]/a';
 
 exports.walkthroughMessageNextButtonXpath =
-  '//*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[2]/div/div/div/div/div/div[2]/div/div/p[2]/a';
+  '//*[@id="page-data"]/div/div/oc-motivator/div/div/div/motivatorview/div[2]/div[4]/div/div/div/div/div/div/div/div[1]/p[2]/a';
 
 exports.walkthroughJumpInXpath =
   '//*[@id="page-data"]/div/div/motivatorview/div[2]/div[4]/div/div[1]';
@@ -325,10 +323,10 @@ exports.gettingStartedFirstQuickLinkXpath =
   '//*[@id="page-data"]/div/div/div[4]/div/div[1]/a/div';
 
 exports.gettingStartedButtonNoXpath =
-  '//*[@id="page-data"]/div/div/div[6]/div[2]/div[1]/div[1]/div/div[1]';
+  "/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div[4]/dl[2]/dd/div[2]/div/div[1]/div[1]/div/div[1]";
 
 exports.gettingStartedButtonYesXpath =
-  '//*[@id="page-data"]/div/div/div[6]/div[2]/div[1]/div[1]/div/div[2]';
+  "/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div[4]/dl[1]/dd/div[2]/div[2]/div[1]/div[1]/div/div[2]";
 
 exports.supportCentreAssessmentBlockXpath = '//*[@id="assessments"]';
 
@@ -337,6 +335,12 @@ exports.supportCentreAsssessmentSecondArticleBlogTileXpath =
 
 exports.supportCentreAssessmentViewMoreXpath =
   '//*[@id="page-data"]/div/div/div[6]/div/div/a/div';
+
+exports.supportCentreFirstFAQXpath =
+  '//*[@id="page-data"]/div/div/div[4]/dl[1]';
+
+exports.supportCentreSecondFAQXpath =
+  '//*[@id="page-data"]/div/div/div[4]/dl[2]';
 // --------------------Special path for JS operation--------------------
 exports.jsDropFile =
   "var c=arguments,b=c[0],k=c[1];c=c[2];for(var d=b.ownerDocument||document,l=0;;){var e=b.getBoundingClientRect(),g=e.left+(k||e.width/2),h=e.top+(c||e.height/2),f=d.elementFromPoint(g,h);if(f&&b.contains(f))break;if(1<++l)throw b=Error('Element not interactable'),b.code=15,b;b.scrollIntoView({behavior:'instant',block:'center',inline:'center'})}var a=d.createElement('INPUT');a.setAttribute('type','file');a.setAttribute('multiple','');a.setAttribute('style','position:fixed;z-index:2147483647;left:0;top:0;');a.onchange=function(b){a.parentElement.removeChild(a);b.stopPropagation();var c={constructor:DataTransfer,effectAllowed:'all',dropEffect:'none',types:['Files'],files:a.files,setData:function(){},getData:function(){},clearData:function(){},setDragImage:function(){}};window.DataTransferItemList&&(c.items=Object.setPrototypeOf(Array.prototype.map.call(a.files,function(a){return{constructor:DataTransferItem,kind:'file',type:a.type,getAsFile:function(){return a},getAsString:function(b){var c=new FileReader;c.onload=function(a){b(a.target.result)};c.readAsText(a)}}}),{constructor:DataTransferItemList,add:function(){},clear:function(){},remove:function(){}}));['dragenter','dragover','drop'].forEach(function(a){var b=d.createEvent('DragEvent');b.initMouseEvent(a,!0,!0,d.defaultView,0,0,0,g,h,!1,!1,!1,!1,0,null);Object.setPrototypeOf(b,null);b.dataTransfer=c;Object.setPrototypeOf(b,DragEvent.prototype);f.dispatchEvent(b)})};d.documentElement.appendChild(a);a.getBoundingClientRect();return a; ";

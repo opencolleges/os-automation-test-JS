@@ -4,7 +4,6 @@ const { By, until } = require("selenium-webdriver");
 const { driver } = require("../commonSteps");
 
 const {
-  supportMenuXpath,
   supportBreadcrumbXpath,
   supportCategoryItemXpath,
   supportCentreFAQXpath,
@@ -19,21 +18,6 @@ const path = require("path");
 const fileName = path.basename(__filename);
 
 setDefaultTimeout(120 * 1000);
-
-Then(/^click on support menu from nav$/, async function () {
-  try {
-    var supportMenu = await driver.wait(
-      until.elementLocated(By.xpath(supportMenuXpath)),
-      30000
-    );
-  } catch {
-    errorLog(fileName, "supportMenu", supportMenuXpath, "3s");
-    driver.close();
-    throw Error(err.message);
-  }
-
-  supportMenu.click();
-});
 
 Then(/^check support centre page title is expected$/, async function () {
   await driver.sleep(5000);
