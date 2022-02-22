@@ -5,7 +5,8 @@ Feature:DPS-658
         When user successfully logins
 
     Scenario: Last visited page link and Walkthrough
-      Then click on last visited page link
-      Then back to home page
-      Then click on OpenSpace Tour to test the Walkthrough
+      # New Dashboard on UAT
+      # Then click on last visited page link
+      # Then back to home page
+      # Then click on OpenSpace Tour to test the Walkthrough
       Then logout the user
