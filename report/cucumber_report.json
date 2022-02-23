@@ -1,13 +1,13 @@
 [
   {
-    "description": "    Verifying FAQ main page and FAQ feedback",
+    "description": "  megadrop menu and subtopic navigation",
     "elements": [
       {
         "description": "",
-        "id": "dps-590;verifying-phone-number-and-payment-history.",
+        "id": "dps-664;hover-over-trainer-tooltip-in-discussion-panel-(hover-on-image-or-name-opens-up-tooltip)",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "Verifying phone number and payment history.",
+        "line": 7,
+        "name": "Hover over trainer tooltip in Discussion Panel (Hover on Image or Name Opens up Tooltip)",
         "steps": [
           {
             "arguments": [],
@@ -19,86 +19,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39339412166
+              "duration": 45650643222
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
-            "name": "click on getting started support category from support page",
+            "line": 10,
+            "name": "click and hover on the profile menu",
             "match": {
-              "location": "features/steps/supportCentre/DPS-590.js:31"
+              "location": "features/steps/commonSteps.js:124"
             },
             "result": {
               "status": "passed",
-              "duration": 5100554007
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "click on view more button to navigate to main FAQ page",
-            "match": {
-              "location": "features/steps/supportCentre/DPS-590.js:64"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5022233260
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "check FAQ main page title is expected",
-            "match": {
-              "location": "features/steps/supportCentre/DPS-590.js:84"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5033772096
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "check the breadscrumbs and heading display correct",
-            "match": {
-              "location": "features/steps/supportCentre/DPS-590.js:90"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 53944074
+              "duration": 10156689511
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "click the first FAQ and provide the feedback with YES",
+            "name": "click Message Centre",
             "match": {
-              "location": "features/steps/supportCentre/DPS-590.js:146"
+              "location": "features/steps/messageCenter/DPS-664.js:22"
             },
             "result": {
-              "status": "failed",
-              "duration": 40018438217,
-              "error_message": "Error: Waiting for element to be located By(xpath, /html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div[4]/dl[1]/dd/div[2]/div[2]/div[1]/div[1]/div/div[2])\nWait timed out after 30003ms\n    at World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/supportCentre/DPS-590.js:173:13)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              "status": "passed",
+              "duration": 28806365
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 12,
-            "name": "click the second FAQ and provide the feedback with NO",
+            "name": "message Centre Compose screen with all details preloaded for to, subject and student id",
             "match": {
-              "location": "features/steps/supportCentre/DPS-590.js:180"
+              "location": "features/steps/messageCenter/DPS-664.js:37"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 10070382431
             }
           },
           {
@@ -110,8 +70,8 @@
               "location": "features/steps/commonSteps.js:148"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 6738932823
             }
           }
         ],
@@ -124,16 +84,16 @@
         "type": "scenario"
       }
     ],
-    "id": "dps-590",
+    "id": "dps-664",
     "line": 2,
     "keyword": "Feature",
-    "name": "DPS-590",
+    "name": "DPS-664",
     "tags": [
       {
         "name": "@chrome",
         "line": 1
       }
     ],
-    "uri": "features/DPS-590.feature"
+    "uri": "features/DPS-664.feature"
   }
 ]
