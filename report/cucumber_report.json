@@ -1,13 +1,13 @@
 [
   {
-    "description": "    Verifying Support Centre",
+    "description": "    Verifying FAQ main page and FAQ feedback",
     "elements": [
       {
         "description": "",
-        "id": "dps-577;verifying-support-centre",
+        "id": "dps-590;verifying-phone-number-and-payment-history.",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Verifying support centre",
+        "name": "Verifying phone number and payment history.",
         "steps": [
           {
             "arguments": [],
@@ -19,72 +19,99 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40653432868
+              "duration": 39339412166
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "click on support menu from nav",
+            "name": "click on getting started support category from support page",
             "match": {
-              "location": "features/steps/commonSteps.js:166"
+              "location": "features/steps/supportCentre/DPS-590.js:31"
             },
             "result": {
               "status": "passed",
-              "duration": 15689859
+              "duration": 5100554007
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "check support centre page title is expected",
+            "name": "click on view more button to navigate to main FAQ page",
             "match": {
-              "location": "features/steps/supportCentre/DPS-577.js:22"
+              "location": "features/steps/supportCentre/DPS-590.js:64"
             },
             "result": {
               "status": "passed",
-              "duration": 5024837816
+              "duration": 5022233260
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "click on all 8 support category and navigate to each page then click on support breadcrumbs to back to support centre page",
+            "name": "check FAQ main page title is expected",
             "match": {
-              "location": "features/steps/supportCentre/DPS-577.js:28"
+              "location": "features/steps/supportCentre/DPS-590.js:84"
             },
             "result": {
               "status": "passed",
-              "duration": 50160156683
+              "duration": 5033772096
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "expand collapse all FAQ on support category page",
+            "name": "check the breadscrumbs and heading display correct",
             "match": {
-              "location": "features/steps/supportCentre/DPS-577.js:97"
+              "location": "features/steps/supportCentre/DPS-590.js:90"
             },
             "result": {
               "status": "passed",
-              "duration": 544312893
+              "duration": 53944074
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
+            "line": 11,
+            "name": "click the first FAQ and provide the feedback with YES",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-590.js:146"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 40018438217,
+              "error_message": "Error: Waiting for element to be located By(xpath, /html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div[4]/dl[1]/dd/div[2]/div[2]/div[1]/div[1]/div/div[2])\nWait timed out after 30003ms\n    at World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/supportCentre/DPS-590.js:173:13)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "click the second FAQ and provide the feedback with NO",
+            "match": {
+              "location": "features/steps/supportCentre/DPS-590.js:180"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
             "name": "logout the user",
             "match": {
               "location": "features/steps/commonSteps.js:148"
             },
             "result": {
-              "status": "passed",
-              "duration": 5186655914
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -97,16 +124,16 @@
         "type": "scenario"
       }
     ],
-    "id": "dps-577",
+    "id": "dps-590",
     "line": 2,
     "keyword": "Feature",
-    "name": "DPS-577",
+    "name": "DPS-590",
     "tags": [
       {
         "name": "@chrome",
         "line": 1
       }
     ],
-    "uri": "features/DPS-577.feature"
+    "uri": "features/DPS-590.feature"
   }
 ]
