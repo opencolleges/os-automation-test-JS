@@ -139,8 +139,7 @@ Then(
       throw Error(err.message);
     }
 
-    // Assert each reading tag is displayed
-    // UNSTABLE, NEED INVESTIGATE
+    // Assert each reding tag is displayed
     // for (let i = 0; i < readings.length; i++) {
     //   const element = readings[i];
     //   driver.executeScript("arguments[0].scrollIntoView()", element);
