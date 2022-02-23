@@ -18,8 +18,8 @@ jobs:
           name: Check Versions
           command: |
             node --version
-            google-chrome --version
-            chromedriver --version
+            firefox --version
+            geckodriver --version
       - run: 
           command: | 
             npm install
