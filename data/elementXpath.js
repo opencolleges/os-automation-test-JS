@@ -322,11 +322,9 @@ exports.gettingStartedCurrentBreadScrumbXpath =
 exports.gettingStartedFirstQuickLinkXpath =
   '//*[@id="page-data"]/div/div/div[4]/div/div[1]/a/div';
 
-exports.gettingStartedButtonNoXpath =
-  "/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div[4]/dl[2]/dd/div[2]/div/div[1]/div[1]/div/div[1]";
+exports.gettingStartedButtonNoXpath = '//*[@id="no_335"]';
 
-exports.gettingStartedButtonYesXpath =
-  "/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div[4]/dl[1]/dd/div[2]/div[2]/div[1]/div[1]/div/div[2]";
+exports.gettingStartedButtonYesXpath = '//*[@id="yes_71"]';
 
 exports.supportCentreAssessmentBlockXpath = '//*[@id="assessments"]';
 
