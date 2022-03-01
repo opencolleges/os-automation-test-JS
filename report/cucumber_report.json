@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 42330902118
+              "duration": 40669278257
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5010722306
+              "duration": 5005577409
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5020525143
+              "duration": 5033169946
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7777000918
+              "duration": 6744215337
             }
           },
           {
@@ -71,7 +71,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10022640092
+              "duration": 10024798298
             }
           },
           {
@@ -84,7 +84,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4846136624
+              "duration": 2079609140
             }
           }
         ],
@@ -114,10 +114,10 @@
     "elements": [
       {
         "description": "",
-        "id": "dps-590;verifying-phone-number-and-payment-history.",
+        "id": "dps-577;verifying-support-centre",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Verifying phone number and payment history.",
+        "name": "Verifying support centre",
         "steps": [
           {
             "arguments": [],
@@ -129,128 +129,72 @@
             },
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 35861794219
-=======
-              "duration": 39339412166
->>>>>>> d60a4d2142745291d96a1b028e254129020c0f91
+              "duration": 35862736248
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "click on getting started support category from support page",
+            "name": "click on support menu from nav",
             "match": {
-              "location": "features/steps/supportCentre/DPS-590.js:31"
+              "location": "features/steps/commonSteps.js:166"
             },
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 8803506
-=======
-              "duration": 5100554007
->>>>>>> d60a4d2142745291d96a1b028e254129020c0f91
+              "duration": 7159882
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "click on view more button to navigate to main FAQ page",
+            "name": "check support centre page title is expected",
             "match": {
-              "location": "features/steps/supportCentre/DPS-590.js:64"
+              "location": "features/steps/supportCentre/DPS-577.js:22"
             },
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 5022280632
-=======
-              "duration": 5022233260
->>>>>>> d60a4d2142745291d96a1b028e254129020c0f91
+              "duration": 5023909489
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "check FAQ main page title is expected",
+            "name": "click on all 8 support category and navigate to each page then click on support breadcrumbs to back to support centre page",
             "match": {
-              "location": "features/steps/supportCentre/DPS-590.js:84"
+              "location": "features/steps/supportCentre/DPS-577.js:28"
             },
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 50147039852
-=======
-              "duration": 5033772096
->>>>>>> d60a4d2142745291d96a1b028e254129020c0f91
+              "duration": 50098268220
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "check the breadscrumbs and heading display correct",
+            "name": "expand collapse all FAQ on support category page",
             "match": {
-<<<<<<< HEAD
               "location": "features/steps/supportCentre/DPS-577.js:98"
             },
             "result": {
               "status": "passed",
-              "duration": 1252544320
-=======
-              "location": "features/steps/supportCentre/DPS-590.js:90"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 53944074
->>>>>>> d60a4d2142745291d96a1b028e254129020c0f91
+              "duration": 1168252764
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
-            "name": "click the first FAQ and provide the feedback with YES",
-            "match": {
-              "location": "features/steps/supportCentre/DPS-590.js:146"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 40018438217,
-              "error_message": "Error: Waiting for element to be located By(xpath, /html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div[4]/dl[1]/dd/div[2]/div[2]/div[1]/div[1]/div/div[2])\nWait timed out after 30003ms\n    at World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/supportCentre/DPS-590.js:173:13)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "click the second FAQ and provide the feedback with NO",
-            "match": {
-              "location": "features/steps/supportCentre/DPS-590.js:180"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
+            "line": 10,
             "name": "logout the user",
             "match": {
               "location": "features/steps/commonSteps.js:148"
             },
             "result": {
-<<<<<<< HEAD
               "status": "passed",
-              "duration": 5513052008
-=======
-              "status": "skipped",
-              "duration": 0
->>>>>>> d60a4d2142745291d96a1b028e254129020c0f91
+              "duration": 5472777965
             }
           }
         ],
@@ -263,17 +207,16 @@
         "type": "scenario"
       }
     ],
-    "id": "dps-590",
+    "id": "dps-577",
     "line": 2,
     "keyword": "Feature",
-    "name": "DPS-590",
+    "name": "DPS-577",
     "tags": [
       {
         "name": "@chrome",
         "line": 1
       }
     ],
-<<<<<<< HEAD
     "uri": "features/DPS-577.feature"
   },
   {
@@ -296,7 +239,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36492398621
+              "duration": 36553661105
             }
           },
           {
@@ -309,7 +252,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10030434795
+              "duration": 10035876455
             }
           },
           {
@@ -322,7 +265,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9803959
+              "duration": 11450299
             }
           },
           {
@@ -335,7 +278,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5017021950
+              "duration": 5016363006
             }
           },
           {
@@ -348,7 +291,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38631849
+              "duration": 32440678
             }
           },
           {
@@ -361,7 +304,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5012690667
+              "duration": 5008872884
             }
           },
           {
@@ -373,9 +316,8 @@
               "location": "features/steps/myProfile/DPS-579.js:132"
             },
             "result": {
-              "status": "failed",
-              "duration": 30027622244,
-              "error_message": "Error: Waiting for element to be located By(xpath, //*[@id=\"page-data\"]/div/div/profile/profile-sections/div/div/div[1])\nWait timed out after 30026ms\n    at World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/myProfile/DPS-579.js:143:13)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              "status": "passed",
+              "duration": 2743305141
             }
           },
           {
@@ -387,8 +329,8 @@
               "location": "features/steps/myProfile/DPS-579.js:186"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 316251074
             }
           },
           {
@@ -400,8 +342,8 @@
               "location": "features/steps/myProfile/DPS-579.js:201"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 33234043.999999996
             }
           },
           {
@@ -413,8 +355,8 @@
               "location": "features/steps/commonSteps.js:148"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 6240387058
             }
           }
         ],
@@ -458,9 +400,8 @@
               "location": "features/steps/commonSteps.js:37"
             },
             "result": {
-              "status": "failed",
-              "duration": 637629317,
-              "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
+              "status": "passed",
+              "duration": 35636858006
             }
           },
           {
@@ -472,8 +413,8 @@
               "location": "features/steps/supportCentre/DPS-581.js:24"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5020498530
             }
           },
           {
@@ -485,8 +426,8 @@
               "location": "features/steps/supportCentre/DPS-581.js:63"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 518617100.00000006
             }
           },
           {
@@ -498,8 +439,8 @@
               "location": "features/steps/supportCentre/DPS-581.js:67"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5491389880
             }
           },
           {
@@ -511,8 +452,8 @@
               "location": "features/steps/supportCentre/DPS-581.js:110"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1010059074
             }
           },
           {
@@ -524,8 +465,8 @@
               "location": "features/steps/supportCentre/DPS-581.js:151"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 525141252
             }
           },
           {
@@ -537,8 +478,8 @@
               "location": "features/steps/commonSteps.js:148"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5226308104
             }
           }
         ],
@@ -582,9 +523,8 @@
               "location": "features/steps/commonSteps.js:37"
             },
             "result": {
-              "status": "failed",
-              "duration": 1856849,
-              "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
+              "status": "passed",
+              "duration": 36340662784
             }
           },
           {
@@ -596,8 +536,8 @@
               "location": "features/steps/navigation/DPS-573.js:42"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5026482870
             }
           },
           {
@@ -609,8 +549,8 @@
               "location": "features/steps/studyBuddy/DPS-583.js:22"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 7697007
             }
           },
           {
@@ -622,8 +562,8 @@
               "location": "features/steps/studyBuddy/DPS-583.js:39"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 828510533
             }
           },
           {
@@ -635,8 +575,9 @@
               "location": "features/steps/studyBuddy/DPS-583.js:56"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 5023328610,
+              "error_message": "Error: Title is not correct\n    at World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/studyBuddy/DPS-583.js:71:11)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
             }
           },
           {
@@ -733,7 +674,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2873606,
+              "duration": 698725688,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
             }
           },
@@ -883,7 +824,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1339160,
+              "duration": 3037009,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
             }
           },
@@ -1007,7 +948,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1751122,
+              "duration": 2409236,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
             }
           },
@@ -1118,7 +1059,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2491302,
+              "duration": 2294643,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
             }
           },
@@ -1242,7 +1183,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 3098149,
+              "duration": 1592528,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
             }
           },
@@ -1366,7 +1307,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1956128,
+              "duration": 2353394,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
             }
           },
@@ -1464,7 +1405,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1419279,
+              "duration": 3104303,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
             }
           },
@@ -1640,7 +1581,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1527428,
+              "duration": 1898223,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
             }
           },
@@ -1803,27 +1744,14 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1018286,
+              "duration": 1731548,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "check profile picture, trainer name and position",
-            "match": {
-              "location": "features/steps/commonSteps.js:66"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
+            "line": 10,
             "name": "check document title for OpenSpace 2.0",
             "match": {
               "location": "features/steps/megadrop/DPS-640.js:30"
@@ -1836,7 +1764,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
+            "line": 11,
             "name": "can open megadrop course Menu when click on Menu icon on Top navigation",
             "match": {
               "location": "features/steps/commonSteps.js:49"
@@ -1849,7 +1777,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
+            "line": 12,
             "name": "check activity, reading and resource activities inside course content",
             "match": {
               "location": "features/steps/megadrop/DPS-640.js:34"
@@ -1862,10 +1790,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 13,
             "name": "correct subtopic number is present first on subtopic page and click print pdf",
             "match": {
-              "location": "features/steps/megadrop/DPS-640.js:171"
+              "location": "features/steps/megadrop/DPS-640.js:170"
             },
             "result": {
               "status": "skipped",
@@ -1875,7 +1803,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 13,
+            "line": 14,
             "name": "logout the user",
             "match": {
               "location": "features/steps/commonSteps.js:148"
@@ -1927,7 +1855,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1234490,
+              "duration": 1878785,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
             }
           },
@@ -2025,53 +1953,14 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1249459,
+              "duration": 3011732,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "click on last visited page link",
-            "match": {
-              "location": "features/steps/navigation/DPS-658.js:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "back to home page",
-            "match": {
-              "location": "features/steps/navigation/DPS-658.js:40"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "click on OpenSpace Tour to test the Walkthrough",
-            "match": {
-              "location": "features/steps/navigation/DPS-658.js:44"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
+            "line": 12,
             "name": "logout the user",
             "match": {
               "location": "features/steps/commonSteps.js:148"
@@ -2123,7 +2012,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 3017526,
+              "duration": 1069781,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
             }
           },
@@ -2234,27 +2123,14 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1296689,
+              "duration": 1240788,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "check profile picture, trainer name and position",
-            "match": {
-              "location": "features/steps/commonSteps.js:66"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
+            "line": 10,
             "name": "click and hover on the profile menu",
             "match": {
               "location": "features/steps/commonSteps.js:124"
@@ -2267,7 +2143,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
+            "line": 11,
             "name": "click Message Centre",
             "match": {
               "location": "features/steps/messageCenter/DPS-664.js:22"
@@ -2280,7 +2156,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
+            "line": 12,
             "name": "message Centre Compose screen with all details preloaded for to, subject and student id",
             "match": {
               "location": "features/steps/messageCenter/DPS-664.js:37"
@@ -2293,7 +2169,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 13,
             "name": "logout the user",
             "match": {
               "location": "features/steps/commonSteps.js:148"
@@ -2345,7 +2221,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1528715,
+              "duration": 1437570,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:42:3)"
             }
           },
@@ -2469,7 +2345,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1455693,
+              "duration": 1608412,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:42:3)"
             }
           },
@@ -2606,7 +2482,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2347248,
+              "duration": 1873933,
               "error_message": "NoSuchSessionError: Tried to run command without establishing a connection\n    at Object.throwDecodedError (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/node_modules/selenium-webdriver/lib/webdriver.js:735:17)\n    at async exports.login (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/utilities/function.js:72:3)\n    at async World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/commonSteps.js:38:3)"
             }
           },
@@ -2709,8 +2585,5 @@
       }
     ],
     "uri": "features/DPS-942.feature"
-=======
-    "uri": "features/DPS-590.feature"
->>>>>>> d60a4d2142745291d96a1b028e254129020c0f91
   }
 ]
