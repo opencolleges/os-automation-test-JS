@@ -458,3 +458,88 @@ Name: title
 Xpath: By.css('h1')
 Waiting time: 6s
 
+File: DPS-583.js
+Name: title
+Xpath: By.css('h1')
+Waiting time: 6s
+
+File: DPS-583.js
+Name: title
+Xpath: By.css('h1')
+Waiting time: 6s
+
+File: DPS-583.js
+Name: title
+Xpath: By.css('h1')
+Waiting time: 6s
+
+File: DPS-583.js
+Name: title
+Xpath: By.css('h1')
+Waiting time: 6s
+
+File: DPS-583.js
+Name: questionDetail
+Xpath: //*[@id="faq_study-buddy_1"]
+Waiting time: 3s
+
+File: DPS-583.js
+Name: questionList
+Xpath: By.css('dl')
+Waiting time: 3s
+
+File: DPS-583.js
+Name: viewMoreQuestionsButton
+Xpath: //*[@id="page-data"]/div/div/div[5]/div/div/a
+Waiting time: 3s
+
+File: DPS-583.js
+Name: title
+Xpath: By.css('h1')
+Waiting time: 3s
+
+File: null
+Name: otherLinks
+Xpath: //div[@class='menu-behavior-link mgn-t5 mgn-l5 mgn-r5 pad-10']
+Waiting time: 3s
+
+File: null
+Name: otherLinks
+Xpath: //div[@class='menu-behavior-link mgn-t5 mgn-l5 mgn-r5 pad-10']
+Waiting time: 3s
+
+File: null
+Name: otherLinks
+Xpath: //div[@class='menu-behavior-link mgn-t5 mgn-l5 mgn-r5 pad-10']
+Waiting time: 3s
+
+File: DPS-583.js
+Name: title
+Xpath: By.css('h1')
+Waiting time: 6s
+
+File: DPS-583.js
+Name: questionDetail
+Xpath: //*[@id="faq_study-buddy_1"]
+Waiting time: 3s
+
+File: DPS-583.js
+Name: questionList
+Xpath: By.css('dl')
+Waiting time: 3s
+
+File: DPS-638.js
+Name: firstSubTopic
+Xpath: //*[@id="megaDropCtrkl"]/div/div/div[3]/div[3]/div/div[1]/div/div[1]
+Waiting time: 3s
+
+File: null
+Name: otherLinks
+Xpath: //div[@class='menu-behavior-link mgn-t5 mgn-l5 mgn-r5 pad-10']
+Waiting time: 3s
+
+File: DPS-942.js
+Name: firstLink
+Xpath: /html/body/ul[2]/li[1]
+Waiting time: 3s
+

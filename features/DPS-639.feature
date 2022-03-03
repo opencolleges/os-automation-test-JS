@@ -13,4 +13,4 @@ Feature:DPS-639
         Then can click on quiz and check content is loading right
         Then can open megadrop course Menu when click on Menu icon on Top navigation
         Then can click on assessment and check content is loading right
-        Then logout the user
+        # Then logout the user
