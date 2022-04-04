@@ -7,7 +7,7 @@
     "single": "./node_modules/.bin/cucumber-js ./features/${npm_config_testFile}.feature -f json:report/cucumber_report.json",
     "test": "./node_modules/.bin/cucumber-js ./features -f json:report/cucumber_report.json",
     "test-junit": "./node_modules/.bin/cucumber-js ./features --format=json | node_modules/.bin/cucumber-junit > report/results.xml",
-    "test-junit-single": "./node_modules/.bin/cucumber-js ./features/DPS-664.feature --format=json | node_modules/.bin/cucumber-junit > report/results.xml",
+    "test-junit-single": "./node_modules/.bin/cucumber-js ./features/DPS-639.feature --format=json | node_modules/.bin/cucumber-junit > report/results.xml",
     "test-junit-json": "./node_modules/.bin/cucumber-js ./features/DPS-664.feature --format=json:report/cucumber_report.json",
     "report": "node index.js"
   },
@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "@cucumber/cucumber": "^8.0.0-rc.1",
-    "chromedriver": "^98.0.0"
+    "chromedriver": "^100.0.0"
   }
 }
