@@ -1,346 +1,7 @@
-File: DPS-577.js
-Name: supportBreadcrumb
-Xpath: //*[@id="course_picker_span"]/a[2]
-Waiting time: 3s
-
-File: DPS-577.js
-Name: supportBreadcrumb
-Xpath: //*[@id="course_picker_span"]/a[2]
-Waiting time: 3s
-
-File: DPS-577.js
-Name: supportBreadcrumb
-Xpath: //*[@id="course_picker_span"]/a[2]
-Waiting time: 3s
-
-File: DPS-577.js
-Name: supportCategoryItemdiv[9]
-Xpath: //*[@id="support-centre-react-div"]/div/
-Waiting time: 3s
-
-File: DPS-577.js
-Name: supportCategoryItemdiv[9]
-Xpath: //*[@id="support-centre-react-div"]/div/
-Waiting time: 3s
-
-File: DPS-577.js
-Name: supportCategoryItemdiv[9]
-Xpath: //*[@id="support-centre-react-div"]/div/
-Waiting time: 3s
-
-File: DPS-581.js
-Name: title
-Xpath: By.css("h1")
-Waiting time: 3s
-
-File: DPS-581.js
-Name: title
-Xpath: By.css("h1")
-Waiting time: 3s
-
-File: DPS-581.js
-Name: title
-Xpath: By.css("h1")
-Waiting time: 3s
-
-File: commonSteps
-Name: toolTip
-Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/motivatorview/div/div/div[2]/div[1]/div[1]/div/div/div/div[2]
-Waiting time: 5s
-
-File: commonSteps
-Name: toolTip
-Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/motivatorview/div/div/div[2]/div[1]/div[1]/div/div/div/div[2]
-Waiting time: 10s
-
-File: DPS-581.js
-Name: assessmentBlock
-Xpath: //*[@id="assessments"]
-Waiting time: 3s
-
-File: DPS-581.js
-Name: assessmentBlock
-Xpath: //*[@id="assessments"]
-Waiting time: 3s
-
-File: DPS-581.js
-Name: assessmentBlock
-Xpath: //*[@id="assessments"]
-Waiting time: 3s
-
-File: DPS-581.js
-Name: assessmentBlock
-Xpath: //*[@id="assessments"]
-Waiting time: 3s
-
-File: DPS-581.js
-Name: assessmentBlock
-Xpath: //*[@id="assessments"]
-Waiting time: 3s
-
-File: DPS-581.js
-Name: assessmentBlock
-Xpath: //*[@id="assessments"]
-Waiting time: 3s
-
-File: DPS-583.js
-Name: studyBuddy
-Xpath: //*[@id="study-buddy"]
-Waiting time: 10s
-
-File: DPS-577.js
-Name: title
-Xpath: By.css("h1")
-Waiting time: 3s
 
 File: DPS-573.js
-Name: supportMenu
-Xpath: By.className('mgn-b5')
-Waiting time: 3s
-
-File: DPS-588.js
-Name: assignmentName
-Xpath: *[@id="grades_dt_id13"]/div[1]/div[1]
-Waiting time: 3s
-
-File: DPS-588.js
-Name: collapseButton
-Xpath: //*[@id="grades_dt_detail_id130"]
-Waiting time: 3s
-
-File: DPS-588.js
-Name: collapseButton
-Xpath: //*[@id="grades_dt_detail_id130"]
-Waiting time: 3s
-
-File: commonSteps
-Name: toolTip
-Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/motivatorview/div/div/div[2]/div[1]/div[1]/div/div/div/div[2]
-Waiting time: 10s
-
-File: commonSteps
-Name: toolTip
-Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/motivatorview/div/div/div[2]/div[1]/div[1]/div/div/div/div[2]
-Waiting time: 10s
-
-File: commonSteps
-Name: name
-Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/motivatorview/div/div/div[2]/div[1]/div[1]/div/div/div/div[1]/div[2]/div/h6
-Waiting time: 3s
-
-File: DPS-658.js
-Name: lastVisitedLink
-Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/motivatorview/div/div/div[2]/div[3]/div[1]/p/a/span
-Waiting time: 3s
-
-File: commonSteps
-Name: toolTip
-Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/div/motivatorview/div/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[2]
-Waiting time: 10s
-
-File: commonSteps
-Name: toolTip
-Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/div/motivatorview/div/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[2]
-Waiting time: 10s
-
-File: DPS-588.js
-Name: assignmentName
-Xpath: *[@id="grades_dt_id1"]/div[1]/div[1]
-Waiting time: 3s
-
-File: DPS-639.js
-Name: teamUpBuddy
-Xpath: //*[@id="discussion-container"]/div[1]/div[2]/div/a/span
-Waiting time: 6s
-
-File: DPS-639.js
-Name: assessmentTitle
-Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[1]/div[1]/h3
-Waiting time: 3s
-
-File: commonSteps
-Name: toolTip
-Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/div/motivatorview/div/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[2]
-Waiting time: 10s
-
-File: DPS-658.js
-Name: lastVisitedLink
-Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/div/motivatorview/div/div[1]/div[2]/div[3]/div/div/p/a/span
-Waiting time: 3s
-
-File: DPS-659.js
-Name: downloadAssessment
-Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]
-Waiting time: 3s
-
-File: DPS-588.js
-Name: pageTitle
-Xpath: By.css('h1')
-Waiting time: 6s
-
-File: commonSteps
-Name: toolTip
-Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/div/motivatorview/div/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[2]
-Waiting time: 10s
-
-File: DPS-658.js
-Name: openSpaceTour
-Xpath: //*[@id="megadrop-onboarding-button"]/a
-Waiting time: 3s
-
-File: DPS-658.js
-Name: openSpaceTour
-Xpath: //*[@id="megadrop-onboarding-button"]/a
-Waiting time: 3s
-
-File: DPS-658.js
-Name: openSpaceTour
-Xpath: //*[@id="megadrop-onboarding-button"]/a
-Waiting time: 3s
-
-File: DPS-577.js
-Name: FAQ
-Xpath: //*[@id="page-data"]/div[2]/div[2]/div/dl/dd[6]
-Waiting time: 3s
-
-File: DPS-577.js
-Name: FAQ
-Xpath: //*[@id="page-data"]/div[2]/div[2]/div/dl/dd[6]
-Waiting time: 3s
-
-File: DPS-590.js
-Name: firstQuickLink
-Xpath: //*[@id="page-data"]/div/div/div[4]/div/div[1]/a/div
-Waiting time: 3s
-
-File: DPS-590.js
-Name: buttonYes
-Xpath: //*[@id="page-data"]/div/div/div[6]/div[2]/div[1]/div[1]/div/div[2]
-Waiting time: 3s
-
-File: DPS-658.js
-Name: menu
-Xpath: //*[@id="overlayOpen"]/div
-Waiting time: 3s
-
-File: DPS-658.js
-Name: menu
-Xpath: //*[@id="overlayOpen"]/div
-Waiting time: 3s
-
-File: DPS-659.js
-Name: downloadAssessment
-Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]
-Waiting time: 3s
-
-File: DPS-658.js
-Name: lastVisitedLink
-Xpath: //*[@id="page-data"]/div/div/oc-motivator/div/div/div/motivatorview/div/div[1]/div[2]/div[3]/div/div/p/a/span
-Waiting time: 3s
-
-File: DPS-658.js
-Name: messageNextButton
-Xpath: //*[@id="page-data"]/div/div/motivatorview/div[2]/div[4]/div/div/div/div/div/div/div/div[1]/p[2]/a
-Waiting time: 3s
-
-File: DPS-658.js
-Name: messageNextButton
-Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[2]/div/div/div/div/div/div[2]/div/div/p[2]/a
-Waiting time: 3s
-
-File: DPS-659.js
-Name: downloadAssessment
-Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]
-Waiting time: 3s
-
-File: DPS-659.js
-Name: downloadAssessment
-Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]
-Waiting time: 3s
-
-File: DPS-659.js
-Name: downloadAssessment
-Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]/a
-Waiting time: 3s
-
-File: DPS-659.js
-Name: downloadAssessment
-Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]/a
-Waiting time: 3s
-
-File: DPS-664.js
-Name: messageButton
-Xpath: //*[@id="page-data"]/div/div/motivatorview/div[1]/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[1]/div[2]/a/div
-Waiting time: 3s
-
-File: DPS-579.js
-Name: gradingPreference
-Xpath: //*[@id="page-data"]/div/div/profile/profile-sections/div/div/div[1]
-Waiting time: 3s
-
-File: DPS-573.js
-Name: title
-Xpath: By.css('title')
-Waiting time: 3s
-
-File: DPS-639.js
-Name: secondAssessment
-Xpath: //*[@id="megaDropCtrkl"]/div/div/div[3]/div[2]/div/div[1]/div/div[10]/a[1]/div
-Waiting time: 3s
-
-File: DPS-639.js
-Name: secondAssessment
-Xpath: //*[@id="megaDropCtrkl"]/div/div/div[3]/div[2]/div/div[1]/div/div[10]/a[1]/div
-Waiting time: 3s
-
-File: DPS-573.js
-Name: title
-Xpath: By.css('title')
-Waiting time: 3s
-
-File: DPS-659.js
-Name: downloadAssessment
-Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[1]/div/div[1]/div[2]/div[2]/div[1]/a
-Waiting time: 3s
-
-File: DPS-573.js
-Name: title
-Xpath: By.css('title')
-Waiting time: 3s
-
-File: DPS-664.js
-Name: messageButton
-Xpath: //*[@id="page-data"]/div/div/motivatorview/div[1]/div[1]/div[2]/div[1]/div[1]/div/div[1]/div/div/div[1]/div[2]/a/div
-Waiting time: 3s
-
-File: DPS-658.js
-Name: messageNextButton
-Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[2]/div/div/div/div/div/div[2]/div/div/p[2]/a
-Waiting time: 3s
-
-File: DPS-642.js
-Name: searchInput
-Xpath: /html/body/div[2]/div[1]/nav-bar/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div/div/div/div/form/div/div/input
-Waiting time: 3s
-
-File: DPS-658.js
-Name: messageNextButton
-Xpath: //*[@id="page-data"]/div/div/assessment/div[1]/div/assessment-header/div[2]/div/div/div/div/div/div[2]/div/div/p[2]/a
-Waiting time: 3s
-
-File: DPS-658.js
-Name: jumpInPopUp
-Xpath: //*[@id="page-data"]/div/div/motivatorview/div[2]/div[4]/div/div[1]
-Waiting time: 3s
-
-File: DPS-658.js
-Name: jumpInPopUp
-Xpath: //*[@id="page-data"]/div/div/motivatorview/div[2]/div[4]/div/div[1]
-Waiting time: 3s
-
-File: DPS-639.js
-Name: secondAssessment
-Xpath: //*[@id="megaDropCtrkl"]/div/div/div[3]/div[2]/div/div[1]/div/div[10]/a[1]/div
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
 
 File: DPS-573.js
@@ -348,113 +9,214 @@ Name: links
 Xpath: By.className('large-3')
 Waiting time: 3s
 
-File: DPS-942.js
-Name: firstLink
-Xpath: /html/body/div[2]/div[1]/nav-bar/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div/div/div/div/form/div/div/div/div[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
 
-File: DPS-942.js
-Name: firstLink
-Xpath: //*[@id="ui-id-102"]/li[1]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
 
-File: DPS-590.js
-Name: buttonYes
-Xpath: //*[@id="faq_support-team_71"]/div[2]/div[1]/div[1]/div/div[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
 
-File: DPS-590.js
-Name: buttonYes
-Xpath: //*[@id="faq_support-team_71"]/div[2]/div[1]/div[1]/div/div[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: Expected values to be strictly equal:
+[32m+ actual[39m [31m- expected[39m
 
-File: DPS-590.js
-Name: buttonYes
-Xpath: /html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div[4]/dl[1]/dd/div[2]/div[2]/div[1]/div[1]/div/div[2]
-Waiting time: 3s
+[32m+[39m 'https://uat-os.opencolleges.edu.au/E1048B#/ask-for-support'
+[31m-[39m 'https://uat-os.opencolleges.edu.au/123341241E1048B#/ask-for-support'
 
-File: DPS-590.js
-Name: buttonYes
-Xpath: //*[@id="faq_support-team_335"]/div/div[1]/div[1]/div/div[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-590.js
-Name: buttonYes
-Xpath: //*[@id="faq_support-team_335"]/div/div[1]/div[1]/div/div[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-590.js
-Name: buttonYes
-Xpath: //*[@id="faq_support-team_71"]/div[2]/div[1]/div[1]/div/div[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-590.js
-Name: buttonYes
-Xpath: /html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div[4]/dl[1]/dd/div[2]/div[2]/div[1]/div[1]/div/div[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-664.js
-Name: messageButton
-Xpath: //*[@id="message-centre-menu"]/div/div[1]/div[1]/div/div/div
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-664.js
-Name: messageReceiver
-Xpath: undefined
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-664.js
-Name: messageReceiver
-Xpath: undefined
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-590.js
-Name: buttonYes
-Xpath: /html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div[4]/dl[1]/dd/div[2]/div[2]/div[1]/div[1]/div/div[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-577.js
-Name: supportBreadcrumb
-Xpath: //*[@id="course_picker_span"]/a[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-577.js
-Name: supportBreadcrumb6
-Xpath: //*[@id="course_picker_span"]/a[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-577.js
-Name: supportBreadcrumb6
-Xpath: //*[@id="course_picker_span"]/a[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-577.js
-Name: supportBreadcrumb6
-Xpath: /html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div[1]/p[1]/span/a[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-577.js
-Name: supportCategoryItem
-Xpath: //*[@id="support-centre-react-div"]/div/div[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-577.js
-Name: supportBreadcrumb6
-Xpath: //*[@id="course_picker_span"]/a[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-577.js
-Name: supportBreadcrumb6
-Xpath: //*[@id="course_picker_span"]/a[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-590.js
-Name: buttonYes
-Xpath: /html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div[4]/dl[1]/dd/div[2]/div[2]/div[1]/div[1]/div/div[2]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
 
-File: DPS-590.js
-Name: buttonYes
-Xpath: //*[@id="yes_71"]
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
 Waiting time: 3s
+Error message: undefined
+
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-581.js
+Name: viewMore
+Xpath: //*[@id="page-data"]/div/div/div[6]/div/div/a/div
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-581.js
+Name: viewMore
+Xpath: //*[@id="page-data"]/div/div/div[6]/div/div/a/div
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-581.js
+Name: viewMore
+Xpath: //*[@id="page-data"]/div/div/div[6]/div/div/a/div
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-581.js
+Name: viewMore
+Xpath: //*[@id="page-data"]/div/div/div[6]/div/div/a/div
+Waiting time: 3s
+Error message: undefined
 

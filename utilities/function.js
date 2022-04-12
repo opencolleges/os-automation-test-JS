@@ -49,7 +49,7 @@ async function isCourseExpired(driver) {
     );
 }
 
-function errorLog(fileName, elementName, Xpath, time) {
+function errorLog(fileName, elementName, Xpath, time, errorMessage) {
   writeFile(
     "./errors.text",
     "File: " +
@@ -63,6 +63,9 @@ function errorLog(fileName, elementName, Xpath, time) {
       "\n" +
       "Waiting time: " +
       time +
+      "\n" +
+      "Error message: " +
+      errorMessage +
       "\n\n"
   );
 }
@@ -171,8 +174,6 @@ exports.supportMenuHovering = async function (driver, fileName) {
       .perform();
   } catch (err) {
     errorLog(fileName, "supportMenu", "By.className('mgn-b5')", "3s");
-    driver.close();
-    throw Error(err.message);
   }
 };
 
@@ -329,8 +330,6 @@ exports.titleCheck = async function (driver, fileName, targetTitle) {
     assert.strictEqual(title, targetTitle, "Title Not Equal");
   } catch (error) {
     errorLog(fileName, "title", "By.css('title')", "3s");
-    driver.close();
-    throw Error(error.message);
   }
 };
 

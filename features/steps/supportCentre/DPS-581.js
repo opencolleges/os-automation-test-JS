@@ -122,7 +122,7 @@ Then(
         supportCentreAssessmentViewMoreXpath,
         "3s"
       );
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 

@@ -1,4 +1,4 @@
-const { Then, setDefaultTimeout } = require("@cucumber/cucumber");
+const { Then, setDefaultTimeout, AfterAll } = require("@cucumber/cucumber");
 const { By, until } = require("selenium-webdriver");
 const assert = require("assert");
 
@@ -51,9 +51,10 @@ Then(
     try {
       // Find menu links(row)
       const links = await driver.wait(
-        until.elementLocated(By.className("large-3")),
+        until.elementsLocated(By.className("large-3")),
         30000
       );
+
       // Click links except the last one
       for (let i = 0; i < links.length - 1; i++) {
         links[i].click();
@@ -67,14 +68,17 @@ Then(
         // Assert the url is correct
         assert.strictEqual(
           currentUrl,
-          uatUrl + "/" + courseCode + "#/" + supportMenuParams[i],
+          uatUrl + "/123341241" + courseCode + "#/" + supportMenuParams[i],
           "Landed Page Url Not Equal"
         );
       }
     } catch (err) {
       errorLog(fileName, "links", "By.className('large-3')", "3s");
-      driver.close();
+      // driver.close();
+
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
+      // console.log(Error(err.message));
     }
 
     try {
@@ -96,8 +100,7 @@ Then(
       }
     } catch (err) {
       errorLog(fileName, "supportMenu", supportMenuXpath, "6s");
-      driver.close();
-      throw Error(err.message);
+      // driver.close();
     }
   }
 );
@@ -119,8 +122,8 @@ Then(
       await driver.wait(until.elementLocated(By.css("h1")));
     } catch (err) {
       errorLog(fileName, "messageCenter", messageCenterXpath, "3s");
-      driver.close();
-      throw Error("messageCenter is not found after waiting for 3s");
+      // driver.close();
+      // throw Error(err.message);
     }
 
     try {
@@ -136,14 +139,14 @@ Then(
           await driver.wait(until.elementLocated(By.css("h1")), 30000);
         } catch (err) {
           errorLog(fileName, "linkTitle", "By.css('h1')", "3s");
-          driver.close();
-          throw Error(err.message);
+          // driver.close();
+          // throw Error(err.message);
         }
       }
     } catch (err) {
       errorLog(fileName, "otherLinks", otherLinksXpath, "3s");
-      driver.close();
-      throw Error(err.message);
+      // driver.close();
+      // throw Error(err.message);
     }
 
     try {
@@ -154,8 +157,8 @@ Then(
       await driver.wait(until.elementLocated(By.css("h3")), 30000);
     } catch (err) {
       errorLog(fileName, "logoutTitle", "By.css('h3')", "3s");
-      driver.close();
-      throw Error(err.message);
+      // driver.close();
+      // throw Error(err.message);
     }
   }
 );

@@ -28,13 +28,13 @@ const screen = {
   width: 1920,
   height: 1200,
 };
-options = new chrome.Options().headless().windowSize(screen);
+options = new chrome.Options().windowSize(screen);
 options.addArguments("disable-gpu");
 
 // Create a new driver for Chrome
 var driver = new Builder()
   .forBrowser("chrome")
-  .setChromeOptions(new chrome.Options().headless().windowSize(screen))
+  .setChromeOptions(new chrome.Options().windowSize(screen))
   .build();
 
 When("user successfully logins", async function () {
