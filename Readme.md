@@ -18,26 +18,26 @@ function: File to store reusable functions
 
 ## Test Cases
 
-DPS-573:Verifying support and profile menu in top navigation.
-DPS-577:Verifying support centre.
-DPS-579:Verifying my profile and enrolment page.
-DPS-581:Verifying assessment support page.
-DPS-583:Verifying study buddy page.
-DPS-588:Verifying students grades page.
-DPS-589:Verifying payment page.
-DPS-590:Verifying FAQ main page and FAQ feedback.
-DPS-591:Verifying user can post image and text into discussion panel.
-DPS-592:Verifying discussion likes, dislikes, replies and url content.
-DPS-593:Verifying the number of discussion posts.
-DPS-638:Verifying megadrop menu options.
-DPS-639:Verifying megadrop menu and subtopic navigation.
-DPS-640:Verifying megadrop menu and activities.
-DPS-642:Verifying megadrop menu and search links.
-DPS-658:Verifying last visited page link and walkthrough.
-DPS-659:Verifying download assessment.
-DPS-664:Verifying trainer tooltip in discussion panel.
-DPS-802:Verifying assessor home page.
-DPS-803:Verifying assessor messaging.
+DPS-573:Verifying support and profile menu in top navigation.  
+DPS-577:Verifying support centre.  
+DPS-579:Verifying my profile and enrolment page.  
+DPS-581:Verifying assessment support page.  
+DPS-583:Verifying study buddy page.  
+DPS-588:Verifying students grades page.  
+DPS-589:Verifying payment page.  
+DPS-590:Verifying FAQ main page and FAQ feedback.  
+DPS-591:Verifying user can post image and text into discussion panel.  
+DPS-592:Verifying discussion likes, dislikes, replies and url content.  
+DPS-593:Verifying the number of discussion posts.  
+DPS-638:Verifying megadrop menu options.  
+DPS-639:Verifying megadrop menu and subtopic navigation.  
+DPS-640:Verifying megadrop menu and activities.  
+DPS-642:Verifying megadrop menu and search links.  
+DPS-658:Verifying last visited page link and walkthrough.  
+DPS-659:Verifying download assessment.  
+DPS-664:Verifying trainer tooltip in discussion panel.  
+DPS-802:Verifying assessor home page.  
+DPS-803:Verifying assessor messaging.  
 DPS-942:Verifying search bar in support centre page.
 
 ## Prerequisites
