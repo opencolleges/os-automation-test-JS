@@ -46,10 +46,10 @@ Nodejs: https://nodejs.org/en/download/
 
 ## Installation
 
-Selenium: npm install selenium-webdriver --save-dev
-Cucumberjs: npm install cucumber-js --save-dev
-Chromedriver: brew install chromedriver --cask
-(Install latest chromedriver from terminal root (~/))
+Selenium: npm install selenium-webdriver --save-dev  
+Cucumberjs: npm install cucumber-js --save-dev  
+Chromedriver: brew install chromedriver --cask  
+(Install latest chromedriver from terminal root (~/))  
 Cucumber report: npm install cucumber-html-reporter --save-dev
 
 ## Test Executing:
