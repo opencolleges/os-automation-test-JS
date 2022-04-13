@@ -18,14 +18,27 @@ function: File to store reusable functions
 
 ## Test Cases
 
-DPS-537:Verifying support and profile menu in top navigation.  
-DPS-591:Verifying user can post image and text into discussion panel.  
-DPS-592:Verifying discussion likes, dislikes, replies and url content.  
-DPS-593:Verifying the number of discussion posts.  
-DPS-638:Verifying megadrop menu options.  
-DPS-639:Verifying megadrop menu and subtopic navigation.  
-DPS-640:Verifying megadrop menu and activities.  
+DPS-573:Verifying support and profile menu in top navigation.
+DPS-577:Verifying support centre.
+DPS-579:Verifying my profile and enrolment page.
+DPS-581:Verifying assessment support page.
+DPS-583:Verifying study buddy page.
+DPS-588:Verifying students grades page.
+DPS-589:Verifying payment page.
+DPS-590:Verifying FAQ main page and FAQ feedback.
+DPS-591:Verifying user can post image and text into discussion panel.
+DPS-592:Verifying discussion likes, dislikes, replies and url content.
+DPS-593:Verifying the number of discussion posts.
+DPS-638:Verifying megadrop menu options.
+DPS-639:Verifying megadrop menu and subtopic navigation.
+DPS-640:Verifying megadrop menu and activities.
+DPS-642:Verifying megadrop menu and search links.
+DPS-658:Verifying last visited page link and walkthrough.
+DPS-659:Verifying download assessment.
 DPS-664:Verifying trainer tooltip in discussion panel.
+DPS-802:Verifying assessor home page.
+DPS-803:Verifying assessor messaging.
+DPS-942:Verifying search bar in support centre page.
 
 ## Prerequisites
 
@@ -33,17 +46,19 @@ Nodejs: https://nodejs.org/en/download/
 
 ## Installation
 
-Selenium: npm install selenium-webdriver --save-dev  
-Cucumberjs: npm install cucumber-js --save-dev  
+Selenium: npm install selenium-webdriver --save-dev
+Cucumberjs: npm install cucumber-js --save-dev
+Chromedriver: brew install chromedriver --cask
+(Install latest chromedriver from terminal root (~/))
 Cucumber report: npm install cucumber-html-reporter --save-dev
 
 ## Test Executing:
 
 Test a single test case: ./node_modules/.bin/cucumber-js ./features/testFile.feature -f json:report/cucumber_report.json
 
-Test all test cases: npm run all  
+Test all test cases: npm run all
 
-Show test report: npm run report  
+Show test report: npm run report
 
 ## Resources
 
