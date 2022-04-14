@@ -106,6 +106,11 @@ https://www.npmjs.com/package/cucumber-html-reporter
 Selenium Exception Handling:
 https://www.guru99.com/exception-handling-selenium.html
 
+## Udemy Courses
+
+WebDriverIO + Javascript  
+https://www.udemy.com/course/webdriverio-tutorial-nodejs-javascript/learn/lecture/25734250?start=15#overview
+
 ## Contact
 
 Kyrie Wen - kyrie.wen@opencolleges.edu.au
