@@ -60,6 +60,29 @@ Test all test cases: npm run all
 
 Show test report: npm run report
 
+## Common Errors and Solutions:
+
+Element click interception  
+https://stackoverflow.com/questions/56779520/elementclickinterceptedexception-element-click-intercepted
+
+Element is not attached to the document page  
+https://stackoverflow.com/questions/67205623/selenium-element-is-not-attached-to-the-page-document-in-selenium-java
+
+Element is not clickable at point (X,Y)  
+https://stackoverflow.com/questions/37879010/selenium-debugging-element-is-not-clickable-at-point-x-y/37880313#37880313
+
+Element not interactable  
+https://stackoverflow.com/questions/45183797/element-not-interactable-exception-in-selenium-web-automation
+
+Function timed out  
+https://stackoverflow.com/questions/51965579/webdriverio-cucumber-function-timeout-ensure-promise-resolves-within-10000
+
+Invalid session Id  
+https://stackoverflow.com/questions/56483403/selenium-common-exceptions-webdriverexception-message-invalid-session-id-using
+
+Version Error  
+brew install chromedriver --cask
+
 ## Resources
 
 Selenium Docs:
@@ -79,6 +102,9 @@ https://cucumber.io/docs/guides/10-minute-tutorial/
 
 Cucumber reporting:
 https://www.npmjs.com/package/cucumber-html-reporter
+
+Selenium Exception Handling:
+https://www.guru99.com/exception-handling-selenium.html
 
 ## Contact
 
