@@ -108,47 +108,6 @@ Then(
 );
 
 Then(
-  /^click on view more button and then click breadcrumb to back to assessment page$/,
-  async function () {
-    try {
-      var viewMore = await driver.wait(
-        until.elementLocated(By.xpath(supportCentreAssessmentViewMoreXpath)),
-        30000
-      );
-    } catch (err) {
-      errorLog(
-        fileName,
-        "viewMore",
-        supportCentreAssessmentViewMoreXpath,
-        "3s"
-      );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
-    }
-
-    viewMore.click();
-
-    try {
-      var assessmentsPageBreadScrumb = await driver.wait(
-        until.elementLocated(By.xpath(gettingStartedCurrentBreadScrumbXpath)),
-        30000
-      );
-    } catch (err) {
-      errorLog(
-        fileName,
-        "assessmentsPageBreadScrumb",
-        gettingStartedCurrentBreadScrumbXpath,
-        "3s"
-      );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
-    }
-
-    assessmentsPageBreadScrumb.click();
-  }
-);
-
-Then(
   /^click on support breadcrumb to navigate to back to support centre page$/,
   async function () {
     try {

@@ -68,7 +68,7 @@ Then(
         // Assert the url is correct
         assert.strictEqual(
           currentUrl,
-          uatUrl + "/123341241" + courseCode + "#/" + supportMenuParams[i],
+          uatUrl + "/" + courseCode + "#/" + supportMenuParams[i],
           "Landed Page Url Not Equal"
         );
       }

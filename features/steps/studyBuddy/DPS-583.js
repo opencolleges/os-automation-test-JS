@@ -132,7 +132,6 @@ Then(/^check the title$/, async function () {
   try {
     // Find title
     const title = await driver.wait(until.elementLocated(By.css("h1")), 30000);
-
     // Assert title is expected
     strictEqual(
       await title.getText(),
