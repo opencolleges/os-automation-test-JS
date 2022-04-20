@@ -54,7 +54,8 @@ Cucumber report: npm install cucumber-html-reporter --save-dev
 
 ## Test Executing:
 
-Test a single test case: ./node_modules/.bin/cucumber-js ./features/testFile.feature -f json:report/cucumber_report.json
+Test a single test case: Test a single test case: npm run single -testFile=DPS-573  
+(Run test case DPS-573.feature)
 
 Test all test cases: npm run all
 
