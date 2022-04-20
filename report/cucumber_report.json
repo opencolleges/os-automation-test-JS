@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39061626475
+              "duration": 45625346585
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5007350172
+              "duration": 5005963333
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5080671982
+              "duration": 5098483681
             }
           },
           {
@@ -58,8 +58,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 15020155370,
-              "error_message": "Error: Landed Page Url Not Equal\n    at World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/navigation/DPS-573.js:80:13)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              "duration": 15032427175,
+              "error_message": "Error: Landed Page Url Not Equal\n    at World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/navigation/DPS-573.js:78:13)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
             }
           },
           {
@@ -68,7 +68,7 @@
             "line": 9,
             "name": "click and hover on the profile menu",
             "match": {
-              "location": "features/steps/commonSteps.js:127"
+              "location": "features/steps/commonSteps.js:131"
             },
             "result": {
               "status": "skipped",
@@ -81,7 +81,7 @@
             "line": 10,
             "name": "check profile menus and navigate to all the links listed in the menu",
             "match": {
-              "location": "features/steps/navigation/DPS-573.js:108"
+              "location": "features/steps/navigation/DPS-573.js:106"
             },
             "result": {
               "status": "skipped",
@@ -130,7 +130,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39009584372
+              "duration": 37497020148
             }
           },
           {
@@ -139,11 +139,11 @@
             "line": 6,
             "name": "click on support menu from nav",
             "match": {
-              "location": "features/steps/commonSteps.js:169"
+              "location": "features/steps/commonSteps.js:175"
             },
             "result": {
               "status": "passed",
-              "duration": 37159891
+              "duration": 16159590.999999998
             }
           },
           {
@@ -156,7 +156,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5031436166
+              "duration": 5030151953
             }
           },
           {
@@ -169,7 +169,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 50207409365
+              "duration": 50250432286
             }
           },
           {
@@ -182,7 +182,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 918273427
+              "duration": 846367178
             }
           },
           {
@@ -191,11 +191,11 @@
             "line": 10,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 5290223431
+              "duration": 5409490765
             }
           }
         ],
@@ -240,7 +240,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36990325436
+              "duration": 37080202364
             }
           },
           {
@@ -249,11 +249,11 @@
             "line": 6,
             "name": "click and hover on the profile menu",
             "match": {
-              "location": "features/steps/commonSteps.js:127"
+              "location": "features/steps/commonSteps.js:131"
             },
             "result": {
               "status": "passed",
-              "duration": 10062347160
+              "duration": 10069524809
             }
           },
           {
@@ -266,7 +266,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15937691
+              "duration": 18221179
             }
           },
           {
@@ -279,7 +279,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5016626519
+              "duration": 5016689375
             }
           },
           {
@@ -292,7 +292,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38373386
+              "duration": 42137138
             }
           },
           {
@@ -305,7 +305,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5018667104
+              "duration": 5016534533
             }
           },
           {
@@ -318,7 +318,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2941752469
+              "duration": 2614954741
             }
           },
           {
@@ -331,7 +331,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 72712705
+              "duration": 70077364
             }
           },
           {
@@ -344,7 +344,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40204962
+              "duration": 46797347
             }
           },
           {
@@ -353,11 +353,11 @@
             "line": 14,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 6334370184
+              "duration": 6558279866
             }
           }
         ],
@@ -402,7 +402,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35921418807
+              "duration": 36049407529
             }
           },
           {
@@ -415,7 +415,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5051129257
+              "duration": 5041905632
             }
           },
           {
@@ -428,7 +428,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 531584015
+              "duration": 534967657.00000006
             }
           },
           {
@@ -441,7 +441,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4133875328
+              "duration": 4743836308
             }
           },
           {
@@ -454,8 +454,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 30064416769,
-              "error_message": "Error: Waiting for element to be located By(xpath, //*[@id=\"page-data\"]/div/div/div[6]/div/div/a/div)\nWait timed out after 30065ms\n    at World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/supportCentre/DPS-581.js:126:13)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              "duration": 30189377567,
+              "error_message": "Error: Waiting for element to be located By(xpath, //*[@id=\"page-data\"]/div/div/div[6]/div/div/a/div)\nWait timed out after 30189ms\n    at World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/supportCentre/DPS-581.js:126:13)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
             }
           },
           {
@@ -477,7 +477,7 @@
             "line": 11,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "skipped",
@@ -526,7 +526,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37149944211
+              "duration": 36861344439
             }
           },
           {
@@ -539,7 +539,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5053565078
+              "duration": 5059764871
             }
           },
           {
@@ -552,7 +552,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16932606
+              "duration": 19285005
             }
           },
           {
@@ -565,7 +565,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 695271318
+              "duration": 680293108
             }
           },
           {
@@ -578,7 +578,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5025746493
+              "duration": 5026363614
             }
           },
           {
@@ -591,7 +591,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 211977432
+              "duration": 306718780
             }
           },
           {
@@ -604,7 +604,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5044263656
+              "duration": 5049820591
             }
           },
           {
@@ -616,8 +616,9 @@
               "location": "features/steps/studyBuddy/DPS-583.js:131"
             },
             "result": {
-              "status": "passed",
-              "duration": 32147796.999999996
+              "status": "failed",
+              "duration": 32548066,
+              "error_message": "Error: Title is not correct\n    at World.<anonymous> (/Users/kyriesijiewen/Desktop/Source/os-automation-test-JS-Github/features/steps/studyBuddy/DPS-583.js:145:11)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
             }
           },
           {
@@ -626,11 +627,11 @@
             "line": 13,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
-              "status": "passed",
-              "duration": 5054183363
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -675,7 +676,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36829837671
+              "duration": 37341046367
             }
           },
           {
@@ -684,11 +685,11 @@
             "line": 6,
             "name": "click and hover on the profile menu",
             "match": {
-              "location": "features/steps/commonSteps.js:127"
+              "location": "features/steps/commonSteps.js:131"
             },
             "result": {
               "status": "passed",
-              "duration": 10079614986
+              "duration": 10059653636
             }
           },
           {
@@ -701,7 +702,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 113032559
+              "duration": 17000191
             }
           },
           {
@@ -714,7 +715,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5017523627
+              "duration": 5017691422
             }
           },
           {
@@ -727,7 +728,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20944833
+              "duration": 20630897
             }
           },
           {
@@ -740,7 +741,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1357588644
+              "duration": 1753126006
             }
           },
           {
@@ -753,7 +754,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5014598244
+              "duration": 5014098996
             }
           },
           {
@@ -766,7 +767,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 88594774
+              "duration": 104993483
             }
           },
           {
@@ -775,11 +776,11 @@
             "line": 13,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 6272858963
+              "duration": 5925162786
             }
           }
         ],
@@ -824,7 +825,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35992035855
+              "duration": 36048865665
             }
           },
           {
@@ -833,11 +834,11 @@
             "line": 6,
             "name": "click and hover on the profile menu",
             "match": {
-              "location": "features/steps/commonSteps.js:127"
+              "location": "features/steps/commonSteps.js:131"
             },
             "result": {
               "status": "passed",
-              "duration": 10061840183
+              "duration": 10071437437
             }
           },
           {
@@ -850,7 +851,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 283879
+              "duration": 267821
             }
           },
           {
@@ -863,7 +864,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5015460055
+              "duration": 5016967941
             }
           },
           {
@@ -876,7 +877,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22006555
+              "duration": 82460494
             }
           },
           {
@@ -889,7 +890,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23191071
+              "duration": 50521960
             }
           },
           {
@@ -898,11 +899,11 @@
             "line": 11,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 6146408643
+              "duration": 6006351348
             }
           }
         ],
@@ -947,7 +948,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35970610325
+              "duration": 36144627230
             }
           },
           {
@@ -960,7 +961,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5069996096
+              "duration": 5072919882
             }
           },
           {
@@ -973,7 +974,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5046004345
+              "duration": 5049571543
             }
           },
           {
@@ -986,7 +987,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5064612661
+              "duration": 5063168431
             }
           },
           {
@@ -999,7 +1000,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 53880886
+              "duration": 52958165
             }
           },
           {
@@ -1012,7 +1013,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10022455473
+              "duration": 10023643541
             }
           },
           {
@@ -1025,7 +1026,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10029019058
+              "duration": 10027137112
             }
           },
           {
@@ -1034,11 +1035,11 @@
             "line": 12,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 5103764559
+              "duration": 5111260890
             }
           }
         ],
@@ -1083,7 +1084,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37082903100
+              "duration": 36944168612
             }
           },
           {
@@ -1096,7 +1097,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33615249202
+              "duration": 33756486334
             }
           },
           {
@@ -1109,7 +1110,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 314150
+              "duration": 287835
             }
           },
           {
@@ -1122,7 +1123,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40485111633
+              "duration": 41148173301
             }
           },
           {
@@ -1135,7 +1136,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 91413
+              "duration": 96920
             }
           },
           {
@@ -1148,7 +1149,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7140480692
+              "duration": 6669552292
             }
           },
           {
@@ -1157,11 +1158,11 @@
             "line": 11,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 5081237679
+              "duration": 5232801729
             }
           }
         ],
@@ -1206,7 +1207,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36864636442
+              "duration": 36975976713
             }
           },
           {
@@ -1219,7 +1220,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6028742130
+              "duration": 6013099446
             }
           },
           {
@@ -1232,7 +1233,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2497748286
+              "duration": 2702302257.0000005
             }
           },
           {
@@ -1245,7 +1246,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5954424684
+              "duration": 6133903120
             }
           },
           {
@@ -1258,7 +1259,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 160941
+              "duration": 110974
             }
           },
           {
@@ -1271,7 +1272,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13988593894
+              "duration": 14550387283
             }
           },
           {
@@ -1280,11 +1281,11 @@
             "line": 11,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 5064018220
+              "duration": 5072904961
             }
           }
         ],
@@ -1329,7 +1330,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37089996403
+              "duration": 36814882918
             }
           },
           {
@@ -1342,7 +1343,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 145710103
+              "duration": 165131542
             }
           },
           {
@@ -1355,7 +1356,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2524739917
+              "duration": 2745965760
             }
           },
           {
@@ -1368,7 +1369,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5091926523
+              "duration": 5074517427
             }
           },
           {
@@ -1377,11 +1378,11 @@
             "line": 9,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 5051208374
+              "duration": 5052923703
             }
           }
         ],
@@ -1426,7 +1427,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37186082207
+              "duration": 36763412623
             }
           },
           {
@@ -1439,7 +1440,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5016991070
+              "duration": 5017631628
             }
           },
           {
@@ -1452,7 +1453,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10031451721
+              "duration": 10052423687
             }
           },
           {
@@ -1465,7 +1466,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5016515511
+              "duration": 5016814608
             }
           },
           {
@@ -1478,7 +1479,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5124477963
+              "duration": 5158616269
             }
           },
           {
@@ -1491,7 +1492,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5014606945
+              "duration": 5012988296
             }
           },
           {
@@ -1504,7 +1505,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15231255446
+              "duration": 15229633503
             }
           },
           {
@@ -1517,7 +1518,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5007735626
+              "duration": 5017517224
             }
           },
           {
@@ -1530,7 +1531,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15389561596
+              "duration": 15337576111
             }
           },
           {
@@ -1543,7 +1544,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5289534942
+              "duration": 5139946655
             }
           },
           {
@@ -1552,11 +1553,11 @@
             "line": 17,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 6740601786
+              "duration": 6364648221
             }
           }
         ],
@@ -1601,7 +1602,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35972429435
+              "duration": 36258201819
             }
           },
           {
@@ -1614,7 +1615,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5013735999
+              "duration": 5015065962
             }
           },
           {
@@ -1627,7 +1628,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10150171149
+              "duration": 10158189991
             }
           },
           {
@@ -1640,7 +1641,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5012344329
+              "duration": 5010742455
             }
           },
           {
@@ -1653,7 +1654,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10083413796
+              "duration": 10117484507
             }
           },
           {
@@ -1666,7 +1667,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5006903264
+              "duration": 5008361348
             }
           },
           {
@@ -1679,7 +1680,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10826561121
+              "duration": 10145560458
             }
           },
           {
@@ -1692,7 +1693,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5020866913
+              "duration": 5026097806
             }
           },
           {
@@ -1705,7 +1706,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10276902779
+              "duration": 11227313826
             }
           },
           {
@@ -1714,11 +1715,11 @@
             "line": 16,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 5053940263
+              "duration": 5083636266
             }
           }
         ],
@@ -1763,7 +1764,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37035298575
+              "duration": 36951094748
             }
           },
           {
@@ -1776,7 +1777,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6035645
+              "duration": 6947556
             }
           },
           {
@@ -1789,7 +1790,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5023359813
+              "duration": 5016589473
             }
           },
           {
@@ -1802,7 +1803,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11111506570
+              "duration": 11146670138
             }
           },
           {
@@ -1815,7 +1816,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 51392011
+              "duration": 295144221
             }
           },
           {
@@ -1824,11 +1825,11 @@
             "line": 14,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 5182700088
+              "duration": 5260918547
             }
           }
         ],
@@ -1873,7 +1874,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37174306278
+              "duration": 37040768501
             }
           },
           {
@@ -1886,7 +1887,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5013436990
+              "duration": 5015546580
             }
           },
           {
@@ -1899,7 +1900,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10145877426
+              "duration": 10151413524
             }
           },
           {
@@ -1912,7 +1913,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11222842704
+              "duration": 11382439879
             }
           },
           {
@@ -1921,11 +1922,11 @@
             "line": 11,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 5039289971
+              "duration": 5042654256
             }
           }
         ],
@@ -1970,7 +1971,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37211375617
+              "duration": 37006950006
             }
           },
           {
@@ -1979,11 +1980,11 @@
             "line": 12,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 5079452411
+              "duration": 5077328277
             }
           }
         ],
@@ -2028,7 +2029,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36923002218
+              "duration": 36889764829
             }
           },
           {
@@ -2041,7 +2042,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5015666544
+              "duration": 5028322122
             }
           },
           {
@@ -2054,7 +2055,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 107029304
+              "duration": 166838430
             }
           },
           {
@@ -2067,7 +2068,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5022885490
+              "duration": 5017244803
             }
           },
           {
@@ -2080,7 +2081,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10216249751
+              "duration": 10066752655
             }
           },
           {
@@ -2089,11 +2090,11 @@
             "line": 12,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 10166269958
+              "duration": 10168053760
             }
           }
         ],
@@ -2138,7 +2139,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37799962903
+              "duration": 36837710609
             }
           },
           {
@@ -2147,11 +2148,11 @@
             "line": 10,
             "name": "click and hover on the profile menu",
             "match": {
-              "location": "features/steps/commonSteps.js:127"
+              "location": "features/steps/commonSteps.js:131"
             },
             "result": {
               "status": "passed",
-              "duration": 15224637131
+              "duration": 15088915085
             }
           },
           {
@@ -2164,7 +2165,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17281327
+              "duration": 73722469
             }
           },
           {
@@ -2173,11 +2174,11 @@
             "line": 14,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 11296077599
+              "duration": 11167400111
             }
           }
         ],
@@ -2222,7 +2223,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35904757326
+              "duration": 35897338613
             }
           },
           {
@@ -2235,7 +2236,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5013826086
+              "duration": 5020990870
             }
           },
           {
@@ -2248,7 +2249,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 139331501
+              "duration": 186270446
             }
           },
           {
@@ -2261,7 +2262,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 172898409
+              "duration": 195027691
             }
           },
           {
@@ -2274,7 +2275,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5025065363
+              "duration": 5023484982
             }
           },
           {
@@ -2287,7 +2288,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 336650369
+              "duration": 364565937
             }
           },
           {
@@ -2296,11 +2297,11 @@
             "line": 13,
             "name": "logout the user as an assessor",
             "match": {
-              "location": "features/steps/commonSteps.js:155"
+              "location": "features/steps/commonSteps.js:160"
             },
             "result": {
               "status": "passed",
-              "duration": 73421949
+              "duration": 90162082
             }
           }
         ],
@@ -2345,7 +2346,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36824741305
+              "duration": 36994128245
             }
           },
           {
@@ -2358,7 +2359,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5017135565
+              "duration": 5021420050
             }
           },
           {
@@ -2371,7 +2372,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 147500319
+              "duration": 193470996
             }
           },
           {
@@ -2384,7 +2385,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9770164
+              "duration": 10223755
             }
           },
           {
@@ -2397,7 +2398,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10048784457
+              "duration": 10055724844
             }
           },
           {
@@ -2406,11 +2407,11 @@
             "line": 12,
             "name": "select Inbox and select the first message",
             "match": {
-              "location": "features/steps/assessor/DPS-803.js:172"
+              "location": "features/steps/assessor/DPS-803.js:170"
             },
             "result": {
               "status": "passed",
-              "duration": 5024607023
+              "duration": 5026868360
             }
           },
           {
@@ -2419,11 +2420,11 @@
             "line": 13,
             "name": "verify that content loads in the right-hand panel",
             "match": {
-              "location": "features/steps/assessor/DPS-803.js:207"
+              "location": "features/steps/assessor/DPS-803.js:205"
             },
             "result": {
               "status": "passed",
-              "duration": 5027805678
+              "duration": 5029499275
             }
           },
           {
@@ -2432,11 +2433,11 @@
             "line": 14,
             "name": "logout the user as an assessor",
             "match": {
-              "location": "features/steps/commonSteps.js:155"
+              "location": "features/steps/commonSteps.js:160"
             },
             "result": {
               "status": "passed",
-              "duration": 12121308
+              "duration": 10808319
             }
           }
         ],
@@ -2481,7 +2482,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36560105175
+              "duration": 36658910858
             }
           },
           {
@@ -2490,11 +2491,11 @@
             "line": 5,
             "name": "click on support menu from nav",
             "match": {
-              "location": "features/steps/commonSteps.js:169"
+              "location": "features/steps/commonSteps.js:175"
             },
             "result": {
               "status": "passed",
-              "duration": 16383358.000000002
+              "duration": 17141776
             }
           },
           {
@@ -2507,7 +2508,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10847228636
+              "duration": 10585417146
             }
           },
           {
@@ -2520,7 +2521,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 63039428
+              "duration": 70979788
             }
           },
           {
@@ -2529,11 +2530,11 @@
             "line": 8,
             "name": "click on support menu from nav",
             "match": {
-              "location": "features/steps/commonSteps.js:169"
+              "location": "features/steps/commonSteps.js:175"
             },
             "result": {
               "status": "passed",
-              "duration": 7359845
+              "duration": 7678124
             }
           },
           {
@@ -2546,7 +2547,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10452701594
+              "duration": 10444925666
             }
           },
           {
@@ -2555,11 +2556,11 @@
             "line": 10,
             "name": "logout the user",
             "match": {
-              "location": "features/steps/commonSteps.js:151"
+              "location": "features/steps/commonSteps.js:156"
             },
             "result": {
               "status": "passed",
-              "duration": 10394138877
+              "duration": 5072450580
             }
           }
         ],

@@ -27,7 +27,7 @@ Then(/^click on My Grades link$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "myGradesLink", myGradesLinkXpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -46,7 +46,7 @@ Then(/^check page title$/, async function () {
       .getText();
   } catch (err) {
     errorLog(fileName, "pageTitle", "By.css('h1')", "6s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -63,7 +63,7 @@ Then(/^check course title$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "courseTitle", myGradesCourseTitleXpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -92,7 +92,7 @@ Then(
           `*[@id="grades_dt_id${i}"]/div[1]/div[1]`,
           "3s"
         );
-        driver.close();
+        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
         throw Error(err.message);
       }
 
@@ -113,7 +113,7 @@ Then(
           `//*[@id="grades_dt_id${i}"]/div[1]/div[2]/p`,
           "3s"
         );
-        driver.close();
+        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
         throw Error(err.message);
       }
 
@@ -129,7 +129,7 @@ Then(
         await assignmentGrade.isDisplayed();
       } catch (err) {
         errorLog(fileName, "assignmentGrade", "", "3s");
-        driver.close();
+        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
         throw Error(err.message);
       }
     }
@@ -153,7 +153,7 @@ Then(
           `//*[@id="grades_dt_detail_id${i}0"]`,
           "3s"
         );
-        driver.close();
+        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
         throw Error(err.message);
       }
 
@@ -180,7 +180,7 @@ Then(/^check grade name, date graded, date submitted$/, async function () {
         `//*[@id="grades_dt_row_id${i}0"]/div[1]`,
         "3s"
       );
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -200,7 +200,7 @@ Then(/^check grade name, date graded, date submitted$/, async function () {
         `//*[@id="grades_dt_row_id${i}0"]/div[2]`,
         "3s"
       );
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -220,7 +220,7 @@ Then(/^check grade name, date graded, date submitted$/, async function () {
         `//*[@id="grades_dt_row_id${i}0"]/div[3]`,
         "3s"
       );
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 

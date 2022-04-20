@@ -27,7 +27,7 @@ Then(/^click Message Centre$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "messageCenter", messageCenterXpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -47,8 +47,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "messageButton", messageButtonXpath, "3s");
-      driver.close();
-      throw Error(err.message);
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     }
 
     // Click message button
@@ -74,7 +73,6 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "messageSubject", messageSubjectXpath, "3s");
-      driver.close();
       throw Error(err.message);
     }
 

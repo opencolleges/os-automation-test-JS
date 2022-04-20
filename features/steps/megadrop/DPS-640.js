@@ -42,7 +42,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "module2", module2Xpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -60,7 +60,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "firstTopic", firstTopicXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -75,7 +75,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "firstSubtopic", firstSubtopicXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -93,7 +93,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "footer", footerXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -133,7 +133,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "readings", 'By.className("ats-dt-act-label"', "10s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -157,7 +157,7 @@ Then(
         generalCourseContentXpath,
         "3s"
       );
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -176,7 +176,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "subtopicNumber", subtopicNumberXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -191,7 +191,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "printTopicButton", printTopicButtonXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 

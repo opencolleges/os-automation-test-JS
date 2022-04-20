@@ -25,7 +25,7 @@ Then(/^can click on Module 2$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "module2", module2Xpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -42,7 +42,7 @@ Then(/^can click on Assessment Project$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "assessment", secondAssessmentXpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -59,7 +59,7 @@ Then(/^click Download Assessment$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "downloadAssessment", downloadAssessmentXpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 

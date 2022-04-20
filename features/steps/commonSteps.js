@@ -78,6 +78,7 @@ Then(/^check profile picture, trainer name and position$/, async function () {
     );
   } catch (err) {
     errorLog("commonSteps", "toolTip", toolTipXpath, "10s");
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -92,6 +93,7 @@ Then(/^check profile picture, trainer name and position$/, async function () {
     );
   } catch (err) {
     errorLog("commonSteps", "name", trainerNameXpath, "3s");
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -103,6 +105,7 @@ Then(/^check profile picture, trainer name and position$/, async function () {
     );
   } catch (err) {
     errorLog("commonSteps", "avatar", trainerAvatarXpath, "3s");
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -114,6 +117,7 @@ Then(/^check profile picture, trainer name and position$/, async function () {
     );
   } catch (err) {
     errorLog("commonSteps", "position", trainerPositionXpath, "3s");
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
   // Assert all displayed
@@ -139,6 +143,7 @@ Then("click and hover on the profile menu", async function () {
     );
   } catch (err) {
     errorLog("commonSteps", "profileMenu", profileMenuXpath, "3s");
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -160,6 +165,7 @@ Then(/^logout the user as an assessor$/, async function () {
     );
   } catch (err) {
     errorLog("commonSteps", "logoutAsAssessor", logoutAsAssessorXpath, "6s");
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -174,7 +180,7 @@ Then(/^click on support menu from nav$/, async function () {
     );
   } catch {
     errorLog("commonSteps", "supportMenu", supportMenuXpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 

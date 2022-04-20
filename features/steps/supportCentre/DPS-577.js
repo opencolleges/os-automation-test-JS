@@ -40,7 +40,7 @@ Then(
         supportCategoryItemsWrapperXpath,
         "3s"
       );
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -66,7 +66,7 @@ Then(
           supportCategoryItemXpath + `div[${i}]`,
           "3s"
         );
-        driver.close();
+        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
         throw Error(err.message);
       }
 
@@ -86,7 +86,7 @@ Then(
           supportBreadcrumbXpath,
           "3s"
         );
-        driver.close();
+        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
         throw Error(err.message);
       }
 
@@ -104,7 +104,7 @@ Then(/^expand collapse all FAQ on support category page$/, async function () {
       );
     } catch (err) {
       errorLog(fileName, "FAQ", supportCentreFAQXpath + `dd[${i}]`, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 

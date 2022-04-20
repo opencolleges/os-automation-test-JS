@@ -37,7 +37,7 @@ Then(/^check the breadcrumb on module overview page$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "module1", module1Xpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -55,7 +55,7 @@ Then(/^check the breadcrumb on module overview page$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "moduleOverview", moduleOverviewXpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -73,7 +73,7 @@ Then(/^check the breadcrumb on module overview page$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "homeIcon", homeIconXpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -92,7 +92,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "module2", module2Xpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -112,7 +112,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "firstTopic", firstTopicXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -130,7 +130,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "topicOverview", topicOverviewXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -150,7 +150,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "module2", module2Xpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -169,7 +169,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "firstAssessment", moduleTwoAssessmentXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -187,7 +187,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "teamUpBuddy", teamUpBuddyXpath, "6s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -202,7 +202,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "discussionsIcon", discussionsIconXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -222,7 +222,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "module2", module2Xpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -242,7 +242,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "secondAssessment", secondAssessmentXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -265,7 +265,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "assessmentTitle", assessmentTitleXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -277,7 +277,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "assessmentTips", assessmentTipsXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -295,7 +295,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "teamUpBuddy", teamUpBuddyXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -310,7 +310,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "discussionsIcon", discussionsIconXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -325,7 +325,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "tabDiscussion", '//li[@id="tab-discussion"]', "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -342,7 +342,7 @@ Then(
         '//li[@id="tab-submit-assessment"]',
         "3s"
       );
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 

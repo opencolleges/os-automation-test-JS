@@ -35,7 +35,7 @@ Then(/^click Home$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "home", assessorHomeXpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -55,7 +55,7 @@ Then(/^check whether internal announcements is present$/, async function () {
       assessorInternalAnnouncementsXpath,
       "3s"
     );
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -70,7 +70,7 @@ Then(/^check post functionality$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "textArea", assessorHomeTextAreaXpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -85,7 +85,7 @@ Then(/^check post functionality$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "postButton", assessorHomePostButtonXpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -102,7 +102,7 @@ Then(/^like a comment and unlike a comment$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "firstComment", assessorHomeFirstCommentXpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -115,7 +115,7 @@ Then(/^like a comment and unlike a comment$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "likeButton", assessorHomeLikeButtonXpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -139,7 +139,7 @@ Then(/^add a comment to an existing post$/, async function () {
       assessorHomeCommentTextAreaXpath,
       "3s"
     );
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
   commentTextArea.click();
@@ -158,7 +158,7 @@ Then(/^add a comment to an existing post$/, async function () {
       assessorHomeCommentPostButtonXpath,
       "3s"
     );
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 

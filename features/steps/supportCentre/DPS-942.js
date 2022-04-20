@@ -28,7 +28,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "searchInput", searchInputXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -46,7 +46,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "firstLink", firstLinkXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -75,7 +75,7 @@ Then(/^click on support centre from search list$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "searchInput", searchInputXpath, "3s");
-    driver.close();
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
@@ -97,7 +97,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "searchInput", searchInputXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
@@ -115,7 +115,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "supportCentreLink", supportCentreLinkXpath, "3s");
-      driver.close();
+      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 

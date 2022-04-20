@@ -220,3 +220,21 @@ Xpath: //*[@id="page-data"]/div/div/div[6]/div/div/a/div
 Waiting time: 3s
 Error message: undefined
 
+File: DPS-573.js
+Name: links
+Xpath: By.className('large-3')
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-581.js
+Name: viewMore
+Xpath: //*[@id="page-data"]/div/div/div[6]/div/div/a/div
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-583.js
+Name: title
+Xpath: By.css('h1')
+Waiting time: 3s
+Error message: undefined
+
