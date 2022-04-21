@@ -64,25 +64,41 @@ Show test report: npm run report
 ## Common Errors and Solutions:
 
 Element click interception  
+![Product Name Screen Shot](assets/errors/Element-click-intercepted.png)
 https://stackoverflow.com/questions/56779520/elementclickinterceptedexception-element-click-intercepted
 
 Element is not attached to the document page  
+![Product Name Screen Shot](assets/errors/Element-is-not-attached-to-the-document.png)
 https://stackoverflow.com/questions/67205623/selenium-element-is-not-attached-to-the-page-document-in-selenium-java
 
 Element is not clickable at point (X,Y)  
+![Product Name Screen Shot](assets/errors/Element-click-intercepted.png)
 https://stackoverflow.com/questions/37879010/selenium-debugging-element-is-not-clickable-at-point-x-y/37880313#37880313
 
 Element not interactable  
+![Product Name Screen Shot](assets/errors/Element-not-interactable.png)
 https://stackoverflow.com/questions/45183797/element-not-interactable-exception-in-selenium-web-automation
 
 Function timed out  
+![Product Name Screen Shot](assets/errors/Function-timed-out.png)
 https://stackoverflow.com/questions/51965579/webdriverio-cucumber-function-timeout-ensure-promise-resolves-within-10000
 
 Invalid session Id  
+![Product Name Screen Shot](assets/errors/Invalid-session-id.png)
 https://stackoverflow.com/questions/56483403/selenium-common-exceptions-webdriverexception-message-invalid-session-id-using
 
 Version Error  
+![Product Name Screen Shot](assets/errors/Version-error.png)
 brew install chromedriver --cask
+
+Assertion Error  
+![Product Name Screen Shot](assets/errors/Assertion-error.png)
+
+Cant Find Module  
+![Product Name Screen Shot](assets/errors/Cant-find-module.png)
+
+Waiting For Element To Be Located  
+![Product Name Screen Shot](assets/errors/Waiting-for-element-to-be-located.png)
 
 ## Resources
 
