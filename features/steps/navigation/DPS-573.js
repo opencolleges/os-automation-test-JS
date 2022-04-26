@@ -68,7 +68,7 @@ Then(
         // Assert the url is correct
         assert.strictEqual(
           currentUrl,
-          uatUrl + "/12345" + courseCode + "#/" + supportMenuParams[i]
+          uatUrl + "/" + courseCode + "#/" + supportMenuParams[i]
         );
       }
     } catch (err) {
