@@ -31,11 +31,21 @@ const screen = {
 options = new chrome.Options().windowSize(screen);
 options.addArguments("disable-gpu");
 
-// Create a new driver for Chrome
-var driver = new Builder()
-  .forBrowser("chrome")
-  .setChromeOptions(new chrome.Options().windowSize(screen))
-  .build();
+const runMode = "headless";
+
+if (runMode === "headless") {
+  // Create a new driver for Chrome headless
+  var driver = new Builder()
+    .forBrowser("chrome")
+    .setChromeOptions(new chrome.Options().headless().windowSize(screen))
+    .build();
+} else if (runMode === "web") {
+  // None headless
+  var driver = new Builder()
+    .forBrowser("chrome")
+    .setChromeOptions(new chrome.Options().windowSize(screen))
+    .build();
+}
 
 When("user successfully logins", async function () {
   await login(driver, usernameAlt, password);
