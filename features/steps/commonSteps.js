@@ -208,10 +208,10 @@ Then(/^click 'Contact Support' button$/, async function () {
   try {
     var contactSupport = await driver.wait(
       until.elementLocated(By.xpath(contactSupportXpath)),
-      80000
+      30000
     );
   } catch(err) {
-    errorLog("commonSteps", "contactSupport", supportMenuXpath, "3s");
+    errorLog("commonSteps", "contactSupport", contactSupportXpath, "3s");
     driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
