@@ -7,6 +7,8 @@ const {
   password,
   usernameAssessor,
   passwordAssessor,
+  expiredCourseUser,
+  expiredCoursePass
 } = require("../../data/testData");
 
 const {
@@ -18,6 +20,7 @@ const {
   profileMenuXpath,
   logoutAsAssessorXpath,
   supportMenuXpath,
+  contactSupportXpath,
 } = require("../../data/elementXpath");
 
 const { login, logout, errorLog } = require("../../utilities/function");
@@ -53,6 +56,10 @@ When("user successfully logins", async function () {
 
 When(/^user successfully logins as an assessor$/, async function () {
   await login(driver, usernameAssessor, passwordAssessor);
+});
+
+When(/^user with an expired course logs in$/, async function () {
+  await login(driver, expiredCourseUser, expiredCoursePass);
 });
 
 When(/^page is refreshed$/, async function () {
@@ -195,6 +202,21 @@ Then(/^click on support menu from nav$/, async function () {
   }
 
   supportMenu.click();
+});
+
+Then(/^click 'Contact Support' button$/, async function () {
+  try {
+    var contactSupport = await driver.wait(
+      until.elementLocated(By.xpath(contactSupportXpath)),
+      80000
+    );
+  } catch(err) {
+    errorLog("commonSteps", "contactSupport", supportMenuXpath, "3s");
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    throw Error(err.message);
+  }
+
+  contactSupport.click();
 });
 
 exports.driver = driver;
