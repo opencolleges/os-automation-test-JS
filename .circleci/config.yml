@@ -23,7 +23,6 @@ jobs:
       - run: 
           command: | 
             npm install
-            chromedriver --version
             npm run test
           name: Install, then run Node tests
       - run: 
