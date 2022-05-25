@@ -11,7 +11,7 @@ jobs:
       - image: 'cimg/node:17.4.0-browsers'
     steps:
       - browser-tools/install-chrome
-      - browser-tools/install-chromedriver
+      #- browser-tools/install-chromedriver
       - checkout
 
       - run:
@@ -19,9 +19,9 @@ jobs:
           command: |
             node --version
             google-chrome --version
-            chromedriver --version
       - run: 
-          command: | 
+          command: |
+            rm -rf package-lock.json
             npm install
             npm run test
           name: Install, then run Node tests
