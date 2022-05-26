@@ -4,3 +4,4 @@ Feature:DPS-1086
     Scenario: Verifying user with expired course can extend thier course
         When user with an expired course logs in
         Then click 'Contact Support' button
+        Then logout the user
