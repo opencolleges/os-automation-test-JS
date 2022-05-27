@@ -204,14 +204,12 @@ Then(/^click on support menu from nav$/, async function () {
   supportMenu.click();
 });
 
-Then(/^click 'Contact Support' button$/, async function () {
+Then(/^ensure 'Contact Support' button exsists$/, async function () {
   try {
     var contactSupport = await driver.wait(
       until.elementLocated(By.xpath(contactSupportXpath)),
       30000
     );
-    await driver.sleep(2000);
-    contactSupport.click();
   } catch(err) {
     errorLog("commonSteps", "contactSupport", contactSupportXpath, "3s");
     driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
