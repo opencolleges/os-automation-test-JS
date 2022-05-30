@@ -18,7 +18,6 @@ const {
   courseMenuXpath,
   trainerPositionXpath,
   profileMenuXpath,
-  logoutAsAssessorXpath,
   supportMenuXpath,
   contactSupportXpath,
 } = require("../../data/elementXpath");
@@ -177,11 +176,11 @@ Then(/^logout the user$/, async function () {
 Then(/^logout the user as an assessor$/, async function () {
   try {
     var logoutAsAssessor = await driver.wait(
-      until.elementLocated(By.xpath(logoutAsAssessorXpath)),
+      until.elementLocated(By.id("assessor-logout")),
       60000
     );
   } catch (err) {
-    errorLog("commonSteps", "logoutAsAssessor", logoutAsAssessorXpath, "6s");
+    errorLog("commonSteps", "logoutAsAssessor", "assessor-logout", "6s");
     driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
