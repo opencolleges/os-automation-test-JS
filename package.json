@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "@cucumber/cucumber": "^8.0.0-rc.1",
-    "chromedriver": "^100.0.0"
+    "chromedriver": "latest"
   }
 }

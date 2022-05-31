@@ -7,6 +7,8 @@ const {
   password,
   usernameAssessor,
   passwordAssessor,
+  expiredCourseUser,
+  expiredCoursePass
 } = require("../../data/testData");
 
 const {
@@ -16,8 +18,8 @@ const {
   courseMenuXpath,
   trainerPositionXpath,
   profileMenuXpath,
-  logoutAsAssessorXpath,
   supportMenuXpath,
+  contactSupportXpath,
 } = require("../../data/elementXpath");
 
 const { login, logout, errorLog } = require("../../utilities/function");
@@ -53,6 +55,10 @@ When("user successfully logins", async function () {
 
 When(/^user successfully logins as an assessor$/, async function () {
   await login(driver, usernameAssessor, passwordAssessor);
+});
+
+When(/^user with an expired course logs in$/, async function () {
+  await login(driver, expiredCourseUser, expiredCoursePass);
 });
 
 When(/^page is refreshed$/, async function () {
@@ -170,11 +176,11 @@ Then(/^logout the user$/, async function () {
 Then(/^logout the user as an assessor$/, async function () {
   try {
     var logoutAsAssessor = await driver.wait(
-      until.elementLocated(By.xpath(logoutAsAssessorXpath)),
+      until.elementLocated(By.id("assessor-logout")),
       60000
     );
   } catch (err) {
-    errorLog("commonSteps", "logoutAsAssessor", logoutAsAssessorXpath, "6s");
+    errorLog("commonSteps", "logoutAsAssessor", "assessor-logout", "6s");
     driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
@@ -195,6 +201,19 @@ Then(/^click on support menu from nav$/, async function () {
   }
 
   supportMenu.click();
+});
+
+Then(/^ensure 'Contact Support' button exsists$/, async function () {
+  try {
+    var contactSupport = await driver.wait(
+      until.elementLocated(By.xpath(contactSupportXpath)),
+      30000
+    );
+  } catch(err) {
+    errorLog("commonSteps", "contactSupport", contactSupportXpath, "3s");
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    throw Error(err.message);
+  }
 });
 
 exports.driver = driver;
