@@ -30,7 +30,7 @@ const screen = {
 };
 
 const runMode = "headless";  //'headless' for circleci, 'web' to see it run on screen in your local
-const useFirefox = false;
+const useFirefox = true;
 
 if (useFirefox) {
   const ffx = require("selenium-webdriver/firefox");
