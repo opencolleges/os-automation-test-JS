@@ -71,6 +71,8 @@ function errorLog(fileName, elementName, Xpath, time, errorMessage) {
 }
 
 exports.login = async function (driver, username, password) {
+  //Low cost to logout.  Hit here in case previous step failed.
+  driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
   // Open the page for login
   await driver.get(uatUrl);
 
