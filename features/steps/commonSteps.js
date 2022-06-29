@@ -24,29 +24,51 @@ const {
 
 const { login, logout, errorLog } = require("../../utilities/function");
 
-const chrome = require("selenium-webdriver/chrome");
-
 const screen = {
   width: 1920,
   height: 1200,
 };
-options = new chrome.Options().windowSize(screen);
-options.addArguments("disable-gpu");
 
-const runMode = "headless";
+const runMode = "headless";  //'headless' for circleci, 'web' to see it run on screen in your local
+const useFirefox = false;
 
-if (runMode === "headless") {
-  // Create a new driver for Chrome headless
-  var driver = new Builder()
-    .forBrowser("chrome")
-    .setChromeOptions(new chrome.Options().headless().windowSize(screen))
-    .build();
-} else if (runMode === "web") {
-  // None headless
-  var driver = new Builder()
-    .forBrowser("chrome")
-    .setChromeOptions(new chrome.Options().windowSize(screen))
-    .build();
+if (useFirefox) {
+  const ffx = require("selenium-webdriver/firefox");
+  options = new ffx.Options().windowSize(screen);
+  options.addArguments("disable-gpu");
+
+  if (runMode === "headless") {
+    // Create a new driver for Chrome headless
+    var driver = new Builder()
+        .forBrowser("firefox")
+        .setFirefoxOptions(new ffx.Options().headless().windowSize(screen))
+        .build();
+  } else if (runMode === "web") {
+    // None headless
+    var driver = new Builder()
+        .forBrowser("firefox")
+        .setFirefoxOptions(new ffx.Options().windowSize(screen))
+        .build();
+  }
+}
+else{
+  const chrome = require("selenium-webdriver/chrome");
+  options = new chrome.Options().windowSize(screen);
+  options.addArguments("disable-gpu");
+
+  if (runMode === "headless") {
+    // Create a new driver for Chrome headless
+    var driver = new Builder()
+        .forBrowser("chrome")
+        .setChromeOptions(new chrome.Options().headless().windowSize(screen))
+        .build();
+  } else if (runMode === "web") {
+    // None headless
+    var driver = new Builder()
+        .forBrowser("chrome")
+        .setChromeOptions(new chrome.Options().windowSize(screen))
+        .build();
+  }
 }
 
 When("user successfully logins", async function () {
