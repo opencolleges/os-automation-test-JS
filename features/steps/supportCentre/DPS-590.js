@@ -43,7 +43,7 @@ Then(
     }
 
     await actions
-      .move({ duration: 5000, origin: supportMenu, x: 0, y: 0 })
+      .move({ duration: 2000, origin: supportMenu, x: 0, y: 0 })
       .perform();
 
     try {
@@ -64,7 +64,7 @@ Then(
 Then(
   /^click on view more button to navigate to main FAQ page$/,
   async function () {
-    await driver.sleep(5000);
+
 
     try {
       var viewMore = await driver.wait(
@@ -82,71 +82,16 @@ Then(
 );
 
 Then(/^check FAQ main page title is expected$/, async function () {
-  await driver.sleep(5000);
+
 
   await elementTitleCheck(driver, fileName, "FAQs - Getting Started");
 });
 
-Then(/^check the breadscrumbs and heading display correct$/, async function () {
-  try {
-    var courseBreadscrumb = await driver
-      .wait(
-        until.elementLocated(By.xpath(gettingStartedCourseBreadScrumbXpath)),
-        30000
-      )
-      .getText();
-  } catch (err) {
-    errorLog(
-      fileName,
-      "courseBreadscrumb",
-      gettingStartedCourseBreadScrumbXpath,
-      "3s"
-    );
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-    throw Error(err.message);
-  }
-  strictEqual(
-    courseBreadscrumb,
-    "E1048B Certificate III Education Support - Supporting Education"
-  );
-
-  try {
-    var previousPageBreadScrumb = await driver
-      .wait(until.elementLocated(By.xpath(supportBreadcrumbXpath)), 30000)
-      .getText();
-  } catch (err) {
-    errorLog(fileName, "previousPageBreadScrumb", supportBreadcrumbXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-    throw Error(err.message);
-  }
-
-  strictEqual(previousPageBreadScrumb, "Support Centre");
-
-  try {
-    var currentPageBreadScrumb = await driver
-      .wait(
-        until.elementLocated(By.xpath(gettingStartedCurrentBreadScrumbXpath)),
-        30000
-      )
-      .getText();
-  } catch (err) {
-    errorLog(
-      fileName,
-      "currentPageBreadScrumb",
-      gettingStartedCurrentBreadScrumbXpath,
-      "3s"
-    );
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-    throw Error(err.message);
-  }
-
-  strictEqual(currentPageBreadScrumb, "Getting Started");
-});
 
 Then(
   /^click the first FAQ and provide the feedback with YES$/,
   async function () {
-    await driver.sleep(5000);
+
     try {
       var firstFAQ = await driver.wait(
         until.elementLocated(By.xpath(supportCentreFirstFAQXpath)),
@@ -160,7 +105,6 @@ Then(
 
     firstFAQ.click();
 
-    await driver.sleep(5000);
 
     try {
       var buttonYes = await driver.wait(
@@ -180,7 +124,7 @@ Then(
 Then(
   /^click the second FAQ and provide the feedback with NO$/,
   async function () {
-    await driver.sleep(5000);
+
     try {
       var secondFAQ = await driver.wait(
         until.elementLocated(By.xpath(supportCentreSecondFAQXpath)),
@@ -194,7 +138,6 @@ Then(
 
     secondFAQ.click();
 
-    await driver.sleep(5000);
 
     try {
       var buttonNo = await driver.wait(

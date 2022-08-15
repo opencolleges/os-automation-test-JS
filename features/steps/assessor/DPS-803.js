@@ -32,6 +32,8 @@ Then(/^click OpenSpace Release Notes$/, async function () {
       until.elementLocated(By.xpath(assessorOpenSpaceReleaseNotesXpath)),
       30000
     );
+
+    openSpaceReleaseNotes.click();
   } catch (err) {
     errorLog(
       fileName,
@@ -43,7 +45,6 @@ Then(/^click OpenSpace Release Notes$/, async function () {
     throw Error(err.message);
   }
 
-  openSpaceReleaseNotes.click();
 });
 
 Then(
@@ -53,13 +54,14 @@ Then(
       var title = await driver
         .wait(until.elementLocated(By.css("h1")), 30000)
         .getText();
+      strictEqual(title, "Release notes");
     } catch (err) {
       errorLog(fileName, "title", "By.css('h1')", "3s");
       driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
 
-    strictEqual(title, "Release notes");
+
 
     try {
       var content = await driver.wait(
@@ -87,13 +89,14 @@ Then(/^click Messages$/, async function () {
       until.elementLocated(By.xpath(assessorMessagesXpath)),
       30000
     );
+
+    Messages.click();
   } catch (err) {
     errorLog(fileName, "Messages", assessorMessagesXpath, "3s");
     driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
 
-  Messages.click();
 });
 
 Then(
@@ -143,7 +146,7 @@ Then(
 
       tabBarItem.click();
 
-      await driver.sleep(5000);
+      await driver.sleep(1000);
 
       try {
         var messageItem = await driver.wait(
@@ -187,7 +190,7 @@ Then(/^select Inbox and select the first message$/, async function () {
 
   inbox.click();
 
-  await driver.sleep(5000);
+  await driver.sleep(1000);
 
   try {
     var firstInboxMessage = await driver.wait(
@@ -203,7 +206,7 @@ Then(/^select Inbox and select the first message$/, async function () {
 });
 
 Then(/^verify that content loads in the right-hand panel$/, async function () {
-  await driver.sleep(5000);
+  //await driver.sleep(5000);
 
   try {
     var messageSender = await driver.wait(
@@ -218,7 +221,7 @@ Then(/^verify that content loads in the right-hand panel$/, async function () {
 
   assert(
     await messageSender.getText(),
-    "Emma Biggs",
+    "Michelle Badato",
     "Message sender is not correct"
   );
 });

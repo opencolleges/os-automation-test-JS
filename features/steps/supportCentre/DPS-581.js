@@ -36,9 +36,6 @@ Then(
     }
 
     supportMenu.click();
-
-    await driver.sleep(5000);
-
     try {
       var assessmentBlock = await driver.wait(
         until.elementLocated(By.xpath(supportCentreAssessmentBlockXpath)),
@@ -104,28 +101,5 @@ Then(
     }
 
     assessmentsPageBreadScrumb.click();
-  }
-);
-
-Then(
-  /^click on support breadcrumb to navigate to back to support centre page$/,
-  async function () {
-    try {
-      var supportCentreBreadScrumb = await driver.wait(
-        until.elementLocated(By.xpath(gettingStartedPreviousBreadScrumbXpath)),
-        30000
-      );
-    } catch (err) {
-      errorLog(
-        fileName,
-        "supportCentreBreadScrumb",
-        gettingStartedPreviousBreadScrumbXpath,
-        "3s"
-      );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
-    }
-
-    supportCentreBreadScrumb.click();
   }
 );

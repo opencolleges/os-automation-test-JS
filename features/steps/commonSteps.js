@@ -31,7 +31,7 @@ const screen = {
 options = new chrome.Options().windowSize(screen);
 options.addArguments("disable-gpu");
 
-const runMode = "headless";
+const runMode = "web";
 
 if (runMode === "headless") {
   // Create a new driver for Chrome headless

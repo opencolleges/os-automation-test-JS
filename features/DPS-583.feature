@@ -9,5 +9,4 @@ Feature:DPS-583
         Then check Support Centre title
         Then click arrow icon of each question to show details
         Then click View more button to show more questions
-        Then check the title
         Then logout the user

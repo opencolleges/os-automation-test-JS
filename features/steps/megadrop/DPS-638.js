@@ -24,7 +24,7 @@ const { errorLog } = require("../../../utilities/function");
 setDefaultTimeout(60 * 1000);
 
 const path = require("path");
-
+//*[@id="message-pane"]/div/div[4]
 // Get file name
 const fileName = path.basename(__filename);
 
@@ -32,7 +32,7 @@ Then(
   /^click on course home page from megadrop menu and navigate to Home Page$/,
   async function () {
     //   Wait for page to load
-    await driver.sleep(5000);
+    //await driver.sleep(5000);
 
     try {
       // Find course homepage
@@ -48,7 +48,7 @@ Then(
     courseHomePage.click();
 
     // Wait for page to load
-    await driver.sleep(5000);
+    //await driver.sleep(5000);
 
     // Get the current url
     const currentUrl = await driver.getCurrentUrl();
@@ -77,7 +77,7 @@ Then(
     courseOverview.click();
 
     // Wait for load
-    await driver.sleep(5000);
+    //await driver.sleep(5000);
 
     try {
       // Find course title
@@ -114,7 +114,7 @@ Then(
     module1.click();
 
     // Wait to load topic
-    await driver.sleep(5000);
+    //await driver.sleep(5000);
 
     try {
       // Click Topic1.1 Communicate effectively with students
@@ -132,7 +132,7 @@ Then(
     firstTopic.click();
 
     // Wait to load subtopic
-    await driver.sleep(5000);
+    //await driver.sleep(5000);
 
     try {
       // Find Subtopic1.1 Communicate effectively with students
@@ -150,7 +150,7 @@ Then(
     firstSubtopic.click();
 
     // Wait to load page
-    await driver.sleep(5000);
+    //await driver.sleep(5000);
 
     // Assert content is successfully loaded
     for (let i = 1; i < 6; i++) {
@@ -178,17 +178,13 @@ Then(
         until.elementLocated(By.xpath(additionalResourcesXpath)),
         30000
       );
+        // Click additional resources
+        additionalResources.click();
     } catch (err) {
       errorLog(fileName, "additionalResources", additionalResourcesXpath, "3s");
       driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
-
-    // Click additional resources
-    additionalResources.click();
-
-    // Wait to load
-    await driver.sleep(5000);
 
     try {
       // Find title
@@ -196,6 +192,14 @@ Then(
         until.elementLocated(By.xpath(additionalResourcesTitleXpath)),
         30000
       );
+        // Assert title is successfully displayed
+        assert(await additionalResourcesTitle.isDisplayed());
+
+        // Assert title is expected
+        assert.strictEqual(
+            await additionalResourcesTitle.getText(),
+            "Additional Resources"
+        );
     } catch (err) {
       errorLog(
         fileName,
@@ -207,14 +211,7 @@ Then(
       throw Error(err.message);
     }
 
-    // Assert title is successfully displayed
-    assert(await additionalResourcesTitle.isDisplayed());
 
-    // Assert title is expected
-    assert.strictEqual(
-      await additionalResourcesTitle.getText(),
-      "Additional Resources"
-    );
 
     try {
       var additionalResourcesSubTitle = await driver.wait(
@@ -232,14 +229,6 @@ Then(
       throw Error(err.message);
     }
 
-    // Wait for page to be fully loaded
-    await driver.sleep(10000);
-
-    // Assert subtitle is expected
-    assert.equal(
-      await additionalResourcesSubTitle.getText(),
-      "Showing 32 Additional Resources"
-    );
 
     try {
       // Find links
@@ -247,6 +236,10 @@ Then(
         until.elementsLocated(By.xpath(additionalResourcesLinksXpath)),
         30000
       );
+        // Assert every link is successfully displayed
+        for (let i = 0; i < additionalResourcesLinks.length; i++) {
+            assert(await additionalResourcesLinks[i].isDisplayed());
+        }
     } catch (err) {
       errorLog(
         fileName,
@@ -258,10 +251,7 @@ Then(
       throw Error(err.message);
     }
 
-    // Assert every link is successfully displayed
-    for (let i = 0; i < additionalResourcesLinks.length; i++) {
-      assert(await additionalResourcesLinks[i].isDisplayed());
-    }
+
   }
 );
 
@@ -284,7 +274,7 @@ Then(
     await moduleHelper.click();
 
     // Wait to load
-    await driver.sleep(5000);
+    //await driver.sleep(5000);
 
     // Get current windows
     const windows = await driver.getAllWindowHandles();

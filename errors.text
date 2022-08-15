@@ -1,138 +1,12 @@
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: Expected values to be strictly equal:
-[32m+ actual[39m [31m- expected[39m
-
-[32m+[39m 'https://uat-os.opencolleges.edu.au/E1048B#/ask-for-support'
-[31m-[39m 'https://uat-os.opencolleges.edu.au/123341241E1048B#/ask-for-support'
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
+File: DPS-577.js
+Name: supportBreadcrumb1
+Xpath: //*[@id="course_picker_span"]/a[2]
 Waiting time: 3s
 Error message: undefined
 
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
+File: DPS-577.js
+Name: supportBreadcrumb1
+Xpath: //*[@id="course_picker_span"]/a[2]
 Waiting time: 3s
 Error message: undefined
 
@@ -143,92 +17,80 @@ Waiting time: 3s
 Error message: undefined
 
 File: DPS-581.js
-Name: viewMore
-Xpath: //*[@id="page-data"]/div/div/div[6]/div/div/a/div
+Name: assessmentsPageBreadScrumb
+Xpath: //*[@id="course_picker_span"]/a[3]
 Waiting time: 3s
 Error message: undefined
 
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
+File: DPS-590.js
+Name: courseBreadscrumb
+Xpath: //*[@id="course_picker_span"]/a[1]
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-591.js
+Name: iframe
+Xpath: //iframe[@src='https://widget.cloudinary.com/n/opencolleges/173/index.html?cloud_name=opencolleges']
+Waiting time: 10s
+Error message: undefined
+
+File: DPS-581.js
+Name: assessmentsPageBreadScrumb
+Xpath: //*[@id="course_picker_span"]/a[3]
 Waiting time: 3s
 Error message: undefined
 
 File: DPS-581.js
-Name: viewMore
-Xpath: //*[@id="page-data"]/div/div/div[6]/div/div/a/div
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
+Name: supportCentreBreadScrumb
+Xpath: //*[@id="course_picker_span"]/a[2]
 Waiting time: 3s
 Error message: undefined
 
 File: DPS-581.js
-Name: viewMore
-Xpath: //*[@id="page-data"]/div/div/div[6]/div/div/a/div
+Name: supportCentreBreadScrumb
+Xpath: //*[@id="page-data"]/div/div[1]/p/a[2]
 Waiting time: 3s
 Error message: undefined
 
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
+File: DPS-590.js
+Name: courseBreadscrumb
+Xpath: //*[@id="course_picker_span"]/a[1]
 Waiting time: 3s
 Error message: undefined
 
-File: DPS-581.js
-Name: viewMore
-Xpath: //*[@id="page-data"]/div/div/div[6]/div/div/a/div
+File: DPS-590.js
+Name: secondFAQ
+Xpath: //*[@id="page-data"]/div/div/div[4]/dl[2]
 Waiting time: 3s
 Error message: undefined
 
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
+File: DPS-591.js
+Name: iframe
+Xpath: //iframe[@src='https://widget.cloudinary.com/n/opencolleges/173/index.html?cloud_name=opencolleges']
+Waiting time: 10s
 Error message: undefined
 
-File: DPS-581.js
-Name: viewMore
-Xpath: //*[@id="page-data"]/div/div/div[6]/div/div/a/div
+File: DPS-591.js
+Name: iframe
+Xpath: //iframe[@src='https://widget.cloudinary.com/n/opencolleges/173/index.html?cloud_name=opencolleges']
+Waiting time: 10s
+Error message: undefined
+
+File: DPS-591.js
+Name: iframe
+Xpath: //iframe[@src='https://widget.cloudinary.com/n/opencolleges/173/index.html?cloud_name=opencolleges']
+Waiting time: 10s
+Error message: undefined
+
+File: DPS-591.js
+Name: iframe
+Xpath: //iframe[@src='https://widget.cloudinary.com/n/opencolleges/173/index.html?cloud_name=opencolleges']
+Waiting time: 10s
+Error message: undefined
+
+File: DPS-593.js
+Name: moreDiscussionCommentElement
+Xpath: /html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[3]/div[12] 
 Waiting time: 3s
 Error message: undefined
 
@@ -238,9 +100,33 @@ Xpath: By.css('h1')
 Waiting time: 3s
 Error message: undefined
 
-File: DPS-581.js
-Name: viewMore
-Xpath: //*[@id="page-data"]/div/div/div[6]/div/div/a/div
+File: DPS-638.js
+Name: moduleHelper
+Xpath: //*[@id="page-data"]/div/div[2]/div/div/ul/li[25]
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-803.js
+Name: firstInboxMessage
+Xpath: //*[@id="bg2233710"]
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-803.js
+Name: firstInboxMessage
+Xpath: //*[@id="bg2233710"]
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-803.js
+Name: messageSender
+Xpath: //*[@id="message-pane"]/div[2]/div[1]/div[1]/div/span
+Waiting time: 3s
+Error message: undefined
+
+File: DPS-803.js
+Name: messageSender
+Xpath: //*[@id="message-pane"]/div[2]/div[1]/div[1]/div/span
 Waiting time: 3s
 Error message: undefined
 
@@ -250,27 +136,9 @@ Xpath: By.className('large-3')
 Waiting time: 3s
 Error message: undefined
 
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
-Waiting time: 3s
-Error message: undefined
-
-File: DPS-573.js
-Name: links
-Xpath: By.className('large-3')
+File: commonSteps
+Name: supportMenu
+Xpath: //*[@id="support_menu"]
 Waiting time: 3s
 Error message: undefined
 
