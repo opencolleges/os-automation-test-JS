@@ -1,6 +1,7 @@
 @chrome
 Feature:DPS-1086
-    Verifying top navigations
-    Scenario: Verifying support and profile menu
+    Extension form
+    Scenario: Verifying user with expired course can extend thier course
         When user with an expired course logs in
-        Then click 'Contact Support' button
+        Then ensure 'Contact Support' button exsists
+        Then logout the user

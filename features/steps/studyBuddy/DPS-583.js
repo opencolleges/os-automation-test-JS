@@ -87,14 +87,14 @@ Then(/^click arrow icon of each question to show details$/, async function () {
       try {
         // Find the detail
         await driver.wait(
-          until.elementLocated(By.xpath(`//*[@id="faq_study-buddy_${i + 1}"]`)),
+          until.elementLocated(By.id(`faq_study-buddy_${i + 1}`)),
           30000
         );
       } catch (err) {
         errorLog(
           fileName,
           "questionDetail",
-          `//*[@id="faq_study-buddy_${i + 1}"]`,
+          `faq_study-buddy_${i + 1}`,
           "3s"
         );
         driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");

@@ -7,11 +7,11 @@ orbs:
   browser-tools: circleci/browser-tools@1.2.3
 jobs:
   install-chrome-run-tests:
+    resource_class: large
     docker:
       - image: 'cimg/node:17.4.0-browsers'
     steps:
       - browser-tools/install-chrome
-      #- browser-tools/install-chromedriver
       - checkout
 
       - run:
@@ -19,9 +19,8 @@ jobs:
           command: |
             node --version
             google-chrome --version
-            
       - run: 
-          command: | 
+          command: |
             rm -rf package-lock.json
             npm install
             npm run test
