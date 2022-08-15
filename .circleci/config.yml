@@ -12,8 +12,6 @@ jobs:
       - image: 'cimg/node:17.4.0-browsers'
     steps:
       - browser-tools/install-chrome
-      - browser-tools/install-firefox
-      #- browser-tools/install-chromedriver
       - checkout
 
       - run:
@@ -21,7 +19,6 @@ jobs:
           command: |
             node --version
             google-chrome --version
-            firefox --version
       - run: 
           command: |
             rm -rf package-lock.json
