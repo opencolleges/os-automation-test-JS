@@ -71,12 +71,10 @@ function errorLog(fileName, elementName, Xpath, time, errorMessage) {
 }
 
 exports.login = async function (driver, username, password) {
-
-  // Flush any previous login from previous developer not catching errors in tests & closing session
-  driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-
+  //call logout first, page will redirect to login afterward
+  await driver.get('https://uat-os.opencolleges.edu.au/user/logout');
   // Open the page for login
-  await driver.get(uatUrl);
+  //await driver.get(uatUrl);
 
   // Input username and password
   const usernameInput = await driver.wait(
