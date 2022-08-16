@@ -1,3 +1,6 @@
 node_modules
 report/*
 *_report.json
+
+# Error log
+errors.text
