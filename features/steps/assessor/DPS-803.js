@@ -206,7 +206,7 @@ Then(/^select Inbox and select the first message$/, async function () {
 });
 
 Then(/^verify that content loads in the right-hand panel$/, async function () {
-  //await driver.sleep(5000);
+
 
   try {
     var messageSender = await driver.wait(
