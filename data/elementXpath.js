@@ -291,6 +291,7 @@ exports.messageSenderXpath =
 exports.logoutAsAssessorXpath =
   '//*[@id="trainerDashboardMain"]/div/div/div/trainer-dashboard-off-canvas/aside/ul/li[20]/a';
 
+
 exports.supportCategoryItemsWrapperXpath =
   '//*[@id="support-centre-react-div"]/div';
 
