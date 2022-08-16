@@ -71,12 +71,14 @@ function errorLog(fileName, elementName, Xpath, time, errorMessage) {
 }
 
 exports.login = async function (driver, username, password) {
+  //Seems like on occasion in circleCI that the driver gets in a weird state.
+  //Give it some time to get itself together and then try
+  await driver.sleep(5000);
 
-  // Flush any previous login from previous developer not catching errors in tests & closing session
-  driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-
+  //call logout first, page will redirect to login afterward
+  await driver.get('https://uat-os.opencolleges.edu.au/user/logout');
   // Open the page for login
-  await driver.get(uatUrl);
+  //await driver.get(uatUrl);
 
   // Input username and password
   const usernameInput = await driver.wait(
@@ -105,7 +107,7 @@ exports.login = async function (driver, username, password) {
   // Wait for page loading
   await driver.sleep(1000);
 
-  // Check wheather course is expired
+  // Check whether course is expired
   await isCourseExpired(driver);
 };
 

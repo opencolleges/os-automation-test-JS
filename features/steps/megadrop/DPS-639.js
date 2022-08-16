@@ -320,11 +320,11 @@ Then(
     try {
       // Find tab discussion
       var tabDiscussion = await driver.wait(
-        until.elementLocated(By.xpath('//li[@id="tab-discussion"]')),
+        until.elementLocated(By.id("tab-discussion")),
         30000
       );
     } catch (err) {
-      errorLog(fileName, "tabDiscussion", '//li[@id="tab-discussion"]', "3s");
+      errorLog(fileName, "tabDiscussion", "tab-discussion", "3s");
       driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
       throw Error(err.message);
     }
@@ -332,14 +332,14 @@ Then(
     try {
       // Find tab submit assessment
       var tabSubmitAssessment = await driver.wait(
-        until.elementLocated(By.xpath('//li[@id="tab-submit-assessment"]')),
+        until.elementLocated(By.id("tab-submit-assessment")),
         30000
       );
     } catch (err) {
       errorLog(
         fileName,
         "tabSubmitAssessment",
-        '//li[@id="tab-submit-assessment"]',
+        "tab-submit-assessment",
         "3s"
       );
       driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");

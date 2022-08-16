@@ -10,6 +10,10 @@ exports.usernameAssessor = "tracey.hickey";
 exports.passwordAssessor = "Y[JWcyF27:jef:Y";
 
 
+// User with an expired course
+exports.expiredCourseUser="elizabeth_charles29@hotmail.com"
+exports.expiredCoursePass="Y[JWcyF27:jef:Y"
+
 // exports.course = "Welcome to the Certificate III in Education Support";
 exports.course = "Welcome to the Certificate III in Education Support";
 

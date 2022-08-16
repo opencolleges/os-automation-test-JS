@@ -7,6 +7,8 @@ const {
   password,
   usernameAssessor,
   passwordAssessor,
+  expiredCourseUser,
+  expiredCoursePass
 } = require("../../data/testData");
 
 const {
@@ -16,35 +18,57 @@ const {
   courseMenuXpath,
   trainerPositionXpath,
   profileMenuXpath,
-  logoutAsAssessorXpath,
   supportMenuXpath,
+  contactSupportXpath,
 } = require("../../data/elementXpath");
 
 const { login, logout, errorLog } = require("../../utilities/function");
-
-const chrome = require("selenium-webdriver/chrome");
 
 const screen = {
   width: 1920,
   height: 1200,
 };
-options = new chrome.Options().windowSize(screen);
-options.addArguments("disable-gpu");
 
-const runMode = "headless";
+const runMode = "headless";  //'headless' for circleci, 'web' to see it run on screen in your local
+const useFirefox = false;
 
-if (runMode === "headless") {
-  // Create a new driver for Chrome headless
-  var driver = new Builder()
-    .forBrowser("chrome")
-    .setChromeOptions(new chrome.Options().headless().windowSize(screen))
-    .build();
-} else if (runMode === "web") {
-  // None headless
-  var driver = new Builder()
-    .forBrowser("chrome")
-    .setChromeOptions(new chrome.Options().windowSize(screen))
-    .build();
+if (useFirefox) {
+  const ffx = require("selenium-webdriver/firefox");
+  options = new ffx.Options().windowSize(screen);
+  options.addArguments("disable-gpu");
+
+  if (runMode === "headless") {
+    // Create a new driver for Chrome headless
+    var driver = new Builder()
+        .forBrowser("firefox")
+        .setFirefoxOptions(new ffx.Options().headless().windowSize(screen))
+        .build();
+  } else if (runMode === "web") {
+    // None headless
+    var driver = new Builder()
+        .forBrowser("firefox")
+        .setFirefoxOptions(new ffx.Options().windowSize(screen))
+        .build();
+  }
+}
+else{
+  const chrome = require("selenium-webdriver/chrome");
+  options = new chrome.Options().windowSize(screen);
+  options.addArguments("disable-gpu");
+
+  if (runMode === "headless") {
+    // Create a new driver for Chrome headless
+    var driver = new Builder()
+        .forBrowser("chrome")
+        .setChromeOptions(new chrome.Options().headless().windowSize(screen))
+        .build();
+  } else if (runMode === "web") {
+    // None headless
+    var driver = new Builder()
+        .forBrowser("chrome")
+        .setChromeOptions(new chrome.Options().windowSize(screen))
+        .build();
+  }
 }
 
 When("user successfully logins", async function () {
@@ -53,6 +77,10 @@ When("user successfully logins", async function () {
 
 When(/^user successfully logins as an assessor$/, async function () {
   await login(driver, usernameAssessor, passwordAssessor);
+});
+
+When(/^user with an expired course logs in$/, async function () {
+  await login(driver, expiredCourseUser, expiredCoursePass);
 });
 
 When(/^page is refreshed$/, async function () {
@@ -169,12 +197,16 @@ Then(/^logout the user$/, async function () {
 
 Then(/^logout the user as an assessor$/, async function () {
   try {
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    var logoutAsAssessor = await driver.wait(
+      until.elementLocated(By.id("assessor-logout")),
+      60000
+    );
   } catch (err) {
-    errorLog("commonSteps", "logoutAsAssessor", logoutAsAssessorXpath, "6s");
+    errorLog("commonSteps", "logoutAsAssessor", "assessor-logout", "6s");
     driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);
   }
+
   logoutAsAssessor.click();
 });
 
@@ -191,6 +223,19 @@ Then(/^click on support menu from nav$/, async function () {
   }
 
   supportMenu.click();
+});
+
+Then(/^ensure 'Contact Support' button exsists$/, async function () {
+  try {
+    var contactSupport = await driver.wait(
+      until.elementLocated(By.xpath(contactSupportXpath)),
+      30000
+    );
+  } catch(err) {
+    errorLog("commonSteps", "contactSupport", contactSupportXpath, "3s");
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    throw Error(err.message);
+  }
 });
 
 exports.driver = driver;

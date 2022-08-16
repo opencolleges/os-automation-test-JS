@@ -79,7 +79,7 @@ Then(
       try {
         const assignmentName = driver.wait(
           until.elementLocated(
-            By.xpath(`//*[@id="grades_dt_id${i}"]/div[1]/div[1]`)
+            By.id(`grades_dt_id${i}`)
           ),
           30000
         );
@@ -89,7 +89,7 @@ Then(
         errorLog(
           fileName,
           "assignmentName",
-          `*[@id="grades_dt_id${i}"]/div[1]/div[1]`,
+          `grades_dt_id${i}`,
           "3s"
         );
         driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
@@ -100,7 +100,7 @@ Then(
       try {
         const assignmentCode = driver.wait(
           until.elementLocated(
-            By.xpath(`//*[@id="grades_dt_id${i}"]/div[1]/div[2]/p`)
+            By.id(`grades_dt_id${i}`)
           ),
           30000
         );
@@ -110,7 +110,7 @@ Then(
         errorLog(
           fileName,
           "assignmentCode",
-          `//*[@id="grades_dt_id${i}"]/div[1]/div[2]/p`,
+          `grades_dt_id${i}`,
           "3s"
         );
         driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
@@ -121,14 +121,14 @@ Then(
       try {
         const assignmentGrade = await driver.wait(
           until.elementLocated(
-            By.xpath(`//*[@id="grades_dt_row_id${i}0"]/div[1]`)
+            By.id(`grades_dt_row_id${i}0`)
           ),
           30000
         );
 
         await assignmentGrade.isDisplayed();
       } catch (err) {
-        errorLog(fileName, "assignmentGrade", "", "3s");
+        errorLog(fileName, "assignmentGrade", `grades_dt_row_id${i}0`, "3s");
         driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
         throw Error(err.message);
       }
@@ -143,14 +143,14 @@ Then(
     for (let i = 0; i < 1; i++) {
       try {
         var collapseButton = await driver.wait(
-          until.elementLocated(By.xpath(`//*[@id="grades_dt_detail_id${i}0"]`)),
+          until.elementLocated(By.id(`grades_dt_detail_id${i}0`)),
           30000
         );
       } catch (err) {
         errorLog(
           fileName,
           "collapseButton",
-          `//*[@id="grades_dt_detail_id${i}0"]`,
+          `grades_dt_detail_id${i}0`,
           "3s"
         );
         driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
@@ -169,7 +169,7 @@ Then(/^check grade name, date graded, date submitted$/, async function () {
     try {
       var gradeName = driver.wait(
         until.elementLocated(
-          By.xpath(`//*[@id="grades_dt_row_id${i}0"]/div[1]`)
+          By.id(`grades_dt_row_id${i}0`)
         ),
         30000
       );
@@ -177,7 +177,7 @@ Then(/^check grade name, date graded, date submitted$/, async function () {
       errorLog(
         fileName,
         "gradeName",
-        `//*[@id="grades_dt_row_id${i}0"]/div[1]`,
+        `grades_dt_row_id${i}0`,
         "3s"
       );
       driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
@@ -189,7 +189,7 @@ Then(/^check grade name, date graded, date submitted$/, async function () {
     try {
       var gradeDate = driver.wait(
         until.elementLocated(
-          By.xpath(`//*[@id="grades_dt_row_id${i}0"]/div[2]`)
+          By.id(`grades_dt_row_id${i}0`)
         ),
         30000
       );
@@ -197,7 +197,7 @@ Then(/^check grade name, date graded, date submitted$/, async function () {
       errorLog(
         fileName,
         "gradeDate",
-        `//*[@id="grades_dt_row_id${i}0"]/div[2]`,
+        `grades_dt_row_id${i}0`,
         "3s"
       );
       driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
@@ -209,7 +209,7 @@ Then(/^check grade name, date graded, date submitted$/, async function () {
     try {
       var gradeSubmitted = driver.wait(
         until.elementLocated(
-          By.xpath(`//*[@id="grades_dt_row_id${i}0"]/div[3]`)
+          By.id(`grades_dt_row_id${i}0`)
         ),
         30000
       );
@@ -217,7 +217,7 @@ Then(/^check grade name, date graded, date submitted$/, async function () {
       errorLog(
         fileName,
         "gradeSubmitted",
-        `//*[@id="grades_dt_row_id${i}0"]/div[3]`,
+        `grades_dt_row_id${i}0`,
         "3s"
       );
       driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");

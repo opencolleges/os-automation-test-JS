@@ -100,6 +100,22 @@ Then(
         until.elementLocated(By.xpath(changePasswordButtonXpath)),
         30000
       );
+      changePasswordButton.click();
+
+      await driver.sleep(5000);
+
+      // Get the current url
+      const currentUrl = await driver.getCurrentUrl();
+
+      // Assert the url is expected
+      assert.equal(
+          currentUrl,
+          "https://os-forms-staging.opencolleges.edu.au" + "/update-password"
+      );
+
+      // Back to previous page
+      driver.executeScript("window.history.go(-1)");
+
     } catch (err) {
       errorLog(
         fileName,
@@ -111,21 +127,7 @@ Then(
       throw Error(err.message);
     }
 
-    changePasswordButton.click();
 
-    await driver.sleep(5000);
-
-    // Get the current url
-    const currentUrl = await driver.getCurrentUrl();
-
-    // Assert the url is expected
-    assert.equal(
-      currentUrl,
-      "https://os-forms-staging.opencolleges.edu.au" + "/update-password"
-    );
-
-    // Back to previous page
-    driver.executeScript("window.history.go(-1)");
   }
 );
 
