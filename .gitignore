@@ -1,3 +1,4 @@
 node_modules
 report/*
 *_report.json
+/.idea/vcs.xml
