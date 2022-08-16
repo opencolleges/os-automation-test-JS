@@ -71,8 +71,10 @@ function errorLog(fileName, elementName, Xpath, time, errorMessage) {
 }
 
 exports.login = async function (driver, username, password) {
-  //Low cost to logout.  Hit here in case previous step failed.
+
+  // Flush any previous login from previous developer not catching errors in tests & closing session
   driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+
   // Open the page for login
   await driver.get(uatUrl);
 
@@ -101,7 +103,7 @@ exports.login = async function (driver, username, password) {
   loginbtn.click();
 
   // Wait for page loading
-  await driver.sleep(5000);
+  await driver.sleep(1000);
 
   // Check wheather course is expired
   await isCourseExpired(driver);
@@ -181,7 +183,7 @@ exports.supportMenuHovering = async function (driver, fileName) {
 
 exports.discussionPanelImageUpload = async function (driver, fileName) {
   // Wait for page to fully loaded
-  await driver.sleep(8000);
+  //await driver.sleep(8000);
 
   try {
     // Find discussion text

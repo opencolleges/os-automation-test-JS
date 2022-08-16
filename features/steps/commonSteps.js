@@ -216,7 +216,7 @@ Then(/^click on support menu from nav$/, async function () {
       until.elementLocated(By.xpath(supportMenuXpath)),
       30000
     );
-  } catch {
+  } catch (err){
     errorLog("commonSteps", "supportMenu", supportMenuXpath, "3s");
     driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
     throw Error(err.message);

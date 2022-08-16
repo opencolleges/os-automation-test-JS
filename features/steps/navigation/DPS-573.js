@@ -32,7 +32,7 @@ setDefaultTimeout(120 * 1000);
 
 Then(/^checking document title for OpenSpace$/, async function () {
   // Wait for page to fully loaded
-  await driver.sleep(5000);
+  //await driver.sleep(5000);
 
   // Check title is equal
   await titleCheck(driver, fileName, title);

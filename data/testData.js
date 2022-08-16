@@ -4,12 +4,11 @@ exports.uatUrl = "https://uat-os.opencolleges.edu.au";
 
 exports.usernameAlt = "testuser@opencolleges.com.au";
 // exports.usernameAlt = "e1144@opencolleges.com.au"
+exports.password = "Y[JWcyF27:jef:Y";
 
 exports.usernameAssessor = "tracey.hickey";
-
 exports.passwordAssessor = "Y[JWcyF27:jef:Y";
 
-exports.password = "test123";
 
 // User with an expired course
 exports.expiredCourseUser="elizabeth_charles29@hotmail.com"
