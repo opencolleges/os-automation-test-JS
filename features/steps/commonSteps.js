@@ -208,7 +208,7 @@ Then(/^logout the user as an assessor$/, async function () {
     throw Error(err.message);
   }
 
-  logoutAsAssessor.click();
+  //logoutAsAssessor.click();
 });
 
 Then(/^click on support menu from nav$/, async function () {
