@@ -197,10 +197,11 @@ Then(/^logout the user$/, async function () {
 
 Then(/^logout the user as an assessor$/, async function () {
   try {
-    var logoutAsAssessor = await driver.wait(
-      until.elementLocated(By.id("assessor-logout")),
-      60000
-    );
+    // var logoutAsAssessor = await driver.wait(
+    //   until.elementLocated(By.id("assessor-logout")),
+    //   60000
+    // );
+    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
   } catch (err) {
     errorLog("commonSteps", "logoutAsAssessor", "assessor-logout", "6s");
     driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
