@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "@cucumber/cucumber": "^8.5.1",
-    "chromedriver": "^104.0.0"
+    "chromedriver": "^106.0.1"
   }
 }
