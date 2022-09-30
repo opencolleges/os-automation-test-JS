@@ -1,4 +1,4 @@
-exports.uatUrl = "https://uat-os.opencolleges.edu.au";
+exports.uatUrl = "https://php7.opencolleges.edu.au";
 
 // exports.usernameAlt = "dac.84@hotmail.com";
 
