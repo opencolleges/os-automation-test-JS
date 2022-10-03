@@ -13,6 +13,7 @@ const {
 const { errorLog, elementTitleCheck } = require("../../../utilities/function");
 
 const path = require("path");
+const {uatUrl} = require("../../../data/testData");
 
 // Get file name
 const fileName = path.basename(__filename);
@@ -40,7 +41,7 @@ Then(
         supportCategoryItemsWrapperXpath,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -66,7 +67,7 @@ Then(
           supportCategoryItemXpath + `div[${i}]`,
           "3s"
         );
-        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+        driver.navigate().to(uatUrl+"/user/logout");
         throw Error(err.message);
       }
 
@@ -86,7 +87,7 @@ Then(
           supportBreadcrumbXpath,
           "3s"
         );
-        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+        driver.navigate().to(uatUrl+"/user/logout");
         throw Error(err.message);
       }
 
@@ -104,7 +105,7 @@ Then(/^expand collapse all FAQ on support category page$/, async function () {
       );
     } catch (err) {
       errorLog(fileName, "FAQ", supportCentreFAQXpath + `dd[${i}]`, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 

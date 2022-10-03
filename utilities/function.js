@@ -76,7 +76,7 @@ exports.login = async function (driver, username, password) {
   await driver.sleep(5000);
 
   //call logout first, page will redirect to login afterward
-  await driver.get('https://uat-os.opencolleges.edu.au/user/logout');
+  await driver.navigate().to(uatUrl+"/user/logout");
   // Open the page for login
   //await driver.get(uatUrl);
 
@@ -118,7 +118,7 @@ exports.elementTitleCheck = async function (driver, fileName, expectedTitle) {
       .getText();
   } catch (err) {
     errorLog(fileName, "title", 'By.css("h1")', "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
   strictEqual(title, expectedTitle);
@@ -140,7 +140,7 @@ exports.logout = async function (driver) {
       .perform();
   } catch (err) {
     errorLog("function", "profileMenu", profileMenuXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -158,7 +158,7 @@ exports.logout = async function (driver) {
     await driver.wait(until.elementLocated(By.css("h3")));
   } catch (err) {
     errorLog("null", "otherLinks", otherLinksXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 };
@@ -196,7 +196,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     discussionPanel.click();
   } catch (err) {
     errorLog(fileName, "discussionPanel", discussionPanelXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -211,7 +211,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     addImage.click();
   } catch (err) {
     errorLog(fileName, "addImageButton", addImageXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -229,7 +229,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     driver.switchTo().frame(iframe);
   } catch (err) {
     errorLog(fileName, "iframe", iframeXpath, "10s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -245,7 +245,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     await driver.sleep(5000);
   } catch (err) {
     errorLog(fileName, "browseButton", browseButtonXpath, "10s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -257,7 +257,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     uploadFile.sendKeys(filePath);
   } catch (err) {
     errorLog(fileName, "uploadFile", "", "");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -289,7 +289,7 @@ exports.publishPostToDiscussionPanel = async function (driver, fileName) {
     discussionPanel.sendKeys(textToPost);
   } catch (err) {
     errorLog(fileName, "discussionPanel", discussionPanelXpath, "6s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -304,7 +304,7 @@ exports.publishPostToDiscussionPanel = async function (driver, fileName) {
     postButton.click();
   } catch (err) {
     errorLog(fileName, "postButton", postButtonXpath, "6s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -324,7 +324,7 @@ exports.publishPostToDiscussionPanel = async function (driver, fileName) {
     assert(await postText.isDisplayed());
   } catch (err) {
     errorLog(fileName, "postText", `//p[contains(text(),${name})] `, "6s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 };
@@ -351,7 +351,7 @@ exports.pofanityCheck = async function (driver, fileName) {
     assert(await pofanityElement.isDisplayed());
   } catch (err) {
     errorLog(fileName, "pofanityElement", pofanityElementXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 };

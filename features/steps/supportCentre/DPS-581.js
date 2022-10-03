@@ -15,6 +15,7 @@ const {
 const { errorLog, elementTitleCheck } = require("../../../utilities/function");
 
 const path = require("path");
+const {uatUrl} = require("../../../data/testData");
 
 // Get file name
 const fileName = path.basename(__filename);
@@ -31,8 +32,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "supportMenu", supportMenuXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     supportMenu.click();
@@ -48,7 +49,7 @@ Then(
         supportCentreAssessmentBlockXpath,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+        driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -78,8 +79,8 @@ Then(
         supportCentreAsssessmentSecondArticleBlogTileXpath,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     secondArticleBlogTile.click();
@@ -96,8 +97,8 @@ Then(
         gettingStartedCurrentBreadScrumbXpath,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     assessmentsPageBreadScrumb.click();

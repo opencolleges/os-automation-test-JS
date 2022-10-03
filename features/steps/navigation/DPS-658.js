@@ -16,6 +16,7 @@ const {
 const { errorLog } = require("../../../utilities/function");
 
 const path = require("path");
+const {uatUrl} = require("../../../data/testData");
 
 // Get file name
 const fileName = path.basename(__filename);
@@ -30,7 +31,7 @@ Then(/^click on last visited page link$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "lastVisitedLink", lastVisitedLinkXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -49,7 +50,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "openSpaceTour", openSpaceTourXPath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -64,7 +65,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "menu", walkthroughMenuXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -79,7 +80,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "module", walkthroughModuleXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -94,7 +95,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "assessment", walkthroughAssessmentXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -114,7 +115,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
       walkthroughAssessmentNextButtonXpath,
       "3s"
     );
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -134,7 +135,7 @@ Then(/^click on OpenSpace Tour to test the Walkthrough$/, async function () {
       walkthroughMessageNextButtonXpath,
       "3s"
     );
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 

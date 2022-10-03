@@ -15,6 +15,7 @@ setDefaultTimeout(60 * 1000);
 
 const path = require("path");
 const { errorLog } = require("../../../utilities/function");
+const {uatUrl} = require("../../../data/testData");
 
 // Get file name
 const fileName = path.basename(__filename);
@@ -27,8 +28,8 @@ Then(/^click Message Centre$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "messageCenter", messageCenterXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-    throw Error(err.message);
+      driver.navigate().to(uatUrl+"/user/logout");
+      throw Error(err.message);
   }
 
   messageCenter.click();
@@ -47,7 +48,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "messageButton", messageButtonXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+        driver.navigate().to(uatUrl+"/user/logout");
     }
 
     // Click message button

@@ -23,6 +23,7 @@ setDefaultTimeout(60 * 1000);
 const path = require("path");
 const { errorLog } = require("../../../utilities/function");
 const { strictEqual } = require("assert");
+const {uatUrl} = require("../../../data/testData");
 
 // Get file name
 const fileName = path.basename(__filename);
@@ -35,7 +36,7 @@ Then(/^click My Profile$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "myProfile", myProfileXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -53,7 +54,7 @@ Then(/^check My Profile page title$/, async function () {
       .getText();
   } catch (err) {
     errorLog(fileName, "pageTitle", "By.css('h1')", "6s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -71,7 +72,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "studentName", studentNameXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -82,7 +83,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "studentNumber", studentNumberXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -123,7 +124,7 @@ Then(
         changePasswordButtonXpath,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -141,7 +142,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "gradingPreference", gradingPreferenceXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -159,7 +160,7 @@ Then(
         gradingPreferenceEditButtonXpath,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -177,7 +178,7 @@ Then(
         gradingPreferenceSaveButtonXpath,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -193,7 +194,7 @@ Then(/^check Privacy Setting section is present$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "privacySetting", privacySettingXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -208,7 +209,7 @@ Then(/^check Study Buddy settings can be edited and saved$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "studyBuddySettings", studyBuddySettingsXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -221,7 +222,7 @@ Then(/^check Study Buddy settings can be edited and saved$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "editButton", studyBuddySettingsEditButtonXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -239,7 +240,7 @@ Then(/^check Study Buddy settings can be edited and saved$/, async function () {
       studyBuddySettingsCancelButtonXpath,
       "3s"
     );
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 

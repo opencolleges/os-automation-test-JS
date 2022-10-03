@@ -24,6 +24,7 @@ const {
 setDefaultTimeout(120 * 1000);
 
 const path = require("path");
+const {uatUrl} = require("../../../data/testData");
 
 // Get file name
 const fileName = path.basename(__filename);
@@ -48,7 +49,7 @@ Then(
       assert(await previewImage.isDisplayed());
     } catch (err) {
       errorLog(fileName, "previewImageButton", previewImageXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -63,8 +64,8 @@ Then(
       removeImage.click();
     } catch (err) {
       errorLog(fileName, "removeImageButton", removeImageXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
   }
 );
@@ -89,7 +90,7 @@ Then(
       assert(await imageCounter.isDisplayed());
     } catch (err) {
       errorLog(fileName, "imageCounter", imageCounterXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+        driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -104,8 +105,8 @@ Then(
       postButton.click();
     } catch (err) {
       errorLog(fileName, "postButton", postButtonXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -119,8 +120,8 @@ Then(
       assert(await postImage.isDisplayed());
     } catch (err) {
       errorLog(fileName, "postImageButton", postImageXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -134,8 +135,8 @@ Then(
       assert(await imageIcon.isDisplayed());
     } catch (err) {
       errorLog(fileName, "imageIcon", imageIconXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Click post image
@@ -155,8 +156,8 @@ Then(
       assert(await openImageButton.isDisplayed());
     } catch (err) {
       errorLog(fileName, "openImageButton", '//img[@class="mfp-img"]', "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
   }
 );
@@ -175,8 +176,8 @@ Then(
       discussionPanel.click();
     } catch (err) {
       errorLog(fileName, "discussionPanel", discussionPanelXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Generate a random string
@@ -196,8 +197,8 @@ Then(
       postButton.click();
     } catch (err) {
       errorLog(fileName, "postButton", postButtonXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -218,8 +219,8 @@ Then(
         `//p[contains(text(),${textToPost})] `,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
   }
 );

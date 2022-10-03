@@ -14,6 +14,7 @@ setDefaultTimeout(60 * 1000);
 
 const path = require("path");
 const { strictEqual } = require("assert");
+const {uatUrl} = require("../../../data/testData");
 
 // Get file name
 const fileName = path.basename(__filename);
@@ -27,7 +28,7 @@ Then(/^click on My Grades link$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "myGradesLink", myGradesLinkXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -46,7 +47,7 @@ Then(/^check page title$/, async function () {
       .getText();
   } catch (err) {
     errorLog(fileName, "pageTitle", "By.css('h1')", "6s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -63,7 +64,7 @@ Then(/^check course title$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "courseTitle", myGradesCourseTitleXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -92,7 +93,7 @@ Then(
           `grades_dt_id${i}`,
           "3s"
         );
-        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+        driver.navigate().to(uatUrl+"/user/logout");
         throw Error(err.message);
       }
 
@@ -113,7 +114,7 @@ Then(
           `grades_dt_id${i}`,
           "3s"
         );
-        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+        driver.navigate().to(uatUrl+"/user/logout");
         throw Error(err.message);
       }
 
@@ -129,7 +130,7 @@ Then(
         await assignmentGrade.isDisplayed();
       } catch (err) {
         errorLog(fileName, "assignmentGrade", `grades_dt_row_id${i}0`, "3s");
-        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+        driver.navigate().to(uatUrl+"/user/logout");
         throw Error(err.message);
       }
     }
@@ -153,7 +154,7 @@ Then(
           `grades_dt_detail_id${i}0`,
           "3s"
         );
-        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+        driver.navigate().to(uatUrl+"/user/logout");
         throw Error(err.message);
       }
 
@@ -180,7 +181,7 @@ Then(/^check grade name, date graded, date submitted$/, async function () {
         `grades_dt_row_id${i}0`,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -200,7 +201,7 @@ Then(/^check grade name, date graded, date submitted$/, async function () {
         `grades_dt_row_id${i}0`,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -220,7 +221,7 @@ Then(/^check grade name, date graded, date submitted$/, async function () {
         `grades_dt_row_id${i}0`,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 

@@ -8,8 +8,10 @@ const {
   usernameAssessor,
   passwordAssessor,
   expiredCourseUser,
-  expiredCoursePass
+  expiredCoursePass,
+  uatUrl
 } = require("../../data/testData");
+
 
 const {
   toolTipXpath,
@@ -116,7 +118,7 @@ Then(/^check profile picture, trainer name and position$/, async function () {
     );
   } catch (err) {
     errorLog("commonSteps", "toolTip", toolTipXpath, "10s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -131,7 +133,7 @@ Then(/^check profile picture, trainer name and position$/, async function () {
     );
   } catch (err) {
     errorLog("commonSteps", "name", trainerNameXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -143,7 +145,7 @@ Then(/^check profile picture, trainer name and position$/, async function () {
     );
   } catch (err) {
     errorLog("commonSteps", "avatar", trainerAvatarXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -155,7 +157,7 @@ Then(/^check profile picture, trainer name and position$/, async function () {
     );
   } catch (err) {
     errorLog("commonSteps", "position", trainerPositionXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
   // Assert all displayed
@@ -181,7 +183,7 @@ Then("click and hover on the profile menu", async function () {
     );
   } catch (err) {
     errorLog("commonSteps", "profileMenu", profileMenuXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -201,10 +203,10 @@ Then(/^logout the user as an assessor$/, async function () {
     //   until.elementLocated(By.id("assessor-logout")),
     //   60000
     // );
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-  } catch (err) {
+    driver.navigate().to(uatUrl+"/user/logout");
+      } catch (err) {
     errorLog("commonSteps", "logoutAsAssessor", "assessor-logout", "6s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -219,7 +221,7 @@ Then(/^click on support menu from nav$/, async function () {
     );
   } catch (err){
     errorLog("commonSteps", "supportMenu", supportMenuXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -234,7 +236,7 @@ Then(/^ensure 'Contact Support' button exsists$/, async function () {
     );
   } catch(err) {
     errorLog("commonSteps", "contactSupport", contactSupportXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 });
