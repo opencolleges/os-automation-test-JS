@@ -7,6 +7,8 @@ require('dotenv').config()
 const usernameAlt = process.env["usernameAlt"]
 const password = process.env["password"]
 const usernameAssessor = process.env["usernameAssessor"]
+const passwordAssessor = process.env["passwordAssessor"]
+
 const expiredCourseUser = process.env["expiredCourseUser"]
 const expiredCoursePass = process.env["expiredCoursePass"]
 const uatUrl = process.env["uatUrl"]

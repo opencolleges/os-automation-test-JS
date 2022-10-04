@@ -128,42 +128,7 @@ exports.elementTitleCheck = async function (driver, fileName, expectedTitle) {
 };
 
 exports.logout = async function (driver) {
-  const actions = driver.actions({ bridge: true });
-
-  try {
-    // Find profile menu
-    const profileMenu = await driver.wait(
-      until.elementLocated(By.xpath(profileMenuXpath)),
-      30000
-    );
-
-    // Move mouse to the element to hover it
-    await actions
-      .move({ duration: 5000, origin: profileMenu, x: 0, y: 0 })
-      .perform();
-  } catch (err) {
-    errorLog("function", "profileMenu", profileMenuXpath, "3s");
-    driver.navigate().to(uatUrl+"/user/logout");
-    throw Error(err.message);
-  }
-
-  try {
-    // Find other links (My Profile, My Grades, My Payment, What's New, Log Out)
-    const otherLinks = await driver.wait(
-      until.elementsLocated(By.xpath(otherLinksXpath)),
-      30000
-    );
-
-    // Click Log Out
-    otherLinks[otherLinks.length - 1].click();
-
-    // Confirm that browser redirected and title loaded
-    await driver.wait(until.elementLocated(By.css("h3")));
-  } catch (err) {
-    errorLog("null", "otherLinks", otherLinksXpath, "3s");
-    driver.navigate().to(uatUrl+"/user/logout");
-    throw Error(err.message);
-  }
+  driver.navigate().to(uatUrl+"/user/logout");
 };
 
 exports.supportMenuHovering = async function (driver, fileName) {
