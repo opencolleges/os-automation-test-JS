@@ -1,3 +1,15 @@
+exports.title = "Open Space 2.0 | Open Colleges | Open Colleges";
+
+exports.supportMenuParams = [
+    "ask-for-support",
+    "message-centre?tab=contacts&section=trainer",
+    "support",
+];
+
+exports.partialTargetUrl =
+    "https://opencolleges.sharepoint.com/sites/OS/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FOS%2FShared%20Documents%2FCourse%20Content%2FE1048B%20Additional%20Resources%2FModule%2013%20assessment%20helpers&p=true";
+
+
 exports.usernameInputXpath = "// input[ @ type = 'text']";
 
 exports.passwordInputXpath = "// input[ @ type = 'password']";

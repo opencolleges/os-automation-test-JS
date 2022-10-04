@@ -4,7 +4,7 @@ const assert = require("assert");
 
 const { driver } = require("../commonSteps");
 
-const { title, uatUrl} = require("../../../data/testData");
+const uatUrl = process.env["uatUrl"]
 
 const {
   module2Xpath,

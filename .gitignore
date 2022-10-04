@@ -6,4 +6,4 @@ report/*
 
 # Error log
 errors.text
-.env
+/.env

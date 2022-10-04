@@ -13,7 +13,7 @@ const { strictEqual } = require("assert");
 const { errorLog } = require("../../../utilities/function");
 
 const path = require("path");
-const {uatUrl} = require("../../../data/testData");
+const uatUrl = process.env["uatUrl"]
 
 // Get file name
 const fileName = path.basename(__filename);

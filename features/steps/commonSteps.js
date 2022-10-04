@@ -1,17 +1,15 @@
 const { When, Then, AfterAll } = require("@cucumber/cucumber");
 const { Builder, By, until } = require("selenium-webdriver");
 const assert = require("assert");
+require('dotenv').config()
 
-const {
-  usernameAlt,
-  password,
-  usernameAssessor,
-  passwordAssessor,
-  expiredCourseUser,
-  expiredCoursePass,
-  uatUrl
-} = require("../../data/testData");
 
+const usernameAlt = process.env["usernameAlt"]
+const password = process.env["password"]
+const usernameAssessor = process.env["usernameAssessor"]
+const expiredCourseUser = process.env["expiredCourseUser"]
+const expiredCoursePass = process.env["expiredCoursePass"]
+const uatUrl = process.env["uatUrl"]
 
 const {
   toolTipXpath,

@@ -20,7 +20,8 @@ const { errorLog } = require("../../../utilities/function");
 setDefaultTimeout(120 * 1000);
 
 const path = require("path");
-const {uatUrl} = require("../../../data/testData");
+
+const uatUrl = process.env["uatUrl"]
 
 // Get file name
 const fileName = path.basename(__filename);

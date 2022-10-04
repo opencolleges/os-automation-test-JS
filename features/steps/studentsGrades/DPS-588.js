@@ -14,7 +14,7 @@ setDefaultTimeout(60 * 1000);
 
 const path = require("path");
 const { strictEqual } = require("assert");
-const {uatUrl} = require("../../../data/testData");
+const uatUrl = process.env["uatUrl"]
 
 // Get file name
 const fileName = path.basename(__filename);

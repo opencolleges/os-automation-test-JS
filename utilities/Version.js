@@ -1,5 +1,5 @@
 const { Builder, By } = require("selenium-webdriver");
-const {uatUrl} = require("../data/testData");
+const uatUrl = process.env["uatUrl"]
 
 const versionCheck = async () => {
   // Driver initialise

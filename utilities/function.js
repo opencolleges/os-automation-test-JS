@@ -1,8 +1,7 @@
 const { By, until } = require("selenium-webdriver");
 const assert = require("assert");
-require('dotenv').config()
 
-const { uatUrl } = require("../data/testData");
+const uatUrl = process.env["uatUrl"]
 
 const {
   usernameInputXpath,

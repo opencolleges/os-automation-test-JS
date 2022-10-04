@@ -4,17 +4,15 @@ const assert = require("assert");
 
 const { driver } = require("../commonSteps");
 
-const {
-  title,
-  uatUrl,
-  courseCode,
-  supportMenuParams,
-} = require("../../../data/testData");
+const uatUrl = process.env["uatUrl"]
+const courseCode = process.env["courseCode"]
 
 const {
   supportMenuXpath,
   messageCenterXpath,
   otherLinksXpath,
+    title,
+    supportMenuParams,
 } = require("../../../data/elementXpath");
 
 const {
