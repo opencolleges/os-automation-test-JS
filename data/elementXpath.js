@@ -320,9 +320,9 @@ exports.gettingStartedCurrentBreadScrumbXpath =
 exports.gettingStartedFirstQuickLinkXpath =
   '//*[@id="page-data"]/div/div/div[4]/div/div[1]/a/div';
 
-exports.gettingStartedButtonNoXpath = '//*[@id="no_265"]';
+exports.gettingStartedButtonNoXpath = '//*[@id="no_80446"]';
 
-exports.gettingStartedButtonYesXpath = '//*[@id="yes_271"]';
+exports.gettingStartedButtonYesXpath = '//*[@id="yes_242"]';
 
 exports.supportCentreAssessmentBlockXpath = '//*[@id="assessments"]';
 

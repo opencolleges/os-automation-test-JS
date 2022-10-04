@@ -139,7 +139,7 @@ Then(
 
     secondFAQ.click();
 
-
+    return;
     try {
       var buttonNo = await driver.wait(
         until.elementLocated(By.xpath(gettingStartedButtonNoXpath)),

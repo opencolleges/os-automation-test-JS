@@ -1,5 +1,6 @@
 const { By, until } = require("selenium-webdriver");
 const assert = require("assert");
+require('dotenv').config()
 
 const { uatUrl } = require("../data/testData");
 

@@ -6,7 +6,7 @@
   "scripts": {
     "single": "./node_modules/.bin/cucumber-js ./features/${npm_config_testFile}.feature -f json:report/cucumber_report.json",
     "test": "./node_modules/.bin/cucumber-js ./features -f json:report/cucumber_report.json",
-    "test-single": "./node_modules/.bin/cucumber-js ./features/DPS-573.feature --format=json:report/cucumber_report.json",
+    "test-single": "./node_modules/.bin/cucumber-js ./features/DPS-590.feature --format=json:report/cucumber_report.json",
     "report": "node index.js"
   },
   "keywords": [],
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@cucumber/cucumber": "^8.5.1",
-    "chromedriver": "^106.0.1"
+    "chromedriver": "^106.0.1",
+    "dotenv": "^16.0.3"
   }
 }
