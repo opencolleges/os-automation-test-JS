@@ -1,8 +1,8 @@
 const { When, Then, AfterAll } = require("@cucumber/cucumber");
 const { Builder, By, until } = require("selenium-webdriver");
 const assert = require("assert");
-require('dotenv').config()
 
+require('dotenv').config()
 
 const usernameAlt = process.env["usernameAlt"]
 const password = process.env["password"]
@@ -29,7 +29,7 @@ const screen = {
   height: 1200,
 };
 
-const runMode = "headless";  //'headless' for circleci, 'web' to see it run on screen in your local
+const runMode = "web";  //'headless' for circleci, 'web' to see it run on screen in your local
 const useFirefox = false;
 
 if (useFirefox) {

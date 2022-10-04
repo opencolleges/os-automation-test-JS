@@ -4,8 +4,9 @@ const assert = require("assert");
 
 const { driver } = require("../commonSteps");
 
-const { courseCode, course } = require("../../../data/elementXpath");
 const uatUrl = process.env["uatUrl"]
+const courseCode = process.env["courseCode"]
+const course = process.env["course"]
 
 const {
   courseHomePageXpath,

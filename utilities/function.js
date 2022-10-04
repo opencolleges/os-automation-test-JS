@@ -73,10 +73,12 @@ function errorLog(fileName, elementName, Xpath, time, errorMessage) {
 exports.login = async function (driver, username, password) {
   //Seems like on occasion in circleCI that the driver gets in a weird state.
   //Give it some time to get itself together and then try
-  await driver.sleep(5000);
+  //await driver.sleep(5000);
 
   //call logout first, page will redirect to login afterward
   await driver.navigate().to(uatUrl+"/user/logout");
+
+  //await driver.sleep(1000);
   // Open the page for login
   //await driver.get(uatUrl);
 
@@ -87,6 +89,7 @@ exports.login = async function (driver, username, password) {
   );
 
   usernameInput.sendKeys(username);
+
 
   const passwordInput = await driver.wait(
     until.elementLocated(By.xpath(passwordInputXpath)),
