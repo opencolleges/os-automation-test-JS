@@ -29,7 +29,7 @@ const screen = {
   height: 1200,
 };
 
-const runMode = "web";  //'headless' for circleci, 'web' to see it run on screen in your local
+const runMode = "headless";  //'headless' for circleci, 'web' to see it run on screen in your local
 const useFirefox = false;
 
 if (useFirefox) {
