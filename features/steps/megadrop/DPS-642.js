@@ -13,6 +13,7 @@ const { errorLog } = require("../../../utilities/function");
 setDefaultTimeout(60 * 1000);
 
 const path = require("path");
+const uatUrl = process.env["uatUrl"]
 
 // Get file name
 const fileName = path.basename(__filename);
@@ -28,8 +29,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "previousPage", previousPageXpath, "6s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -40,8 +41,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "nextPage", nextPageXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // assert both are displayed
@@ -70,8 +71,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "footer", footerXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Scroll down to footer
@@ -85,8 +86,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "nextPage", nextPageXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Click next page pagination
@@ -103,8 +104,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "nextPageTitle", "By.css('h3')", "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Assert next page title is displayed

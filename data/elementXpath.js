@@ -1,3 +1,15 @@
+exports.title = "Open Space 2.0 | Open Colleges | Open Colleges";
+
+exports.supportMenuParams = [
+    "ask-for-support",
+    "message-centre?tab=contacts&section=trainer",
+    "support",
+];
+
+exports.partialTargetUrl =
+    "https://opencolleges.sharepoint.com/sites/OS/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FOS%2FShared%20Documents%2FCourse%20Content%2FE1048B%20Additional%20Resources%2FModule%2013%20assessment%20helpers&p=true";
+
+
 exports.usernameInputXpath = "// input[ @ type = 'text']";
 
 exports.passwordInputXpath = "// input[ @ type = 'password']";
@@ -320,9 +332,6 @@ exports.gettingStartedCurrentBreadScrumbXpath =
 exports.gettingStartedFirstQuickLinkXpath =
   '//*[@id="page-data"]/div/div/div[4]/div/div[1]/a/div';
 
-exports.gettingStartedButtonNoXpath = '//*[@id="no_265"]';
-
-exports.gettingStartedButtonYesXpath = '//*[@id="yes_271"]';
 
 exports.supportCentreAssessmentBlockXpath = '//*[@id="assessments"]';
 
@@ -337,6 +346,11 @@ exports.supportCentreFirstFAQXpath =
 
 exports.supportCentreSecondFAQXpath =
   '//*[@id="page-data"]/div/div/div[4]/dl[3]';
+
+exports.gettingStartedButtonNoXpath = '//*[@id="no_242"]';
+
+exports.gettingStartedButtonYesXpath = '//*[@id="yes_271"]';
+
 
 // --------------------Special path for JS operation--------------------
 exports.jsDropFile =

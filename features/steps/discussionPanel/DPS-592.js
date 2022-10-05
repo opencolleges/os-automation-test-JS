@@ -21,6 +21,7 @@ const {
 setDefaultTimeout(120 * 1000);
 
 const path = require("path");
+const uatUrl = process.env["uatUrl"]
 
 // Get file name
 const fileName = path.basename(__filename);
@@ -56,8 +57,8 @@ Then(
       replyPostWrapper.click();
     } catch (err) {
       errorLog(fileName, "replyPostWrapper", replyPostWrapperXpath, "6s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -71,8 +72,8 @@ Then(
       replyPostTextArea.sendKeys("reply");
     } catch (err) {
       errorLog(fileName, "replyPostTextArea", replyPostAreaXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -86,8 +87,8 @@ Then(
       driver.executeScript("arguments[0].click()", replyPostButton);
     } catch (err) {
       errorLog(fileName, "replyPostButton", replyPostButtonXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -101,8 +102,8 @@ Then(
       assert(await replyTimeStamp.isDisplayed());
     } catch (err) {
       errorLog(fileName, "replyTimeStamp", replyTimeStampXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
     //  ------------------------------- ! Cant find elements -------------------------------
 
@@ -143,8 +144,8 @@ Then(
       discussionPanel.click();
     } catch (err) {
       errorLog(fileName, "discussionPanel", discussionPanelXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Wait to focus on discussion panel
@@ -179,8 +180,8 @@ Then(
       replyPostWrapper.click();
     } catch (err) {
       errorLog(fileName, "replyPostWrapper", replyPostWrapperXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -194,8 +195,8 @@ Then(
       replyPostArea.click();
     } catch (err) {
       errorLog(fileName, "replyPostArea", replyPostAreaXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Wait to focus on reply panel

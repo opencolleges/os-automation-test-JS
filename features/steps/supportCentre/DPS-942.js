@@ -13,6 +13,7 @@ const { errorLog } = require("../../../utilities/function");
 setDefaultTimeout(60 * 1000);
 
 const path = require("path");
+const uatUrl = process.env["uatUrl"]
 
 // Get file name
 const fileName = path.basename(__filename);
@@ -28,7 +29,7 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "searchInput", searchInputXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+        driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -46,8 +47,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "firstLink", firstLinkXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Click it
@@ -75,8 +76,8 @@ Then(/^click on support centre from search list$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "searchInput", searchInputXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-    throw Error(err.message);
+      driver.navigate().to(uatUrl+"/user/logout");
+      throw Error(err.message);
   }
 
   // Type course in search bar
@@ -97,8 +98,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "searchInput", searchInputXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Type course in search bar
@@ -115,8 +116,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "supportCentreLink", supportCentreLinkXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Click it

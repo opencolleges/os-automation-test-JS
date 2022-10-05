@@ -13,6 +13,7 @@ const { strictEqual } = require("assert");
 const { errorLog } = require("../../../utilities/function");
 
 const path = require("path");
+const uatUrl = process.env["uatUrl"]
 
 // Get file name
 const fileName = path.basename(__filename);
@@ -31,7 +32,7 @@ Then(/^click Support Centre$/, async function () {
     supportCentre.click();
   } catch (err) {
     errorLog(fileName, "supportCentre", supportCentreXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 });
@@ -48,7 +49,7 @@ Then(/^click Study Buddy$/, async function () {
     studyBuddy.click();
   } catch (err) {
     errorLog(fileName, "studyBuddy", studyBuddyXpath, "10s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 });
@@ -67,7 +68,7 @@ Then(/^check Support Centre title$/, async function () {
     strictEqual(title, "Study Buddy", "Title is not correct");
   } catch (err) {
     errorLog(fileName, "title", "By.css('h1')", "6s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 });
@@ -97,13 +98,13 @@ Then(/^click arrow icon of each question to show details$/, async function () {
           `faq_study-buddy_${i + 1}`,
           "3s"
         );
-        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+        driver.navigate().to(uatUrl+"/user/logout");
         throw Error(err.message);
       }
     }
   } catch (err) {
     errorLog(fileName, "questionList", "By.css('dl')", "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 });
@@ -120,7 +121,7 @@ Then(/^click View more button to show more questions$/, async function () {
     viewMoreQuestionsButton.click();
   } catch (err) {
     errorLog(fileName, "viewMoreQuestionsButton", viewMoreQuestionsXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -140,7 +141,7 @@ Then(/^check the title$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "title", "By.css('h1')", "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 });

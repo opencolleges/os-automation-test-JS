@@ -19,6 +19,7 @@ setDefaultTimeout(120 * 1000);
 
 const path = require("path");
 const { strictEqual } = require("assert");
+const uatUrl = process.env["uatUrl"]
 
 // Get file name
 const fileName = path.basename(__filename);
@@ -41,7 +42,7 @@ Then(/^click OpenSpace Release Notes$/, async function () {
       assessorOpenSpaceReleaseNotesXpath,
       "3s"
     );
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -57,7 +58,7 @@ Then(
       strictEqual(title, "Release notes");
     } catch (err) {
       errorLog(fileName, "title", "By.css('h1')", "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -77,7 +78,7 @@ Then(
         assessorOpenSpaceReleaseNotesContentXPath,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
   }
@@ -93,7 +94,7 @@ Then(/^click Messages$/, async function () {
     Messages.click();
   } catch (err) {
     errorLog(fileName, "Messages", assessorMessagesXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -119,7 +120,7 @@ Then(
         "messageItem",
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -141,7 +142,7 @@ Then(
           assessorMessagesTabBarItemsXpath + `div[${i}]`,
           "3s"
         );
-        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+        driver.navigate().to(uatUrl+"/user/logout");
       }
 
       tabBarItem.click();
@@ -184,7 +185,7 @@ Then(/^select Inbox and select the first message$/, async function () {
       assessorMessagesTabBarItemsXpath + `div[${1}]`,
       "3s"
     );
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -198,7 +199,7 @@ Then(/^select Inbox and select the first message$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "firstInboxMessage", firstInboxMessageXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -215,7 +216,7 @@ Then(/^verify that content loads in the right-hand panel$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "messageSender", messageSenderXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 

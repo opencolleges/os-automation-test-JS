@@ -4,17 +4,15 @@ const assert = require("assert");
 
 const { driver } = require("../commonSteps");
 
-const {
-  title,
-  uatUrl,
-  courseCode,
-  supportMenuParams,
-} = require("../../../data/testData");
+const uatUrl = process.env["uatUrl"]
+const courseCode = process.env["courseCode"]
 
 const {
   supportMenuXpath,
   messageCenterXpath,
   otherLinksXpath,
+    title,
+    supportMenuParams,
 } = require("../../../data/elementXpath");
 
 const {
@@ -31,9 +29,6 @@ const fileName = path.basename(__filename);
 setDefaultTimeout(120 * 1000);
 
 Then(/^checking document title for OpenSpace$/, async function () {
-  // Wait for page to fully loaded
-  //await driver.sleep(5000);
-
   // Check title is equal
   await titleCheck(driver, fileName, title);
 });
@@ -73,8 +68,8 @@ Then(
       }
     } catch (err) {
       errorLog(fileName, "links", "By.className('large-3')", "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -96,8 +91,8 @@ Then(
       }
     } catch (err) {
       errorLog(fileName, "supportMenu", supportMenuXpath, "6s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
   }
 );
@@ -119,8 +114,8 @@ Then(
       await driver.wait(until.elementLocated(By.css("h1")));
     } catch (err) {
       errorLog(fileName, "messageCenter", messageCenterXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -136,16 +131,14 @@ Then(
           await driver.wait(until.elementLocated(By.css("h1")), 30000);
         } catch (err) {
           errorLog(fileName, "linkTitle", "By.css('h1')", "3s");
-          driver
-            .navigate()
-            .to("https://uat-os.opencolleges.edu.au/user/logout");
+            driver.navigate().to(uatUrl+"/user/logout");
           throw Error(err.message);
         }
       }
     } catch (err) {
       errorLog(fileName, "otherLinks", otherLinksXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -156,8 +149,8 @@ Then(
       await driver.wait(until.elementLocated(By.css("h3")), 30000);
     } catch (err) {
       errorLog(fileName, "logoutTitle", "By.css('h3')", "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
   }
 );

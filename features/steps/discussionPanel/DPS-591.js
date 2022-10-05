@@ -24,6 +24,7 @@ const {
 setDefaultTimeout(120 * 1000);
 
 const path = require("path");
+const uatUrl = process.env["uatUrl"]
 
 // Get file name
 const fileName = path.basename(__filename);
@@ -31,8 +32,6 @@ const fileName = path.basename(__filename);
 Then(
   /^can preview added image and can remove image from preview panel before posting$/,
   async function () {
-    // Wait for page to be fully loaded
-    //await driver.sleep(5000);
 
     // Upload image to discussion panel
     await discussionPanelImageUpload(driver, fileName);
@@ -48,7 +47,7 @@ Then(
       assert(await previewImage.isDisplayed());
     } catch (err) {
       errorLog(fileName, "previewImageButton", previewImageXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+      driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -63,8 +62,8 @@ Then(
       removeImage.click();
     } catch (err) {
       errorLog(fileName, "removeImageButton", removeImageXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
   }
 );
@@ -72,9 +71,6 @@ Then(
 Then(
   /^can check the image counter before image upload, image icon and posted image can be opened or not after posting the image$/,
   async function () {
-    // Wait for page to be fully loaded
-    //await driver.sleep(5000);
-
     // Upload image to discussion panel
     await discussionPanelImageUpload(driver, fileName);
 
@@ -89,7 +85,7 @@ Then(
       assert(await imageCounter.isDisplayed());
     } catch (err) {
       errorLog(fileName, "imageCounter", imageCounterXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+        driver.navigate().to(uatUrl+"/user/logout");
       throw Error(err.message);
     }
 
@@ -104,8 +100,8 @@ Then(
       postButton.click();
     } catch (err) {
       errorLog(fileName, "postButton", postButtonXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -119,8 +115,8 @@ Then(
       assert(await postImage.isDisplayed());
     } catch (err) {
       errorLog(fileName, "postImageButton", postImageXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -134,16 +130,13 @@ Then(
       assert(await imageIcon.isDisplayed());
     } catch (err) {
       errorLog(fileName, "imageIcon", imageIconXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Click post image
     postImage.click();
-
-    // Wait for image open
-    //await driver.sleep(5000);
-
+    
     try {
       // Try to find image if successfully opened
       const openImageButton = await driver.wait(
@@ -155,8 +148,8 @@ Then(
       assert(await openImageButton.isDisplayed());
     } catch (err) {
       errorLog(fileName, "openImageButton", '//img[@class="mfp-img"]', "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
   }
 );
@@ -175,8 +168,8 @@ Then(
       discussionPanel.click();
     } catch (err) {
       errorLog(fileName, "discussionPanel", discussionPanelXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Generate a random string
@@ -196,8 +189,8 @@ Then(
       postButton.click();
     } catch (err) {
       errorLog(fileName, "postButton", postButtonXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -218,8 +211,8 @@ Then(
         `//p[contains(text(),${textToPost})] `,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
   }
 );

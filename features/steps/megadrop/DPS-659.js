@@ -14,6 +14,9 @@ const { errorLog } = require("../../../utilities/function");
 setDefaultTimeout(60 * 1000);
 
 const path = require("path");
+
+const uatUrl = process.env["uatUrl"]
+
 // Get file name
 const fileName = path.basename(__filename);
 
@@ -25,7 +28,7 @@ Then(/^can click on Module 2$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "module2", module2Xpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -42,7 +45,7 @@ Then(/^can click on Assessment Project$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "assessment", secondAssessmentXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -59,7 +62,7 @@ Then(/^click Download Assessment$/, async function () {
     );
   } catch (err) {
     errorLog(fileName, "downloadAssessment", downloadAssessmentXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 

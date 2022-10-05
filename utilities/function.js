@@ -1,7 +1,7 @@
 const { By, until } = require("selenium-webdriver");
 const assert = require("assert");
 
-const { uatUrl } = require("../data/testData");
+const uatUrl = process.env["uatUrl"]
 
 const {
   usernameInputXpath,
@@ -71,14 +71,9 @@ function errorLog(fileName, elementName, Xpath, time, errorMessage) {
 }
 
 exports.login = async function (driver, username, password) {
-  //Seems like on occasion in circleCI that the driver gets in a weird state.
-  //Give it some time to get itself together and then try
-  await driver.sleep(5000);
-
   //call logout first, page will redirect to login afterward
-  await driver.get('https://uat-os.opencolleges.edu.au/user/logout');
-  // Open the page for login
-  //await driver.get(uatUrl);
+  await driver.navigate().to(uatUrl+"/user/logout");
+
 
   // Input username and password
   const usernameInput = await driver.wait(
@@ -87,6 +82,7 @@ exports.login = async function (driver, username, password) {
   );
 
   usernameInput.sendKeys(username);
+
 
   const passwordInput = await driver.wait(
     until.elementLocated(By.xpath(passwordInputXpath)),
@@ -107,7 +103,6 @@ exports.login = async function (driver, username, password) {
   // Wait for page loading
   await driver.sleep(1000);
 
-  // Check whether course is expired
   await isCourseExpired(driver);
 };
 
@@ -118,49 +113,14 @@ exports.elementTitleCheck = async function (driver, fileName, expectedTitle) {
       .getText();
   } catch (err) {
     errorLog(fileName, "title", 'By.css("h1")', "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
   strictEqual(title, expectedTitle);
 };
 
 exports.logout = async function (driver) {
-  const actions = driver.actions({ bridge: true });
-
-  try {
-    // Find profile menu
-    const profileMenu = await driver.wait(
-      until.elementLocated(By.xpath(profileMenuXpath)),
-      30000
-    );
-
-    // Move mouse to the element to hover it
-    await actions
-      .move({ duration: 5000, origin: profileMenu, x: 0, y: 0 })
-      .perform();
-  } catch (err) {
-    errorLog("function", "profileMenu", profileMenuXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-    throw Error(err.message);
-  }
-
-  try {
-    // Find other links (My Profile, My Grades, My Payment, What's New, Log Out)
-    const otherLinks = await driver.wait(
-      until.elementsLocated(By.xpath(otherLinksXpath)),
-      30000
-    );
-
-    // Click Log Out
-    otherLinks[otherLinks.length - 1].click();
-
-    // Confirm that browser redirected and title loaded
-    await driver.wait(until.elementLocated(By.css("h3")));
-  } catch (err) {
-    errorLog("null", "otherLinks", otherLinksXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-    throw Error(err.message);
-  }
+  driver.navigate().to(uatUrl+"/user/logout");
 };
 
 exports.supportMenuHovering = async function (driver, fileName) {
@@ -184,9 +144,6 @@ exports.supportMenuHovering = async function (driver, fileName) {
 };
 
 exports.discussionPanelImageUpload = async function (driver, fileName) {
-  // Wait for page to fully loaded
-  //await driver.sleep(8000);
-
   try {
     // Find discussion text
     const discussionPanel = await driver.wait(
@@ -196,7 +153,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     discussionPanel.click();
   } catch (err) {
     errorLog(fileName, "discussionPanel", discussionPanelXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -211,7 +168,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     addImage.click();
   } catch (err) {
     errorLog(fileName, "addImageButton", addImageXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -229,7 +186,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     driver.switchTo().frame(iframe);
   } catch (err) {
     errorLog(fileName, "iframe", iframeXpath, "10s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -245,7 +202,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     await driver.sleep(5000);
   } catch (err) {
     errorLog(fileName, "browseButton", browseButtonXpath, "10s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -257,7 +214,7 @@ exports.discussionPanelImageUpload = async function (driver, fileName) {
     uploadFile.sendKeys(filePath);
   } catch (err) {
     errorLog(fileName, "uploadFile", "", "");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -289,7 +246,7 @@ exports.publishPostToDiscussionPanel = async function (driver, fileName) {
     discussionPanel.sendKeys(textToPost);
   } catch (err) {
     errorLog(fileName, "discussionPanel", discussionPanelXpath, "6s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -304,7 +261,7 @@ exports.publishPostToDiscussionPanel = async function (driver, fileName) {
     postButton.click();
   } catch (err) {
     errorLog(fileName, "postButton", postButtonXpath, "6s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 
@@ -324,7 +281,7 @@ exports.publishPostToDiscussionPanel = async function (driver, fileName) {
     assert(await postText.isDisplayed());
   } catch (err) {
     errorLog(fileName, "postText", `//p[contains(text(),${name})] `, "6s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 };
@@ -351,7 +308,7 @@ exports.pofanityCheck = async function (driver, fileName) {
     assert(await pofanityElement.isDisplayed());
   } catch (err) {
     errorLog(fileName, "pofanityElement", pofanityElementXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 };

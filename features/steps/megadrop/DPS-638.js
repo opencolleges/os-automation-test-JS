@@ -4,7 +4,9 @@ const assert = require("assert");
 
 const { driver } = require("../commonSteps");
 
-const { uatUrl, courseCode, course } = require("../../../data/testData");
+const uatUrl = process.env["uatUrl"]
+const courseCode = process.env["courseCode"]
+const course = process.env["course"]
 
 const {
   courseHomePageXpath,
@@ -39,8 +41,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "courseHomePage", courseHomePageXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
     // Click course homepage to show megadrop menu
     courseHomePage.click();
@@ -64,8 +66,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "courseOverview", courseOverviewXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Click course overview
@@ -78,8 +80,8 @@ Then(
         .getText();
     } catch (err) {
       errorLog(fileName, "courseTitle", 'By.css("h1")', "6s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Assert the title is expected
@@ -98,8 +100,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "module1", module1Xpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Click module
@@ -113,8 +115,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "firstTopic", firstTopicXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Click topic
@@ -128,8 +130,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "firstSubTopic", firstSubtopicXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Click subtopic
@@ -144,8 +146,8 @@ Then(
         );
       } catch (err) {
         errorLog(fileName, "content", `By.id(p${i})`, "6s");
-        driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-        throw Error(err.message);
+          driver.navigate().to(uatUrl+"/user/logout");
+          throw Error(err.message);
       }
       assert(await content.isDisplayed());
     }
@@ -165,8 +167,8 @@ Then(
         additionalResources.click();
     } catch (err) {
       errorLog(fileName, "additionalResources", additionalResourcesXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     try {
@@ -190,8 +192,8 @@ Then(
         additionalResourcesTitleXpath,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
 
@@ -208,8 +210,8 @@ Then(
         additionalResourcesSubTitle,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
 
@@ -230,8 +232,8 @@ Then(
         additionalResourcesLinksXpath,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
 
@@ -249,8 +251,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "moduleHelper", moduleHelperXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Click module helper

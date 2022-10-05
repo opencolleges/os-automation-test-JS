@@ -6,7 +6,6 @@ Feature:DPS-590
         Then click on getting started support category from support page
         Then click on view more button to navigate to main FAQ page
         Then click the first FAQ and provide the feedback with YES
-        Then click the second FAQ and provide the feedback with NO
         Then logout the user
 
 

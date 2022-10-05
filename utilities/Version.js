@@ -1,11 +1,12 @@
 const { Builder, By } = require("selenium-webdriver");
+const uatUrl = process.env["uatUrl"]
 
 const versionCheck = async () => {
   // Driver initialise
   this.driver = new Builder().forBrowser("chrome").build();
 
   // Link to version page
-  await this.driver.get("https://uat-os.opencolleges.edu.au/version");
+  await this.driver.navigate().to(uatUrl+"/version");
 
   // Get the text of element
   const version = await this.driver

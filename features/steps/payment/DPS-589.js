@@ -16,6 +16,7 @@ const { errorLog } = require("../../../utilities/function");
 setDefaultTimeout(120 * 1000);
 
 const path = require("path");
+const uatUrl = process.env["uatUrl"]
 
 // Get file name
 const fileName = path.basename(__filename);
@@ -32,7 +33,7 @@ Then(/^click link My Payments$/, async function () {
     myPaymentLink.click();
   } catch (err) {
     errorLog(fileName, "myPaymentLink", myPaymentLinkXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 });
@@ -49,7 +50,7 @@ Then(/^check My Payments page title$/, async function () {
     strictEqual(await title.getText(), "My Payments", "Title is not correct");
   } catch (err) {
     errorLog(fileName, "title", "By.css('h1')", "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 });
@@ -66,7 +67,7 @@ Then(/^check Payment History section presents$/, async function () {
     assert(await paymentHistory.isDisplayed());
   } catch (err) {
     errorLog(fileName, "paymentHistory", paymentHistoryXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 });
@@ -83,7 +84,7 @@ Then(/^check Phone Number section presents$/, async function () {
     assert(await phoneNumberSection.isDisplayed());
   } catch (err) {
     errorLog(fileName, "phoneNumberSection", phoneNumberSectionXpath, "3s");
-    driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
+    driver.navigate().to(uatUrl+"/user/logout");
     throw Error(err.message);
   }
 });

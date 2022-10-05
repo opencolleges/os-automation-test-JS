@@ -4,7 +4,7 @@ const assert = require("assert");
 
 const { driver } = require("../commonSteps");
 
-const { title } = require("../../../data/testData");
+const uatUrl = process.env["uatUrl"]
 
 const {
   module2Xpath,
@@ -42,8 +42,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "module2", module2Xpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Scroll down to module2
@@ -60,8 +60,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "firstTopic", firstTopicXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Click it to load subtopics
@@ -75,8 +75,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "firstSubtopic", firstSubtopicXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Click to show element
@@ -93,8 +93,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "footer", footerXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Scroll down to footer
@@ -133,8 +133,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "readings", 'By.className("ats-dt-act-label"', "10s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Assert each reding tag is displayed
@@ -157,8 +157,8 @@ Then(
         generalCourseContentXpath,
         "3s"
       );
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     assert(await generalCourseContent.isDisplayed());
@@ -176,8 +176,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "subtopicNumber", subtopicNumberXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Assert subtopic number displayed
@@ -191,8 +191,8 @@ Then(
       );
     } catch (err) {
       errorLog(fileName, "printTopicButton", printTopicButtonXpath, "3s");
-      driver.navigate().to("https://uat-os.opencolleges.edu.au/user/logout");
-      throw Error(err.message);
+        driver.navigate().to(uatUrl+"/user/logout");
+        throw Error(err.message);
     }
 
     // Click to print
