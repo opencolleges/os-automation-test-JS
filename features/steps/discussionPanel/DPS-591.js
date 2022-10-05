@@ -32,8 +32,6 @@ const fileName = path.basename(__filename);
 Then(
   /^can preview added image and can remove image from preview panel before posting$/,
   async function () {
-    // Wait for page to be fully loaded
-    //await driver.sleep(5000);
 
     // Upload image to discussion panel
     await discussionPanelImageUpload(driver, fileName);
@@ -73,9 +71,6 @@ Then(
 Then(
   /^can check the image counter before image upload, image icon and posted image can be opened or not after posting the image$/,
   async function () {
-    // Wait for page to be fully loaded
-    //await driver.sleep(5000);
-
     // Upload image to discussion panel
     await discussionPanelImageUpload(driver, fileName);
 
@@ -141,10 +136,7 @@ Then(
 
     // Click post image
     postImage.click();
-
-    // Wait for image open
-    //await driver.sleep(5000);
-
+    
     try {
       // Try to find image if successfully opened
       const openImageButton = await driver.wait(
