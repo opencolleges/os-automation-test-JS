@@ -31,7 +31,7 @@ const screen = {
   height: 1200,
 };
 
-const runMode = "headless";  //'headless' for circleci, 'web' to see it run on screen in your local
+const runMode = "web";  //'headless' for circleci, 'web' to see it run on screen in your local
 const useFirefox = false;
 
 if (useFirefox) {
@@ -198,19 +198,7 @@ Then(/^logout the user$/, async function () {
 });
 
 Then(/^logout the user as an assessor$/, async function () {
-  try {
-    // var logoutAsAssessor = await driver.wait(
-    //   until.elementLocated(By.id("assessor-logout")),
-    //   60000
-    // );
     driver.navigate().to(uatUrl+"/user/logout");
-      } catch (err) {
-    errorLog("commonSteps", "logoutAsAssessor", "assessor-logout", "6s");
-    driver.navigate().to(uatUrl+"/user/logout");
-    throw Error(err.message);
-  }
-
-  //logoutAsAssessor.click();
 });
 
 Then(/^click on support menu from nav$/, async function () {

@@ -332,9 +332,6 @@ exports.gettingStartedCurrentBreadScrumbXpath =
 exports.gettingStartedFirstQuickLinkXpath =
   '//*[@id="page-data"]/div/div/div[4]/div/div[1]/a/div';
 
-exports.gettingStartedButtonNoXpath = '//*[@id="no_80446"]';
-
-exports.gettingStartedButtonYesXpath = '//*[@id="yes_242"]';
 
 exports.supportCentreAssessmentBlockXpath = '//*[@id="assessments"]';
 
@@ -349,6 +346,11 @@ exports.supportCentreFirstFAQXpath =
 
 exports.supportCentreSecondFAQXpath =
   '//*[@id="page-data"]/div/div/div[4]/dl[3]';
+
+exports.gettingStartedButtonNoXpath = '//*[@id="no_242"]';
+
+exports.gettingStartedButtonYesXpath = '//*[@id="yes_271"]';
+
 
 // --------------------Special path for JS operation--------------------
 exports.jsDropFile =

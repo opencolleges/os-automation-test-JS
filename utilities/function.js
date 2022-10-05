@@ -71,16 +71,9 @@ function errorLog(fileName, elementName, Xpath, time, errorMessage) {
 }
 
 exports.login = async function (driver, username, password) {
-  //Seems like on occasion in circleCI that the driver gets in a weird state.
-  //Give it some time to get itself together and then try
-  //await driver.sleep(5000);
-
   //call logout first, page will redirect to login afterward
   await driver.navigate().to(uatUrl+"/user/logout");
 
-  //await driver.sleep(1000);
-  // Open the page for login
-  //await driver.get(uatUrl);
 
   // Input username and password
   const usernameInput = await driver.wait(
@@ -110,7 +103,6 @@ exports.login = async function (driver, username, password) {
   // Wait for page loading
   await driver.sleep(1000);
 
-  // Check whether course is expired
   await isCourseExpired(driver);
 };
 
@@ -152,9 +144,6 @@ exports.supportMenuHovering = async function (driver, fileName) {
 };
 
 exports.discussionPanelImageUpload = async function (driver, fileName) {
-  // Wait for page to fully loaded
-  //await driver.sleep(8000);
-
   try {
     // Find discussion text
     const discussionPanel = await driver.wait(
